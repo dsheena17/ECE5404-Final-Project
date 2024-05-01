@@ -1,1 +1,73 @@
+module axicb_crossbar_top
+
+    #(
+        ///////////////////////////////////////////////////////////////////////
+        // Global Parameter configuration
+        ///////////////////////////////////////////////////////////////////////
+
+        // Number of Principal Components
+        parameter PC_NUM = 34,
+        // Number of Major Principal Components
+        parameter MAJ_PC_NUM = 16,
+        // Number of minor Principal Components
+        parameter MIN_PC_NUM = 16,
+        // Threshold Value
+        parameter MIN_THRESHOLD = 5,
+        parameter MAX_THRESHOLD = 5
+    )
+    
+    (
+        ///////////////////////////////////////////////////////////////////////
+        // Input from the PCA
+        ///////////////////////////////////////////////////////////////////////
+        input  reg [PC_NUM -1:0]                sorted_eigen_values; 
+        input  reg [(PC_NUM*PC_NUM) -1:0]       sorted_eigen_vectors;
+        input  reg [PC_NUM -1:0]                input_sample;
+        input  wire                              clk,
+        input  wire                              aresetn,
+        input  wire                              srst,
+        output wire                              pc_score
+
+
+
+
+
+    );
+    
+    	
+    reg [MAJ_PC_NUM-1:0] maj_comp_eigen_values;
+    reg [(MAJ_PC_NUM*PC_NUM)-1:0] maj_comp_eigen_vector;
+    reg [MIN_PC_NUM-1:0] min_comp_eigen_values;
+    reg [(MIN_PC_NUM*PC_NUM)-1:0] min_comp_eigen_vector;
+    reg                           input_mean;
+    reg [PC_NUM-1:0] pc_values;
+	
+    assign maj_comp_eigen_values  = sorted_eigen_values[ MAJ_PC_NUM-1: 0];
+    assign maj_comp_eigen_vectors = sorted_eigen_vectors[ (MAJ_PC_NUM*PC_NUM)-1: 0];
+    
+    assign min_comp_eigen_values  = sorted_eigen_values[ MIN_PC_NUM-1: 0];
+    assign min_comp_eigen_vectors = sorted_eigen_vectors[ (MIN_PC_NUM*PC_NUM)-1: 0];
+    
+    /////////////////////computing the mean of input values///////////////////
+    reg [PC_NUM:0] summation;
+    integer i;
+
+    always @(*) begin
+        summation = 0;
+        for (i = 0; i < PC_NUM; i = i + 1) begin
+            summation = summation + input_sample[i];
+        end
+        mean_output = summation / PC_NUM;
+    end
+    
+    assign input_mean = 
+    
+    ///////////////////////Computing the principal component values/////////////////
+    assign pc_values = 
+    
+    module_inst
+    (
+    );
+
+endmodule
 
