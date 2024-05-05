@@ -1,0 +1,5 @@
+6 warnings and 95 errors generated.
+Error while processing C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp.
+clang-tidy applied 314 of 314 suggested fixes.
+Suppressed 93 warnings (87 in non-user code, 6 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

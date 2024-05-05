@@ -1,0 +1,1855 @@
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:7528:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:7528:7: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:8502:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:8502:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:8516:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:8516:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:8530:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:8530:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:10147:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:10147:7: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12826:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12827:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12828:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12829:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12830:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12860:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12861:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12862:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12863:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12864:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12865:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12866:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12867:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12868:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12869:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12919:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12920:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12921:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12948:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12949:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12950:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12951:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12952:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12953:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12989:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:12990:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13264:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13264:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13310:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13310:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13473:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13473:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13625:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13625:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13805:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13805:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13809:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13809:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13919:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:13919:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14009:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14009:7: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14028:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14028:7: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14318:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14318:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14401:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14401:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14807:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14807:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14813:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14813:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14817:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14817:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14865:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14865:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14871:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14871:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14875:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14875:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14890:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14890:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14898:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14898:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14963:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14963:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14969:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14969:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14973:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14973:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14988:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14988:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14996:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:14996:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15225:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15225:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15231:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15231:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15235:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15235:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15245:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15245:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15249:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15249:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15259:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15259:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15267:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15267:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15628:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15628:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15634:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15634:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15638:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15638:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15754:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15754:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15760:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15760:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15764:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15764:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15851:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15851:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15857:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15857:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15861:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15861:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15880:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15880:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15887:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:15887:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16003:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16003:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16009:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16009:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16013:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16013:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16033:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16033:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16040:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16040:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16302:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16302:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16308:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16308:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16312:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16312:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16336:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16336:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16343:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16343:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16773:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16773:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16779:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16779:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16783:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16783:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16913:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2193_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16913:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16920:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2200_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16920:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16924:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2204_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16924:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16971:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2251_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16971:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16978:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2258_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16978:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16982:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2262_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:16982:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17000:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2280_7: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17000:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17055:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2335_8: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17055:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17062:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2342_9: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17062:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17066:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2346_10: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17066:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17084:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2364_11: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17084:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17173:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2453_12: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17173:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17180:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2460_13: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17180:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17184:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2464_14: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17184:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17194:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2474_15: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17194:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17198:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2478_16: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17198:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17209:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2489_17: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17209:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17217:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2497_18: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17217:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17542:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2822_19: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17542:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17549:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2829_20: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17549:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17553:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2833_21: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17553:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17641:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2921_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17641:4: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17648:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2928_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17648:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17652:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2932_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17652:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17667:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2947_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17667:3: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17699:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2979_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17699:4: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17706:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2986_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17706:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17710:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2990_7: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17710:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17725:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3005_8: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17725:3: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17775:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3055_9: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17775:4: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17782:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3062_10: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17782:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17786:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3066_11: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17786:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17801:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3081_12: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17801:3: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17938:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3218_13: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17938:4: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17945:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3225_14: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17945:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17949:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3229_15: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17949:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17964:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3244_16: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:17964:3: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18124:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3404_17: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18124:4: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18131:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3411_18: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18131:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18135:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3415_19: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18135:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18850:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:18850:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19068:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19068:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19485:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19485:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19805:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_240_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19805:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19833:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_268_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:19833:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20535:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20535:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20588:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20588:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20602:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20602:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20632:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20632:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20717:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20717:12: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20737:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20737:16: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20751:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20751:20: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20844:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20844:12: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20858:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20858:15: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20978:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:20978:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21102:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21102:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21157:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21157:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21676:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21676:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21687:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21687:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21698:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21698:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21709:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21709:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21720:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21720:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21731:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21731:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21742:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21742:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21753:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:21753:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24078:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24078:12: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24142:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24142:7: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24259:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24259:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24284:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24284:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24354:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:24354:8: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26690:50: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp_i type = ram_2p impl = lutram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26728:48: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp type = ram_2p impl = lutram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26737:9: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+        for (int p = 0; p < NCU; p++) {
+        ^~~
+        VITIS_LOOP_86_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26737:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26805:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26809:13: warning: Added loop label VITIS_LOOP_180_1:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_180_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26809:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26819:13: warning: Added loop label VITIS_LOOP_190_2:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_190_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26819:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26869:50: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = pivot type = ram_2p impl = bram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26876:2: warning: Added loop label VITIS_LOOP_70_1:   [xilinx-label-all-loops]
+ for (int r = 0; r < NCU; r++) {
+ ^~~
+ VITIS_LOOP_70_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26876:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26915:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26919:9: warning: Added loop label VITIS_LOOP_128_1:   [xilinx-label-all-loops]
+        for (int c = 0; c < n; c++) {
+        ^~~
+        VITIS_LOOP_128_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26919:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26929:9: warning: Added loop label VITIS_LOOP_138_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < n; c++) {
+        ^~~
+        VITIS_LOOP_138_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26929:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26980:49: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = rows type = ram_2p impl = bram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:26981:49: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = cols type = ram_2p impl = bram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27014:2: warning: Added loop label VITIS_LOOP_101_1:   [xilinx-label-all-loops]
+ for (int r = 0; r < NCU; r++) {
+ ^~~
+ VITIS_LOOP_101_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27014:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27056:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27060:9: warning: Added loop label VITIS_LOOP_165_1:   [xilinx-label-all-loops]
+        for (int c = 0; c < n; c++) {
+        ^~~
+        VITIS_LOOP_165_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27060:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27067:5: warning: Added loop label VITIS_LOOP_172_2:   [xilinx-label-all-loops]
+    for (int r = 0; r < n; r++) {
+    ^~~
+    VITIS_LOOP_172_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27067:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27076:9: warning: Added loop label VITIS_LOOP_181_3:   [xilinx-label-all-loops]
+        for (int c = 0; c < n; c++) {
+        ^~~
+        VITIS_LOOP_181_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27076:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27082:5: warning: Added loop label VITIS_LOOP_187_4:   [xilinx-label-all-loops]
+    for (int r = 0; r < n; r++) {
+    ^~~
+    VITIS_LOOP_187_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27082:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27136:9: error: Resource with core_name: DMul_meddsp pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable = temp core = DMul_meddsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27142:9: warning: Added loop label VITIS_LOOP_95_1:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < 8; ++idx) {
+        ^~~
+        VITIS_LOOP_95_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27142:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27146:9: error: Resource with core_name: DMul_meddsp pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable = temp core = DMul_meddsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27151:9: warning: Added loop label VITIS_LOOP_104_2:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < 4; ++idx) {
+        ^~~
+        VITIS_LOOP_104_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27151:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27158:9: warning: Added loop label VITIS_LOOP_111_3:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < 2; ++idx) {
+        ^~~
+        VITIS_LOOP_111_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27158:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27225:9: warning: Added loop label VITIS_LOOP_178_1:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < 8; ++idx) {
+        ^~~
+        VITIS_LOOP_178_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27225:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27233:9: warning: Added loop label VITIS_LOOP_186_2:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < 4; ++idx) {
+        ^~~
+        VITIS_LOOP_186_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27233:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27240:9: warning: Added loop label VITIS_LOOP_193_3:   [xilinx-label-all-loops]
+        for (int idx = 0; idx < 2; ++idx) {
+        ^~~
+        VITIS_LOOP_193_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27240:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27268:2: warning: Added loop label VITIS_LOOP_221_4:   [xilinx-label-all-loops]
+ for (int kk = 0; kk < K; ++kk) {
+ ^~~
+ VITIS_LOOP_221_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27268:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27299:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = data type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27303:2: warning: Added loop label VITIS_LOOP_280_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < m; ++i) {
+ ^~~
+ VITIS_LOOP_280_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27303:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27304:9: warning: Added loop label VITIS_LOOP_281_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < n; ++j) {
+        ^~~
+        VITIS_LOOP_281_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27304:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27313:5: warning: Added loop label VITIS_LOOP_290_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < m; ++i) {
+    ^~~
+    VITIS_LOOP_290_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27313:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27314:9: warning: Added loop label VITIS_LOOP_291_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < n; ++j) {
+        ^~~
+        VITIS_LOOP_291_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27314:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27326:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = data type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27330:2: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < m; ++i) {
+ ^~~
+ VITIS_LOOP_307_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27330:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27331:9: warning: Added loop label VITIS_LOOP_308_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < n; ++j) {
+        ^~~
+        VITIS_LOOP_308_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27331:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27340:5: warning: Added loop label VITIS_LOOP_317_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < m; ++i) {
+    ^~~
+    VITIS_LOOP_317_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27340:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27341:9: warning: Added loop label VITIS_LOOP_318_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < n; ++j) {
+        ^~~
+        VITIS_LOOP_318_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27341:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27381:9: error: Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = d op = dsub impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27407:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = d2 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27408:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = deno2 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27412:9: error: Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = m op = dadd impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27426:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpMul op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27428:9: error: Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpSum op = dadd impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27431:9: error: Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpSub op = dsub impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27461:53: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmpOrder type = ram_t2p impl = bram
+                                                    ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27466:5: warning: Added loop label VITIS_LOOP_142_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < dim; ++i) {
+    ^~~
+    VITIS_LOOP_142_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27466:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27534:5: warning: Added loop label VITIS_LOOP_234_1:   [xilinx-label-all-loops]
+    for (int f = 0; f < UN; ++f) {
+    ^~~
+    VITIS_LOOP_234_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27534:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27695:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpMul0 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27696:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpMul1 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27697:9: error: Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = sum op = dadd impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27838:5: warning: Added loop label VITIS_LOOP_562_1:   [xilinx-label-all-loops]
+    for (int g = 0; g < UN; ++g) {
+    ^~~
+    VITIS_LOOP_562_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27838:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:27999:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpMul0 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28000:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpMul1 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28001:9: error: Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = sum op = dadd impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28139:2: warning: Added loop label VITIS_LOOP_875_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 16; ++i) {
+ ^~~
+ VITIS_LOOP_875_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28139:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28147:5: warning: Added loop label VITIS_LOOP_883_2:   [xilinx-label-all-loops]
+    for (int k = 0; k < 3 * UN; ++k) {
+    ^~~
+    VITIS_LOOP_883_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28147:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28151:2: warning: Added loop label VITIS_LOOP_887_3:   [xilinx-label-all-loops]
+ for (int j = 0; j < m_diagSize; ++j) {
+ ^~~
+ VITIS_LOOP_887_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28151:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28159:5: warning: Added loop label VITIS_LOOP_895_4:   [xilinx-label-all-loops]
+    for (int i = 0; i < UN; ++i) {
+    ^~~
+    VITIS_LOOP_895_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28159:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28169:5: warning: Added loop label VITIS_LOOP_905_5:   [xilinx-label-all-loops]
+    for (int i = 0; i < UN; ++i) {
+    ^~~
+    VITIS_LOOP_905_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28169:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28180:5: warning: Added loop label VITIS_LOOP_916_6:   [xilinx-label-all-loops]
+    for (int i = 0; i < UN; ++i) {
+    ^~~
+    VITIS_LOOP_916_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28180:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28209:50: error: Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = Order type = ram_t2p impl = bram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28245:13: warning: Added loop label VITIS_LOOP_1005_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < Dim_inner; ++j) {
+            ^~~
+            VITIS_LOOP_1005_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28245:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28276:25: warning: Added loop label VITIS_LOOP_1036_2:   [xilinx-label-all-loops]
+                        for (int tt = 0; tt < 3; ++tt) {
+                        ^~~
+                        VITIS_LOOP_1036_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28276:25: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28355:53: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = dataA_2D type = ram_t2p impl = uram
+                                                    ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28356:53: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = dataU_2D type = ram_t2p impl = uram
+                                                    ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28366:2: warning: Added loop label VITIS_LOOP_1168_1:   [xilinx-label-all-loops]
+ for (int j = 0; j < NMAX2; ++j) {
+ ^~~
+ VITIS_LOOP_1168_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28366:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28385:9: warning: Added loop label VITIS_LOOP_1187_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < NMAX2; ++j) {
+        ^~~
+        VITIS_LOOP_1187_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28385:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28438:9: error: Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = d op = dsub impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28464:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = d2 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28465:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = deno2 op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28469:9: error: Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = m op = dadd impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28483:9: error: Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpMul op = dmul impl = maxdsp
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28485:9: error: Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpSum op = dadd impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28488:9: error: Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable = tmpSub op = dsub impl = fabric
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28520:2: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+ for (int itm = 0; itm < MCU; itm++) {
+ ^~~
+ VITIS_LOOP_143_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28520:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28538:2: warning: Added loop label VITIS_LOOP_161_1:   [xilinx-label-all-loops]
+ for (int itn = 0; itn < NCU; itn++) {
+ ^~~
+ VITIS_LOOP_161_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28538:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28586:54: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = alpha_acc type = ram_2p impl = bram
+                                                     ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28589:53: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = beta_acc type = ram_2p impl = bram
+                                                    ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28592:54: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = gamma_acc type = ram_2p impl = bram
+                                                     ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28603:2: warning: Added loop label VITIS_LOOP_226_1:   [xilinx-label-all-loops]
+ for (int itm = 0; itm < MCU; itm++) {
+ ^~~
+ VITIS_LOOP_226_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28603:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28622:2: warning: Added loop label VITIS_LOOP_245_2:   [xilinx-label-all-loops]
+ for (int itm = 0; itm < MCU; itm++) {
+ ^~~
+ VITIS_LOOP_245_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28622:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28641:2: warning: Added loop label VITIS_LOOP_264_3:   [xilinx-label-all-loops]
+ for (int itm = 0; itm < MCU; itm++) {
+ ^~~
+ VITIS_LOOP_264_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28641:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28658:5: warning: Added loop label VITIS_LOOP_281_4:   [xilinx-label-all-loops]
+    for (int k = 0; k < 8; k++) {
+    ^~~
+    VITIS_LOOP_281_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28658:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28669:5: warning: Added loop label VITIS_LOOP_292_5:   [xilinx-label-all-loops]
+    for (int k = 0; k < 4; k++) {
+    ^~~
+    VITIS_LOOP_292_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28669:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28679:5: warning: Added loop label VITIS_LOOP_302_6:   [xilinx-label-all-loops]
+    for (int k = 0; k < 2; k++) {
+    ^~~
+    VITIS_LOOP_302_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28679:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28699:2: warning: Added loop label VITIS_LOOP_322_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < ACUN; k++) {
+ ^~~
+ VITIS_LOOP_322_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28699:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28702:2: warning: Added loop label VITIS_LOOP_325_2:   [xilinx-label-all-loops]
+ for (int itn = 0; itn < NCU; itn++) {
+ ^~~
+ VITIS_LOOP_325_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28702:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28742:49: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = ram_t2p impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28745:49: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matU type = ram_t2p impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28747:49: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matV type = ram_t2p impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28750:48: error: Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = A_i type = ram_s2p impl = bram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28753:48: error: Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = A_j type = ram_s2p impl = bram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28756:48: error: Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = V_i type = ram_s2p impl = bram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28759:48: error: Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = V_j type = ram_s2p impl = bram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28763:50: error: Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = sigma type = ram_s2p impl = bram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28775:2: warning: Added loop label VITIS_LOOP_418_1:   [xilinx-label-all-loops]
+ for (int j = 0; j < m; j++) {
+ ^~~
+ VITIS_LOOP_418_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28775:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28789:2: warning: Added loop label VITIS_LOOP_432_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < n; j++) {
+ ^~~
+ VITIS_LOOP_432_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28789:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28804:2: warning: Added loop label VITIS_LOOP_447_3:   [xilinx-label-all-loops]
+ for (int j = 0; j < n; j++) {
+ ^~~
+ VITIS_LOOP_447_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28804:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28888:9: warning: Added loop label VITIS_LOOP_531_4:   [xilinx-label-all-loops]
+        for (int t = 0; t < DEP; t++) {
+        ^~~
+        VITIS_LOOP_531_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28888:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28892:9: warning: Added loop label VITIS_LOOP_535_5:   [xilinx-label-all-loops]
+        for (int i = 0; i < m; i++) {
+        ^~~
+        VITIS_LOOP_535_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28892:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28902:9: warning: Added loop label VITIS_LOOP_545_6:   [xilinx-label-all-loops]
+        for (int t = 0; t < 8; t++) {
+        ^~~
+        VITIS_LOOP_545_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28902:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28908:9: warning: Added loop label VITIS_LOOP_551_7:   [xilinx-label-all-loops]
+        for (int t = 0; t < 4; t++) {
+        ^~~
+        VITIS_LOOP_551_7: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28908:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28914:9: warning: Added loop label VITIS_LOOP_557_8:   [xilinx-label-all-loops]
+        for (int t = 0; t < 2; t++) {
+        ^~~
+        VITIS_LOOP_557_8: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28914:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28929:13: warning: Added loop label VITIS_LOOP_572_9:   [xilinx-label-all-loops]
+            for (int i = 0; i < m; i++) {
+            ^~~
+            VITIS_LOOP_572_9: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28929:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28943:2: warning: Added loop label VITIS_LOOP_586_10:   [xilinx-label-all-loops]
+ for (int j = 0; j < m; j++) {
+ ^~~
+ VITIS_LOOP_586_10: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28943:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28960:2: warning: Added loop label VITIS_LOOP_603_11:   [xilinx-label-all-loops]
+ for (int j = 0; j < n; j++) {
+ ^~~
+ VITIS_LOOP_603_11: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28960:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:28991:50: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp_i type = ram_2p impl = lutram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29029:48: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp type = ram_2p impl = lutram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29038:9: warning: Added loop label VITIS_LOOP_83_1:   [xilinx-label-all-loops]
+        for (int p = 0; p < NCU; p++) {
+        ^~~
+        VITIS_LOOP_83_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29038:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29090:2: warning: Added loop label VITIS_LOOP_135_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < NCU; k++) {
+ ^~~
+ VITIS_LOOP_135_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29090:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29111:2: warning: Added loop label VITIS_LOOP_156_1:   [xilinx-label-all-loops]
+ for (int k = NCU - 1; k >= 0; k--) {
+ ^~~
+ VITIS_LOOP_156_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29111:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29125:50: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = dataD type = xpm_memory impl = uram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29129:2: warning: Added loop label VITIS_LOOP_174_1:   [xilinx-label-all-loops]
+ for (int c = 0; c < n; c++) {
+ ^~~
+ VITIS_LOOP_174_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29129:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29130:9: warning: Added loop label VITIS_LOOP_175_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < (n + NCU - 1) / NCU; i++) {
+        ^~~
+        VITIS_LOOP_175_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29130:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29131:13: warning: Added loop label VITIS_LOOP_176_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < NCU; k++) {
+            ^~~
+            VITIS_LOOP_176_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29131:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29142:9: warning: Added loop label VITIS_LOOP_187_4:   [xilinx-label-all-loops]
+        for (int i = 0; i < (n + NCU - 1) / NCU; i++) {
+        ^~~
+        VITIS_LOOP_187_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29142:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29143:13: warning: Added loop label VITIS_LOOP_188_5:   [xilinx-label-all-loops]
+            for (int k = 0; k < NCU; k++) {
+            ^~~
+            VITIS_LOOP_188_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29143:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29154:9: warning: Added loop label VITIS_LOOP_199_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < n; i++) {
+        ^~~
+        VITIS_LOOP_199_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29154:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29172:5: warning: Added loop label VITIS_LOOP_217_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < (n + NCU - 1) / NCU; i++) {
+    ^~~
+    VITIS_LOOP_217_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29172:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29173:9: warning: Added loop label VITIS_LOOP_218_2:   [xilinx-label-all-loops]
+        for (int k = 0; k < NCU; k++)
+        ^~~
+        VITIS_LOOP_218_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29173:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29174:13: warning: Added loop label VITIS_LOOP_219_3:   [xilinx-label-all-loops]
+            for (int j = i * NCU + k + 1; j < n; j++) {
+            ^~~
+            VITIS_LOOP_219_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29174:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29195:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29199:13: warning: Added loop label VITIS_LOOP_259_1:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_259_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29199:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29211:13: warning: Added loop label VITIS_LOOP_271_2:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_271_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29211:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29238:2: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < NCU; k++) {
+ ^~~
+ VITIS_LOOP_40_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29238:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29259:2: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+ for (int k = NCU - 1; k >= 0; k--) {
+ ^~~
+ VITIS_LOOP_61_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29259:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29273:50: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = dataD type = xpm_memory impl = uram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29277:2: warning: Added loop label VITIS_LOOP_79_1:   [xilinx-label-all-loops]
+ for (int c = 0; c < n; c++) {
+ ^~~
+ VITIS_LOOP_79_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29277:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29278:9: warning: Added loop label VITIS_LOOP_80_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < (n + NCU - 1) / NCU; i++) {
+        ^~~
+        VITIS_LOOP_80_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29278:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29279:13: warning: Added loop label VITIS_LOOP_81_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < NCU; k++) {
+            ^~~
+            VITIS_LOOP_81_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29279:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29290:9: warning: Added loop label VITIS_LOOP_92_4:   [xilinx-label-all-loops]
+        for (int i = 0; i < (n + NCU - 1) / NCU; i++) {
+        ^~~
+        VITIS_LOOP_92_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29290:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29291:13: warning: Added loop label VITIS_LOOP_93_5:   [xilinx-label-all-loops]
+            for (int k = 0; k < NCU; k++) {
+            ^~~
+            VITIS_LOOP_93_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29291:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29302:9: warning: Added loop label VITIS_LOOP_104_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < n; i++) {
+        ^~~
+        VITIS_LOOP_104_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29302:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29311:5: warning: Added loop label VITIS_LOOP_113_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < n; r++) {
+    ^~~
+    VITIS_LOOP_113_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29311:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29334:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29339:13: warning: Added loop label VITIS_LOOP_156_1:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_156_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29339:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29351:13: warning: Added loop label VITIS_LOOP_168_2:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_168_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29351:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29378:2: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < NCU; k++) {
+ ^~~
+ VITIS_LOOP_40_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29378:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29399:2: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+ for (int k = NCU - 1; k >= 0; k--) {
+ ^~~
+ VITIS_LOOP_61_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29399:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29421:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29425:13: warning: Added loop label VITIS_LOOP_107_1:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_107_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29425:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29431:9: warning: Added loop label VITIS_LOOP_113_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < b; j++) {
+        ^~~
+        VITIS_LOOP_113_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29431:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29432:13: warning: Added loop label VITIS_LOOP_114_3:   [xilinx-label-all-loops]
+            for (int r = 0; r < m; r++) {
+            ^~~
+            VITIS_LOOP_114_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29432:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29443:13: warning: Added loop label VITIS_LOOP_125_4:   [xilinx-label-all-loops]
+            for (int r = 0; r < m; r++) {
+            ^~~
+            VITIS_LOOP_125_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29443:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29466:50: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp_i type = ram_2p impl = lutram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29504:48: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp type = ram_2p impl = lutram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29513:9: warning: Added loop label VITIS_LOOP_83_1:   [xilinx-label-all-loops]
+        for (int p = 0; p < NCU; p++) {
+        ^~~
+        VITIS_LOOP_83_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29513:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29565:2: warning: Added loop label VITIS_LOOP_135_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < NCU; k++) {
+ ^~~
+ VITIS_LOOP_135_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29565:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29586:2: warning: Added loop label VITIS_LOOP_156_1:   [xilinx-label-all-loops]
+ for (int k = NCU - 1; k >= 0; k--) {
+ ^~~
+ VITIS_LOOP_156_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29586:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29604:5: warning: Added loop label VITIS_LOOP_174_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < (n + NCU - 1) / NCU; i++) {
+    ^~~
+    VITIS_LOOP_174_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29604:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29605:9: warning: Added loop label VITIS_LOOP_175_2:   [xilinx-label-all-loops]
+        for (int k = 0; k < NCU; k++) {
+        ^~~
+        VITIS_LOOP_175_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29605:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29616:5: warning: Added loop label VITIS_LOOP_186_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < n; i++) {
+    ^~~
+    VITIS_LOOP_186_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29616:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29633:9: warning: Added loop label VITIS_LOOP_203_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < (n + NCU - 1) / NCU; i++) {
+        ^~~
+        VITIS_LOOP_203_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29633:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29634:13: warning: Added loop label VITIS_LOOP_204_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < NCU; k++)
+            ^~~
+            VITIS_LOOP_204_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29634:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29635:17: warning: Added loop label VITIS_LOOP_205_3:   [xilinx-label-all-loops]
+                for (int j = i * NCU + k + 1; j < n; j++) {
+                ^~~
+                VITIS_LOOP_205_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29635:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29659:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29663:13: warning: Added loop label VITIS_LOOP_253_1:   [xilinx-label-all-loops]
+            for (int c = 0; c < n; c++) {
+            ^~~
+            VITIS_LOOP_253_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29663:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29669:9: warning: Added loop label VITIS_LOOP_259_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < b; j++) {
+        ^~~
+        VITIS_LOOP_259_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29669:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29670:13: warning: Added loop label VITIS_LOOP_260_3:   [xilinx-label-all-loops]
+            for (int r = 0; r < n; r++) {
+            ^~~
+            VITIS_LOOP_260_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29670:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29678:13: warning: Added loop label VITIS_LOOP_268_4:   [xilinx-label-all-loops]
+            for (int r = 0; r < n; r++) {
+            ^~~
+            VITIS_LOOP_268_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29678:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29705:13: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+            for (int k = 0; k < NCU; k++) {
+            ^~~
+            VITIS_LOOP_39_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29705:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29728:13: warning: Added loop label VITIS_LOOP_62_1:   [xilinx-label-all-loops]
+            for (int k = NCU - 1; k >= 0; k--) {
+            ^~~
+            VITIS_LOOP_62_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29728:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29741:5: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < n; r++) {
+    ^~~
+    VITIS_LOOP_75_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29741:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29753:5: warning: Added loop label VITIS_LOOP_87_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < (N + NCU - 1) / NCU; i++) {
+    ^~~
+    VITIS_LOOP_87_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29753:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29754:9: warning: Added loop label VITIS_LOOP_88_2:   [xilinx-label-all-loops]
+        for (int k = 0; k < NCU; k++) {
+        ^~~
+        VITIS_LOOP_88_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29754:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29766:5: warning: Added loop label VITIS_LOOP_100_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_100_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29766:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29779:5: warning: Added loop label VITIS_LOOP_113_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < n; ++i) {
+    ^~~
+    VITIS_LOOP_113_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29779:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29798:9: warning: Added loop label VITIS_LOOP_152_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < b; j++) {
+        ^~~
+        VITIS_LOOP_152_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29798:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29801:17: warning: Added loop label VITIS_LOOP_155_2:   [xilinx-label-all-loops]
+                for (int c = 0; c < n; c++) {
+                ^~~
+                VITIS_LOOP_155_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29801:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29814:13: warning: Added loop label VITIS_LOOP_168_3:   [xilinx-label-all-loops]
+            for (int r = 0; r < n; r++) {
+            ^~~
+            VITIS_LOOP_168_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:29814:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:53889:13: warning: Added loop label VITIS_LOOP_76_1:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < 2; r++) {
+            ^~~
+            VITIS_LOOP_76_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:53889:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54050:13: warning: Added loop label VITIS_LOOP_237_1:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < (NCU + 1); r++) {
+            ^~~
+            VITIS_LOOP_237_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54050:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54080:13: warning: Added loop label VITIS_LOOP_267_2:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < NCU; r++) {
+            ^~~
+            VITIS_LOOP_267_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54080:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54114:2: warning: Added loop label VITIS_LOOP_301_3:   [xilinx-label-all-loops]
+ for (unsigned int r = 0; r < NCU; r++) {
+ ^~~
+ VITIS_LOOP_301_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54114:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54146:13: warning: Added loop label VITIS_LOOP_333_4:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < NCU; r++) {
+            ^~~
+            VITIS_LOOP_333_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54146:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54248:2: warning: Added loop label VITIS_LOOP_435_1:   [xilinx-label-all-loops]
+ for (unsigned int r = 0; r < (NCU + 1); r++) {
+ ^~~
+ VITIS_LOOP_435_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54248:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54288:9: warning: Added loop label VITIS_LOOP_475_2:   [xilinx-label-all-loops]
+        for (unsigned int r = 0; r < NCU; r++) {
+        ^~~
+        VITIS_LOOP_475_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54288:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54358:13: warning: Added loop label VITIS_LOOP_545_3:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < NCU2; r++) {
+            ^~~
+            VITIS_LOOP_545_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54358:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54371:13: warning: Added loop label VITIS_LOOP_558_4:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < Nwc; r++) {
+            ^~~
+            VITIS_LOOP_558_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54371:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54394:13: warning: Added loop label VITIS_LOOP_581_5:   [xilinx-label-all-loops]
+            for (unsigned int r = Nwc; r < NCU2; r++) {
+            ^~~
+            VITIS_LOOP_581_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54394:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54410:5: warning: Added loop label VITIS_LOOP_597_6:   [xilinx-label-all-loops]
+    for (unsigned int r = 0; r < Nwc; r++) {
+    ^~~
+    VITIS_LOOP_597_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54410:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54464:2: warning: Added loop label VITIS_LOOP_651_1:   [xilinx-label-all-loops]
+ for (unsigned int r = 0; r < (NCU + 1); r++) {
+ ^~~
+ VITIS_LOOP_651_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54464:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54504:9: warning: Added loop label VITIS_LOOP_691_2:   [xilinx-label-all-loops]
+        for (unsigned int r = 0; r < NCU; r++) {
+        ^~~
+        VITIS_LOOP_691_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54504:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54574:13: warning: Added loop label VITIS_LOOP_761_3:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < NCU2; r++) {
+            ^~~
+            VITIS_LOOP_761_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54574:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54587:13: warning: Added loop label VITIS_LOOP_774_4:   [xilinx-label-all-loops]
+            for (unsigned int r = 0; r < Nwc; r++) {
+            ^~~
+            VITIS_LOOP_774_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54587:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54611:13: warning: Added loop label VITIS_LOOP_798_5:   [xilinx-label-all-loops]
+            for (unsigned int r = Nwc; r < NCU2; r++) {
+            ^~~
+            VITIS_LOOP_798_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54611:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54628:5: warning: Added loop label VITIS_LOOP_815_6:   [xilinx-label-all-loops]
+    for (unsigned int r = 0; r < Nwc; r++) {
+    ^~~
+    VITIS_LOOP_815_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54628:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54672:51: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = outlow type = ram_2p impl = bram
+                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54673:52: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = outdiag type = ram_2p impl = bram
+                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54674:50: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = outup type = ram_2p impl = bram
+                                                 ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54675:51: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = outrhs type = ram_2p impl = bram
+                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54687:9: warning: Added loop label VITIS_LOOP_874_1:   [xilinx-label-all-loops]
+        for (unsigned int i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_874_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54687:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54692:5: warning: Added loop label VITIS_LOOP_879_2:   [xilinx-label-all-loops]
+    for (unsigned int s = 0; s < (logN >> 1); s++) {
+    ^~~
+    VITIS_LOOP_879_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54692:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54705:2: warning: Added loop label VITIS_LOOP_892_3:   [xilinx-label-all-loops]
+ for (unsigned int r = 0; r < NCU; r++) {
+ ^~~
+ VITIS_LOOP_892_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54705:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54723:52: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = DiagLow type = ram_2p impl = bram
+                                                   ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54724:49: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = Diag type = ram_2p impl = bram
+                                                ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54725:51: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = DiagUp type = ram_2p impl = bram
+                                                  ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54726:48: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = RHS type = ram_2p impl = bram
+                                               ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54779:53: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = dataA_2D type = ram_t2p impl = uram
+                                                    ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54780:53: error: Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = dataU_2D type = ram_t2p impl = uram
+                                                    ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54790:2: warning: Added loop label VITIS_LOOP_91_1:   [xilinx-label-all-loops]
+ for (int j = 0; j < NMAX2; ++j) {
+ ^~~
+ VITIS_LOOP_91_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54790:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54812:9: warning: Added loop label VITIS_LOOP_113_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < NMAX2; ++j) {
+        ^~~
+        VITIS_LOOP_113_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54812:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54866:2: warning: Added loop label VITIS_LOOP_66_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4; i++) {
+ ^~~
+ VITIS_LOOP_66_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54866:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54881:2: warning: Added loop label VITIS_LOOP_81_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 8; k++) {
+ ^~~
+ VITIS_LOOP_81_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54881:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54887:2: warning: Added loop label VITIS_LOOP_87_2:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4; i++) {
+ ^~~
+ VITIS_LOOP_87_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54887:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54902:2: warning: Added loop label VITIS_LOOP_102_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 32; k++) {
+ ^~~
+ VITIS_LOOP_102_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54902:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54908:2: warning: Added loop label VITIS_LOOP_108_2:   [xilinx-label-all-loops]
+ for (int k = 0; k < 16; k++) {
+ ^~~
+ VITIS_LOOP_108_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54908:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54914:2: warning: Added loop label VITIS_LOOP_114_3:   [xilinx-label-all-loops]
+ for (int k = 0; k < 8; k++) {
+ ^~~
+ VITIS_LOOP_114_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54914:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54921:2: warning: Added loop label VITIS_LOOP_121_4:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4; i++) {
+ ^~~
+ VITIS_LOOP_121_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54921:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54933:5: warning: Added loop label VITIS_LOOP_133_1:   [xilinx-label-all-loops]
+    for (int i = 0; i * T < rows * cols; i++) {
+    ^~~
+    VITIS_LOOP_133_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54933:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54940:13: warning: Added loop label VITIS_LOOP_140_2:   [xilinx-label-all-loops]
+            for (int t = 0; t < T; t++) {
+            ^~~
+            VITIS_LOOP_140_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54940:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54948:13: warning: Added loop label VITIS_LOOP_148_3:   [xilinx-label-all-loops]
+            for (int t = 0; t < T; t++) {
+            ^~~
+            VITIS_LOOP_148_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54948:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54960:5: warning: Added loop label VITIS_LOOP_160_1:   [xilinx-label-all-loops]
+    for (int i = 0; i * T < rows * rows; i++) {
+    ^~~
+    VITIS_LOOP_160_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54960:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54965:13: warning: Added loop label VITIS_LOOP_165_2:   [xilinx-label-all-loops]
+            for (int t = 0; t < T; t++) {
+            ^~~
+            VITIS_LOOP_165_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54965:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54973:13: warning: Added loop label VITIS_LOOP_173_3:   [xilinx-label-all-loops]
+            for (int t = 0; t < T; t++) {
+            ^~~
+            VITIS_LOOP_173_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54973:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:54989:9: error: Resource with core_name: RAM_2P_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = values2 core = RAM_2P_LUTRAM
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55004:2: warning: Added loop label VITIS_LOOP_204_1:   [xilinx-label-all-loops]
+ for (int u = 0; u < U; u++) {
+ ^~~
+ VITIS_LOOP_204_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55004:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55008:25: warning: Added loop label VITIS_LOOP_208_2:   [xilinx-label-all-loops]
+                        for (int v = 0; v < V; v++) {
+                        ^~~
+                        VITIS_LOOP_208_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55008:25: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55016:25: warning: Added loop label VITIS_LOOP_216_3:   [xilinx-label-all-loops]
+                        for (int v = 0; v < V; v++) {
+                        ^~~
+                        VITIS_LOOP_216_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55016:25: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55022:17: warning: Added loop label VITIS_LOOP_222_4:   [xilinx-label-all-loops]
+                for (int v = 0; v < V; v++) {
+                ^~~
+                VITIS_LOOP_222_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55022:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55043:5: warning: Added loop label VITIS_LOOP_243_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_243_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55043:5: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55045:2: warning: Added loop label VITIS_LOOP_245_2:   [xilinx-label-all-loops]
+ for (int j = 0; V * j <= i; j++) {
+ ^~~
+ VITIS_LOOP_245_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55045:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55048:2: warning: Added loop label VITIS_LOOP_248_3:   [xilinx-label-all-loops]
+ for (int v = 0; v < V; v++) {
+ ^~~
+ VITIS_LOOP_248_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55048:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55050:17: warning: Added loop label VITIS_LOOP_250_4:   [xilinx-label-all-loops]
+                for (int k = 0; k < W; k++) {
+                ^~~
+                VITIS_LOOP_250_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55050:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55082:9: error: Resource with core_name: RAM_2P_LUTRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS resource variable = values core = RAM_2P_LUTRAM
+        ^
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55083:2: warning: Added loop label VITIS_LOOP_283_1:   [xilinx-label-all-loops]
+ for (int w = 0; w < W; w++) {
+ ^~~
+ VITIS_LOOP_283_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55083:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55085:2: warning: Added loop label VITIS_LOOP_285_2:   [xilinx-label-all-loops]
+ for (int v = 0; v < V; v++) {
+ ^~~
+ VITIS_LOOP_285_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55085:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55096:2: warning: Added loop label VITIS_LOOP_296_3:   [xilinx-label-all-loops]
+ for (int u = 0; u < U; u++) {
+ ^~~
+ VITIS_LOOP_296_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55096:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55098:21: warning: Added loop label VITIS_LOOP_298_4:   [xilinx-label-all-loops]
+                    for (int v = 0; v < V; v++) {
+                    ^~~
+                    VITIS_LOOP_298_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55098:21: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55105:21: warning: Added loop label VITIS_LOOP_305_5:   [xilinx-label-all-loops]
+                    for (int v = 0; v < V; v++) {
+                    ^~~
+                    VITIS_LOOP_305_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55105:21: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55111:13: warning: Added loop label VITIS_LOOP_311_6:   [xilinx-label-all-loops]
+            for (int v = 0; v < V; v++) {
+            ^~~
+            VITIS_LOOP_311_6: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55111:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55123:9: warning: Added loop label VITIS_LOOP_323_7:   [xilinx-label-all-loops]
+        for (int v = 0; v < V; v++) {
+        ^~~
+        VITIS_LOOP_323_7: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55123:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55131:2: warning: Added loop label VITIS_LOOP_331_8:   [xilinx-label-all-loops]
+ for (int u = 0; u < U; u++) {
+ ^~~
+ VITIS_LOOP_331_8: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55131:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55133:21: warning: Added loop label VITIS_LOOP_333_9:   [xilinx-label-all-loops]
+                    for (int v = 0; v < V; v++) {
+                    ^~~
+                    VITIS_LOOP_333_9: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55133:21: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55249:13: warning: Added loop label VITIS_LOOP_125_1:   [xilinx-label-all-loops]
+            for (unsigned j = 0; j < N; j++) {
+            ^~~
+            VITIS_LOOP_125_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55249:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55260:9: warning: Added loop label VITIS_LOOP_136_2:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_136_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55260:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55273:13: warning: Added loop label VITIS_LOOP_160_1:   [xilinx-label-all-loops]
+            for (unsigned j = 0; j < N; j++) {
+            ^~~
+            VITIS_LOOP_160_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55273:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55309:13: warning: Added loop label VITIS_LOOP_214_1:   [xilinx-label-all-loops]
+            for (unsigned int j = 0; j < N; j++) {
+            ^~~
+            VITIS_LOOP_214_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55309:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55318:9: warning: Added loop label VITIS_LOOP_238_2:   [xilinx-label-all-loops]
+        for (unsigned int i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_238_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55318:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55319:13: warning: Added loop label VITIS_LOOP_239_3:   [xilinx-label-all-loops]
+            for (unsigned int j = 0; j < EIG_DUP; j++) {
+            ^~~
+            VITIS_LOOP_239_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55319:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55324:9: warning: Added loop label VITIS_LOOP_244_4:   [xilinx-label-all-loops]
+        for (unsigned int i = 0; i < noVars * N; i++) {
+        ^~~
+        VITIS_LOOP_244_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55324:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55325:13: warning: Added loop label VITIS_LOOP_245_5:   [xilinx-label-all-loops]
+            for (unsigned int j = 0; j < EIG_DUP; j++) {
+            ^~~
+            VITIS_LOOP_245_5: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55325:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55350:13: warning: Added loop label VITIS_LOOP_277_1:   [xilinx-label-all-loops]
+            for (unsigned i = 0; i < noVars; i++) {
+            ^~~
+            VITIS_LOOP_277_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55350:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55351:17: warning: Added loop label VITIS_LOOP_278_2:   [xilinx-label-all-loops]
+                for (unsigned j = 0; j < noVars; j++) {
+                ^~~
+                VITIS_LOOP_278_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55351:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55364:13: warning: Added loop label VITIS_LOOP_291_3:   [xilinx-label-all-loops]
+            for (unsigned i = 0; i < noVars; i++) {
+            ^~~
+            VITIS_LOOP_291_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55364:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55365:17: warning: Added loop label VITIS_LOOP_292_4:   [xilinx-label-all-loops]
+                for (unsigned j = 0; j < noVars; j++) {
+                ^~~
+                VITIS_LOOP_292_4: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55365:17: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55381:2: warning: Added loop label VITIS_LOOP_308_1:   [xilinx-label-all-loops]
+ for (unsigned i = 0; i < N; i++) {
+ ^~~
+ VITIS_LOOP_308_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55381:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55394:2: warning: Added loop label VITIS_LOOP_321_1:   [xilinx-label-all-loops]
+ for (unsigned i = 0; i < m_noVariables; i++) {
+ ^~~
+ VITIS_LOOP_321_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55394:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55395:13: warning: Added loop label VITIS_LOOP_322_2:   [xilinx-label-all-loops]
+            for (unsigned j = 0; j < N; j++) {
+            ^~~
+            VITIS_LOOP_322_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55395:13: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55407:2: warning: Added loop label VITIS_LOOP_341_1:   [xilinx-label-all-loops]
+ for (unsigned i = 0; i < N; i++) {
+ ^~~
+ VITIS_LOOP_341_1: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55407:2: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55416:9: warning: Added loop label VITIS_LOOP_350_2:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < m_noVariables; i++) {
+        ^~~
+        VITIS_LOOP_350_2: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55416:9: note: FIX-IT applied suggested code changes
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55417:13: warning: Added loop label VITIS_LOOP_351_3:   [xilinx-label-all-loops]
+            for (unsigned j = 0; j < N; j++) {
+            ^~~
+            VITIS_LOOP_351_3: 
+C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp:55417:13: note: FIX-IT applied suggested code changes
