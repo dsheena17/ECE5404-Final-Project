@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dut.cpp" path="C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\dut.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

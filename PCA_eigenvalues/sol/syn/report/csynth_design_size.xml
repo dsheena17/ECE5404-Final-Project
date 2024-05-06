@@ -1,0 +1,120 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 7938, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 2622, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 1693, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 1611, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 1544, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 2637, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 2483, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 2483, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 2483, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 2501, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 2416, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 2353, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 2432, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 2391, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 2469, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 2629, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="dut" col1="dut.cpp:31" col2="7938" col3="1544" col4="2501" col5="2391" col6="2629">
+                    <row id="11" col0="PCA" col1="pca.hpp:261" col2="7811" col3="" col4="" col5="" col6="">
+                        <row id="34" col0="covCoreMatrix&lt;double, 15, 80, 1, 2&gt;" col1="covariance.hpp:361" col2="603" col3="" col4="" col5="" col6="">
+                            <row id="7" col0="aveImpl&lt;double, 15, 80, 1, 2, 16&gt;" col1="covariance.hpp:274" col2="307" col3="" col4="" col5="" col6="">
+                                <row id="4" col0="addTree16&lt;double&gt;" col1="covariance.hpp:77" col2="64" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="24" col0="covCoreWrapper&lt;double, 15, 80, 1, 2, 16&gt;" col1="covariance.hpp:264" col2="293" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="covCorePart1&lt;double, 15, 80, 1, 2, 16&gt;" col1="covariance.hpp:185" col2="182" col3="" col4="" col5="" col6=""/>
+                                <row id="6" col0="covCorePart2&lt;double, 15, 2, 16&gt;" col1="covariance.hpp:241" col2="79" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="31" col0="implement" col1="pca.hpp:167" col2="7130" col3="" col4="" col5="" col6="">
+                            <row id="8" col0="syevj&lt;double, 15, 1&gt;" col1="syevj.hpp:49" col2="6810" col3="" col4="" col5="" col6="">
+                                <row id="26" col0="gesvdj_2D&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:1075" col2="6642" col3="" col4="" col5="" col6="">
+                                    <row id="5" col0="Jacobi_svd&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:933" col2="6605" col3="" col4="" col5="" col6="">
+                                        <row id="12" col0="GenBlockMat&lt;16, false&gt;" col1="gesvdj.hpp:129" col2="109" col3="" col4="" col5="" col6="">
+                                            <row id="17" col0="swapTwo&lt;int&gt;" col1="gesvdj.hpp:118" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="21" col0="abs" col1="math_helper.hpp:38" col2="962" col3="" col4="" col5="" col6="">
+                                            <row id="33" col0="abs" col1="absdouble.cpp:6" col2="960" col3="" col4="" col5="" col6="">
+                                                <row id="1" col0="generic_fabs&lt;double&gt;" col1="hls_fabs.h:12" col2="958" col3="" col4="" col5="" col6="">
+                                                    <row id="35" col0="generic_copysign&lt;double&gt;" col1="hls_copysign.h:10" col2="956" col3="" col4="" col5="" col6="">
+                                                        <row id="9" col0="fp_struct" col1="x_hls_utils.h:456" col2="640" col2_disp=" 640 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                        <row id="3" col0="to_ieee" col1="x_hls_utils.h:509" col2="298" col3="" col4="" col5="" col6="">
+                                                            <row id="15" col0="to_double" col1="x_hls_utils.h:494" col2="296" col3="" col4="" col5="" col6="">
+                                                                <row id="32" col0="data" col1="x_hls_utils.h:475" col2="278" col3="" col4="" col5="" col6=""/>
+                                                            </row>
+                                                        </row>
+                                                    </row>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="23" col0="jacobi_rotation_2x2&lt;double, 16&gt;" col1="gesvdj.hpp:43" col2="1353" col3="" col4="" col5="" col6="">
+                                            <row id="14" col0="sqrt" col1="math_helper.hpp:82" col2="12" col2_disp="  12 (3 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="sqrt" col1="sqrtdouble.cpp:6" col2="6" col2_disp="   6 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="30" col0="funcDataflow&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:856" col2="3982" col3="" col4="" col5="" col6="">
+                                            <row id="25" col0="unrollRow&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:540" col2="2234" col2_disp="2,234 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="13" col0="unrollCol&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:212" col2="1117" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="2" col0="nsort&lt;unsigned int&gt;" col1="pca.hpp:113" col2="125" col3="" col4="" col5="" col6="">
+                                <row id="10" col0="max" col1="limits:1677" col2="1" col3="" col4="" col5="" col6=""/>
+                                <row id="20" col0="shiftBuffer&lt;double, 3&gt;" col1="pca.hpp:93" col2="17" col3="" col4="" col5="" col6=""/>
+                                <row id="18" col0="shiftBuffer&lt;unsigned int, 3&gt;" col1="pca.hpp:93" col2="17" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="29" col0="filterMat&lt;unsigned int&gt;" col1="pca.hpp:155" col2="33" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="19" col0="getLoadingsMatrix" col1="pca.hpp:336" col2="63" col3="" col4="" col5="" col6="">
+                        <row id="16" col0="sqrt" col1="sqrtdouble.cpp:6" col2="2" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="22" col0="getComponents" col1="pca.hpp:319" col2="33" col3="" col4="" col5="" col6=""/>
+                    <row id="28" col0="getExplainedVariance" col1="pca.hpp:306" col2="18" col3="" col4="" col5="" col6=""/>
+                    <row id="7" col0="aveImpl&lt;double, 15, 80, 1, 2, 16&gt;" col1="covariance.hpp:274" col2="" col3="201" col4="185" col5="183" col6="198"/>
+                    <row id="24" col0="covCoreWrapper&lt;double, 15, 80, 1, 2, 16&gt;" col1="covariance.hpp:264" col2="" col3="224" col4="204" col5="201" col6="322">
+                        <row id="27" col0="covCorePart1&lt;double, 15, 80, 1, 2, 16&gt;" col1="covariance.hpp:185" col2="" col3="106" col4="93" col5="91" col6="106"/>
+                        <row id="6" col0="covCorePart2&lt;double, 15, 2, 16&gt;" col1="covariance.hpp:241" col2="" col3="103" col4="102" col5="101" col6="201"/>
+                    </row>
+                    <row id="31" col0="implement" col1="pca.hpp:167" col2="" col3="994" col4="1989" col5="1865" col6="1916">
+                        <row id="26" col0="gesvdj_2D&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:1075" col2="" col3="724" col4="1654" col5="1520" col6="1524">
+                            <row id="5" col0="Jacobi_svd&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:933" col2="" col3="707" col4="1635" col5="1501" col6="1497">
+                                <row id="23" col0="jacobi_rotation_2x2&lt;double, 16&gt;" col1="gesvdj.hpp:43" col2="" col3="94" col4="760" col4_disp=" 760 (8 calls)" col5="712" col5_disp=" 712 (8 calls)" col6="720" col6_disp=" 720 (8 calls)"/>
+                                <row id="30" col0="funcDataflow&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:856" col2="" col3="414" col4="535" col5="503" col6="532">
+                                    <row id="25" col0="unrollRow&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:540" col2="" col3="244" col3_disp=" 244 (2 calls)" col4="278" col4_disp=" 278 (2 calls)" col5="278" col5_disp=" 278 (2 calls)" col6="292" col6_disp=" 292 (2 calls)"/>
+                                    <row id="13" col0="unrollCol&lt;double, 16, 1, 16&gt;" col1="gesvdj.hpp:212" col2="" col3="125" col4="142" col5="142" col6="149"/>
+                                </row>
+                            </row>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

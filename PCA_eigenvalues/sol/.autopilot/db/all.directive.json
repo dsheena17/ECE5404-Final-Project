@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "dut",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "dut"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "dut",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "dut"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

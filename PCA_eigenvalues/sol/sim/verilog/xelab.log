@@ -1,0 +1,985 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_dut_top glbl -Oenable_linking_all_libraries -prj dut.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s dut 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_dadddsub_64ns_64ns_64_8_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dadddsub_64ns_64ns_64_8_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_dadd_64ns_64ns_64_6_no_dsp_0_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dadd_64ns_64ns_64_6_no_dsp_0_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_dadd_64ns_64ns_64_8_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dadd_64ns_64ns_64_8_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dcmp_64ns_64ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_ddiv_64ns_64ns_64_31_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_ddiv_64ns_64ns_64_31_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_dmul_64ns_64ns_64_8_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dmul_64ns_64ns_64_8_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_dsqrt_64ns_64ns_64_30_no_dsp_0_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dsqrt_64ns_64ns_64_30_no_dsp_0_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_dsub_64ns_64ns_64_6_no_dsp_0_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dsub_64ns_64ns_64_6_no_dsp_0_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/ip/xil_defaultlib/dut_sitodp_32ns_64_5_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sitodp_32ns_64_5_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_automem_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_automem_outputComponents_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_outputComponents_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_automem_outputComponents_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_outputComponents_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_automem_outputComponents_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_outputComponents_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_automem_outputLoadings_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_outputLoadings_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_automem_outputLoadings_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_outputLoadings_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_automem_outputLoadings_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_outputLoadings_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dut_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_aveImpl_double_15_80_1_2_16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_aveImpl_double_15_80_1_2_16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_covCorePart1_double_15_80_1_2_16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_covCorePart1_double_15_80_1_2_16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_covCorePart2_double_15_2_16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_covCorePart2_double_15_2_16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_covCoreWrapper_double_15_80_1_2_16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_covCoreWrapper_double_15_80_1_2_16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dadddsub_64ns_64ns_64_8_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dadddsub_64ns_64ns_64_8_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dadd_64ns_64ns_64_6_no_dsp_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dadd_64ns_64ns_64_6_no_dsp_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dadd_64ns_64ns_64_8_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dadd_64ns_64ns_64_8_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dcmp_64ns_64ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_ddiv_64ns_64ns_64_31_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_ddiv_64ns_64ns_64_31_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dmul_64ns_64ns_64_8_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dmul_64ns_64ns_64_8_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dsqrt_64ns_64ns_64_30_no_dsp_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dsqrt_64ns_64ns_64_30_no_dsp_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dsub_64ns_64ns_64_6_no_dsp_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dsub_64ns_64ns_64_6_no_dsp_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dut_Pipeline_VITIS_LOOP_321_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dut_Pipeline_VITIS_LOOP_321_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module dut_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_fifo_w64_d32_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_fifo_w64_d32_A
+INFO: [VRFC 10-311] analyzing module dut_fifo_w64_d32_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_funcDataflow_double_16_1_16_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_funcDataflow_double_16_1_16_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_gesvdj_2D_double_16_1_16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_gesvdj_2D_double_16_1_16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_dataA_2D_RAM_T2P_URAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_dataA_2D_RAM_T2P_URAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_dSortedBuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_dSortedBuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_eigVals_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_eigVals_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_eigVecs_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_eigVecs_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_iSortedBuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_iSortedBuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_NSort_shift_buf_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_NSort_shift_buf_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_NSort_shift_buf_Loop12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_NSort_shift_buf_Loop12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_VITIS_LOOP_125_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_VITIS_LOOP_125_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_VITIS_LOOP_238_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_VITIS_LOOP_238_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_implement_Pipeline_VITIS_LOOP_244_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_implement_Pipeline_VITIS_LOOP_244_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_jacobi_rotation_2x2_double_16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_jacobi_rotation_2x2_double_16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_s_Order_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_s_Order_RAM_T2P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_Jacobi_svd_double_16_1_16_s_tmpOrder_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_Jacobi_svd_double_16_1_16_s_tmpOrder_RAM_T2P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_mac_muladd_8s_5ns_5ns_8_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mac_muladd_8s_5ns_5ns_8_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module dut_mac_muladd_8s_5ns_5ns_8_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_mac_muladd_8s_8s_8ns_8_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mac_muladd_8s_8s_8ns_8_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dut_mac_muladd_8s_8s_8ns_8_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_mul_32ns_32ns_64_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_32ns_32ns_64_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_mul_32ns_34ns_65_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_32ns_34ns_65_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_mul_8s_5ns_8_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_8s_5ns_8_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_pca_m_pcVals_0_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_pca_m_pcVals_0_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_pca_m_pcVecs_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_pca_m_pcVecs_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_sitodp_32ns_64_5_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sitodp_32ns_64_5_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_sparsemux_17_3_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sparsemux_17_3_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_sparsemux_7_2_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sparsemux_7_2_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_sparsemux_7_2_8_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sparsemux_7_2_8_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_standarisedData_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_standarisedData_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_start_for_covCorePart2_double_15_2_16_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_start_for_covCorePart2_double_15_2_16_U0
+INFO: [VRFC 10-311] analyzing module dut_start_for_covCorePart2_double_15_2_16_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_unrollCol_double_16_1_16_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_unrollCol_double_16_1_16_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_unrollRow_double_16_1_16_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_unrollRow_double_16_1_16_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_urem_32ns_3ns_2_36_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_urem_32ns_3ns_2_36_1_divider
+INFO: [VRFC 10-311] analyzing module dut_urem_32ns_3ns_2_36_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_fifo_w32_d2_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/sim/verilog/dut_start_for_covCorePart2_double_15_2_16_U0.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
+Compiling package axi_utils_v2_0_7.axi_utils_v2_0_7_pkg
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_exp_table...
+Compiling package mult_gen_v12_0_19.mult_gen_v12_0_19_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_pkg
+Compiling package floating_point_v7_1_16.flt_utils
+Compiling package xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_16.vt2mutils
+Compiling package floating_point_v7_1_16.vt2mcomps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.dut_standarisedData_RAM_AUTO_1R1...
+Compiling module xil_defaultlib.dut_pca_m_pcVals_0_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.dut_pca_m_pcVecs_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.dut_aveImpl_double_15_80_1_2_16_...
+Compiling module xil_defaultlib.dut_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.dut_aveImpl_double_15_80_1_2_16_...
+Compiling module xil_defaultlib.dut_aveImpl_double_15_80_1_2_16_...
+Compiling module xil_defaultlib.dut_aveImpl_double_15_80_1_2_16_...
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=52)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=14,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=54,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=16)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=16,length=0)\]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.zero_det_sel [\zero_det_sel(c_xdevicefamily="v...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=55)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=55,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=54,regi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.alignment [\alignment(c_xdevicefamily="virt...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=47,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=18,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=48,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9,length=0)\]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=56,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_16.addsub_dsp [\addsub_dsp(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_16.addsub [\addsub(c_xdevicefamily="virtexu...]
+Compiling architecture rtl of entity floating_point_v7_1_16.align_add [\align_add(c_xdevicefamily="virt...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=6,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=56)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=56,resu...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(b_width=18,c_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=19,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=28)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=29)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=54)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_16.norm_and_round_logic [\norm_and_round_logic(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,length=3)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_gt [\compare_gt(c_xdevicefamily="vir...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq [\compare_eq(c_xdevicefamily="vir...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare [\compare(c_xdevicefamily="virtex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=4,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_exp [\flt_add_exp(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op [\flt_dec_op(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_logic [\flt_add_logic(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add [\flt_add(c_xdevicefamily="virtex...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_dadddsub_64ns_64ns_64_8_full...
+Compiling module xil_defaultlib.dut_dadddsub_64ns_64ns_64_8_full...
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add [\flt_add(c_xdevicefamily="virtex...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_dadd_64ns_64ns_64_8_full_dsp...
+Compiling module xil_defaultlib.dut_dadd_64ns_64ns_64_8_full_dsp...
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=52,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=54,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=53,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=54,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture virtex of entity floating_point_v7_1_16.flt_div_mant [\flt_div_mant(c_xdevicefamily="v...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=13,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=28,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=27)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=27,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,length=27,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=27,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=26,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=27,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=28,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=29,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture virtex of entity floating_point_v7_1_16.flt_div [\flt_div(c_xdevicefamily="virtex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_ddiv_64ns_64ns_64_31_no_dsp_...
+Compiling module xil_defaultlib.dut_ddiv_64ns_64ns_64_31_no_dsp_...
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=31,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=32)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=32,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_16.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=32,dist...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=26,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=27,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=2)\]
+Compiling architecture synth of entity floating_point_v7_1_16.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op [\flt_dec_op(c_xdevicefamily="vir...]
+Compiling architecture struct of entity floating_point_v7_1_16.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_sitodp_32ns_64_5_no_dsp_1_ip
+Compiling module xil_defaultlib.dut_sitodp_32ns_64_5_no_dsp_1(NU...
+Compiling module xil_defaultlib.dut_aveImpl_double_15_80_1_2_16_...
+Compiling module xil_defaultlib.dut_covCorePart1_double_15_80_1_...
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e2_wrapper [\dsp48e2_wrapper(a_width=30,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=45,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=17,length=0)\]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e2_wrapper [\dsp48e2_wrapper(a_width=26,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=34,length=0)\]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,adreg=0,areg...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e2_wrapper [\dsp48e2_wrapper(a_width=26,b_wi...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(adreg=0,a_input="CASCAD...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e2_wrapper [\dsp48e2_wrapper(a_width=26,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=17)\]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e2_wrapper [\dsp48e2_wrapper(a_width=26,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=38,length=0)\]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e2_wrapper [\dsp48e2_wrapper(a_width=26,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=45,length=2)\]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(adreg=0,alumodereg=0,a_...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e2_wrapper [\dsp48e2_wrapper(a_width=26,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=17,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9,length=3)\]
+Compiling architecture struct of entity floating_point_v7_1_16.fix_mult_dsp48e2_dbl [\fix_mult_dsp48e2_dbl(mult_usage...]
+Compiling architecture rtl of entity floating_point_v7_1_16.fix_mult [\fix_mult(c_xdevicefamily="virte...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=5,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="v...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,areg...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(b_width=18,c_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult [\flt_mult(c_xdevicefamily="virte...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_dmul_64ns_64ns_64_8_max_dsp_...
+Compiling module xil_defaultlib.dut_dmul_64ns_64ns_64_8_max_dsp_...
+Compiling module xil_defaultlib.dut_covCorePart1_double_15_80_1_...
+Compiling module xil_defaultlib.dut_covCorePart1_double_15_80_1_...
+Compiling module xil_defaultlib.dut_covCorePart2_double_15_2_16_...
+Compiling module xil_defaultlib.dut_covCorePart2_double_15_2_16_...
+Compiling module xil_defaultlib.dut_fifo_w64_d32_A_ram
+Compiling module xil_defaultlib.dut_fifo_w64_d32_A
+Compiling module xil_defaultlib.dut_fifo_w32_d2_S_ShiftReg
+Compiling module xil_defaultlib.dut_fifo_w32_d2_S
+Compiling module xil_defaultlib.dut_start_for_covCorePart2_doubl...
+Compiling module xil_defaultlib.dut_start_for_covCorePart2_doubl...
+Compiling module xil_defaultlib.dut_covCoreWrapper_double_15_80_...
+Compiling module xil_defaultlib.dut_mac_muladd_8s_8s_8ns_8_4_1_D...
+Compiling module xil_defaultlib.dut_mac_muladd_8s_8s_8ns_8_4_1(I...
+Compiling module xil_defaultlib.dut_dut_Pipeline_VITIS_LOOP_277_...
+Compiling module xil_defaultlib.dut_implement_dSortedBuf_RAM_AUT...
+Compiling module xil_defaultlib.dut_implement_iSortedBuf_RAM_AUT...
+Compiling module xil_defaultlib.dut_implement_dataA_2D_RAM_T2P_U...
+Compiling module xil_defaultlib.dut_implement_eigVals_RAM_AUTO_1...
+Compiling module xil_defaultlib.dut_implement_eigVecs_RAM_AUTO_1...
+Compiling module xil_defaultlib.dut_mul_8s_5ns_8_1_1(NUM_STAGE=1...
+Compiling module xil_defaultlib.dut_implement_Pipeline_Loop_init...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_s_...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_s_...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_Pi...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_Pi...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_Pi...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_Pi...
+Compiling architecture rtl of entity floating_point_v7_1_16.zero_det_sel [\zero_det_sel(c_xdevicefamily="v...]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=54,regi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.alignment [\alignment(c_xdevicefamily="virt...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=27)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=25)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=29,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_16.addsub_logic [\addsub_logic(c_xdevicefamily="v...]
+Compiling architecture rtl of entity floating_point_v7_1_16.addsub [\addsub(c_xdevicefamily="virtexu...]
+Compiling architecture rtl of entity floating_point_v7_1_16.align_add [\align_add(c_xdevicefamily="virt...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_16.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=56,resu...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=6,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_16.norm_and_round_logic [\norm_and_round_logic(c_xdevicef...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_gt [\compare_gt(c_xdevicefamily="vir...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq [\compare_eq(c_xdevicefamily="vir...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare [\compare(c_xdevicefamily="virtex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=3,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=3,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_exp [\flt_add_exp(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_logic [\flt_add_logic(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add [\flt_add(c_xdevicefamily="virtex...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_dsub_64ns_64ns_64_6_no_dsp_0...
+Compiling module xil_defaultlib.dut_dsub_64ns_64ns_64_6_no_dsp_0...
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add [\flt_add(c_xdevicefamily="virtex...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_dadd_64ns_64ns_64_6_no_dsp_0...
+Compiling module xil_defaultlib.dut_dadd_64ns_64ns_64_6_no_dsp_0...
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=22,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq [\compare_eq(c_xdevicefamily="vir...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_gt [\compare_gt(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_16.fp_cmp [\fp_cmp(c_xdevicefamily="virtexu...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_dcmp_64ns_64ns_1_2_no_dsp_1_...
+Compiling module xil_defaultlib.dut_dcmp_64ns_64ns_1_2_no_dsp_1(...
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=5,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=53)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=5,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=6,fast_input=true)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=51,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=7,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=49)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=5)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=45)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=10,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=7)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=43,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=41)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=39,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=13,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=10,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=37)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=14,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=35,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=15,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=33)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=15,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=16,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=13)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=17,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=18,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=15)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=19,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=20,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=21,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=21)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=21,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=22,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=19)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=23,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=20,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=24,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=26,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=23)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=24,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=28,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=29,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=30,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=31,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=32,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=33,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=33,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=34,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=31)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=35,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=36,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=37,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=37,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=38,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=35)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=39,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=36,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=40,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=41,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=41,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=42,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=39)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=43,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=40,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=44,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=45,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=42,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=46,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=43)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=47,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=44,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=48,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=49,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=46,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=49,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=50,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=47)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=51,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=52,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=53,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=50,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=51)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=55,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=56,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=57,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=57,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=58,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant_addsub [\flt_sqrt_mant_addsub(c_xdevicef...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_sqrt_mant [\flt_sqrt_mant(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=27,fast_i...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=27,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_sqrt_exp [\flt_sqrt_exp(c_xdevicefamily="n...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture virtex of entity floating_point_v7_1_16.flt_sqrt [\flt_sqrt(c_xdevicefamily="virte...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.dut_dsqrt_64ns_64ns_64_30_no_dsp...
+Compiling module xil_defaultlib.dut_dsqrt_64ns_64ns_64_30_no_dsp...
+Compiling module xil_defaultlib.dut_jacobi_rotation_2x2_double_1...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_Pi...
+Compiling module xil_defaultlib.dut_funcDataflow_double_16_1_16_...
+Compiling module xil_defaultlib.dut_funcDataflow_double_16_1_16_...
+Compiling module xil_defaultlib.dut_unrollRow_double_16_1_16_9
+Compiling module xil_defaultlib.dut_unrollCol_double_16_1_16_10
+Compiling module xil_defaultlib.dut_sparsemux_17_3_64_1_1(din0_W...
+Compiling module xil_defaultlib.dut_funcDataflow_double_16_1_16_...
+Compiling module xil_defaultlib.dut_Jacobi_svd_double_16_1_16_s
+Compiling module xil_defaultlib.dut_gesvdj_2D_double_16_1_16_s
+Compiling module xil_defaultlib.dut_mac_muladd_8s_5ns_5ns_8_4_1_...
+Compiling module xil_defaultlib.dut_mac_muladd_8s_5ns_5ns_8_4_1(...
+Compiling module xil_defaultlib.dut_implement_Pipeline_Loop_post...
+Compiling module xil_defaultlib.dut_implement_Pipeline_VITIS_LOO...
+Compiling module xil_defaultlib.dut_implement_Pipeline_NSort_shi...
+Compiling module xil_defaultlib.dut_implement_Pipeline_NSort_shi...
+Compiling module xil_defaultlib.dut_urem_32ns_3ns_2_36_1_divider...
+Compiling module xil_defaultlib.dut_urem_32ns_3ns_2_36_1(NUM_STA...
+Compiling module xil_defaultlib.dut_sparsemux_7_2_8_1_1(din0_WID...
+Compiling module xil_defaultlib.dut_implement_Pipeline_PCA_filte...
+Compiling module xil_defaultlib.dut_implement_Pipeline_PCA_Sign_...
+Compiling module xil_defaultlib.dut_sparsemux_7_2_64_1_1(din0_WI...
+Compiling module xil_defaultlib.dut_implement_Pipeline_PCA_Sign_...
+Compiling module xil_defaultlib.dut_implement_Pipeline_VITIS_LOO...
+Compiling module xil_defaultlib.dut_implement_Pipeline_VITIS_LOO...
+Compiling module xil_defaultlib.dut_implement
+Compiling module xil_defaultlib.dut_dut_Pipeline_VITIS_LOOP_350_...
+Compiling module xil_defaultlib.dut_mul_32ns_34ns_65_2_1(NUM_STA...
+Compiling module xil_defaultlib.dut_dut_Pipeline_VITIS_LOOP_321_...
+Compiling module xil_defaultlib.dut_mul_32ns_32ns_64_2_1(NUM_STA...
+Compiling module xil_defaultlib.dut
+Compiling module xil_defaultlib.AESL_automem_input_r
+Compiling module xil_defaultlib.AESL_automem_outputComponents_0
+Compiling module xil_defaultlib.AESL_automem_outputComponents_1
+Compiling module xil_defaultlib.AESL_automem_outputComponents_2
+Compiling module xil_defaultlib.AESL_automem_outputLoadings_0
+Compiling module xil_defaultlib.AESL_automem_outputLoadings_1
+Compiling module xil_defaultlib.AESL_automem_outputLoadings_2
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=6)
+Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=7)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=82)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=39)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=21)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=16)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_dut_top
+Compiling module work.glbl
+Built simulation snapshot dut

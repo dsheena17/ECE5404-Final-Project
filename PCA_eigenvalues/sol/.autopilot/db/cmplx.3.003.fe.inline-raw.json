@@ -1,0 +1,171 @@
+{
+  "0": {
+    "basicblocks": 17,
+    "calls": "5 4 3",
+    "file": "dut.cpp",
+    "fileloc": 31,
+    "instructions": 130,
+    "loads": {
+      "L": 14
+    },
+    "name": "dut",
+    "stores": {
+      "L": 5,
+      "T": 7
+    },
+    "total_instructions": 1611
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "gesvdj.hpp",
+    "fileloc": 43,
+    "instructions": 98,
+    "loads": {
+      "L": 3
+    },
+    "name": "jacobi_rotation_2x2<double, 16>",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 98
+  },
+  "10": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "gesvdj.hpp",
+    "fileloc": 212,
+    "instructions": 125,
+    "loads": {
+      "L": 8
+    },
+    "name": "unrollCol<double, 16, 1, 16>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 125
+  },
+  "11": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "gesvdj.hpp",
+    "fileloc": 540,
+    "instructions": 122,
+    "loads": {
+      "L": 8
+    },
+    "name": "unrollRow<double, 16, 1, 16>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 122
+  },
+  "2": {
+    "basicblocks": 33,
+    "calls": "1 8",
+    "file": "gesvdj.hpp",
+    "fileloc": 933,
+    "instructions": 234,
+    "loads": {
+      "L": 18
+    },
+    "name": "Jacobi_svd<double, 16, 1, 16>",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 746
+  },
+  "3": {
+    "basicblocks": 59,
+    "calls": "9",
+    "file": "pca.hpp",
+    "fileloc": 167,
+    "instructions": 290,
+    "loads": {
+      "L": 21
+    },
+    "name": "implement",
+    "stores": {
+      "L": 29
+    },
+    "total_instructions": 1053
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "7 6",
+    "file": "covariance.hpp",
+    "fileloc": 264,
+    "instructions": 15,
+    "name": "covCoreWrapper<double, 15, 80, 1, 2, 16>",
+    "total_instructions": 224
+  },
+  "5": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "covariance.hpp",
+    "fileloc": 274,
+    "instructions": 204,
+    "loads": {
+      "L": 38
+    },
+    "name": "aveImpl<double, 15, 80, 1, 2, 16>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 204
+  },
+  "6": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "covariance.hpp",
+    "fileloc": 241,
+    "instructions": 103,
+    "name": "covCorePart2<double, 15, 2, 16>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 103
+  },
+  "7": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "covariance.hpp",
+    "fileloc": 185,
+    "instructions": 106,
+    "loads": {
+      "L": 7
+    },
+    "name": "covCorePart1<double, 15, 80, 1, 2, 16>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 106
+  },
+  "8": {
+    "basicblocks": 5,
+    "calls": "11 11 10",
+    "file": "gesvdj.hpp",
+    "fileloc": 856,
+    "instructions": 45,
+    "loads": {
+      "L": 3
+    },
+    "name": "funcDataflow<double, 16, 1, 16>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 414
+  },
+  "9": {
+    "basicblocks": 5,
+    "calls": "2",
+    "file": "gesvdj.hpp",
+    "fileloc": 1075,
+    "instructions": 17,
+    "name": "gesvdj_2D<double, 16, 1, 16>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 763
+  }
+}

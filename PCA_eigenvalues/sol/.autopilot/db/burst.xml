@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:991:5" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:991:5" LoopName="While_Loop" ParentFunc="void xf::solver::internal::Jacobi_svd&lt;double, 16, 1, 16&gt;(double (*) [1][16][16], double (*) [1][16][16], int)"/>
+</VitisHLS:BurstInfo>
+

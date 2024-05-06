@@ -1,0 +1,470 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "19 26 29 34",
+    "file": "dut.cpp",
+    "fileloc": 31,
+    "instructions": 13,
+    "name": "dut",
+    "total_instructions": 7938
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<double>",
+    "total_instructions": 958
+  },
+  "10": {
+    "basicblocks": 28,
+    "calls": "18 27 25",
+    "file": "pca.hpp",
+    "fileloc": 113,
+    "instructions": 90,
+    "loads": {
+      "L": 5
+    },
+    "name": "nsort<unsigned int>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 125
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "22",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 298
+  },
+  "12": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "covariance.hpp",
+    "fileloc": 77,
+    "instructions": 64,
+    "loads": {
+      "L": 8
+    },
+    "name": "addTree16<double>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 64
+  },
+  "13": {
+    "basicblocks": 41,
+    "calls": "2 28 3 4",
+    "file": "gesvdj.hpp",
+    "fileloc": 933,
+    "instructions": 199,
+    "loads": {
+      "L": 8
+    },
+    "name": "Jacobi_svd<double, 16, 1, 16>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 6605
+  },
+  "14": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "covariance.hpp",
+    "fileloc": 241,
+    "instructions": 67,
+    "name": "covCorePart2<double, 15, 2, 16>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 79
+  },
+  "15": {
+    "basicblocks": 87,
+    "calls": "12",
+    "file": "covariance.hpp",
+    "fileloc": 274,
+    "instructions": 243,
+    "loads": {
+      "L": 7
+    },
+    "name": "aveImpl<double, 15, 80, 1, 2, 16>",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 307
+  },
+  "16": {
+    "basicblocks": 42,
+    "calls": "32",
+    "file": "syevj.hpp",
+    "fileloc": 49,
+    "instructions": 168,
+    "loads": {
+      "L": 3
+    },
+    "name": "syevj<double, 15, 1>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 6810
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 320
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "limits",
+    "fileloc": 1677,
+    "instructions": 1,
+    "name": "max",
+    "total_instructions": 1
+  },
+  "19": {
+    "basicblocks": 30,
+    "calls": "8 5",
+    "file": "pca.hpp",
+    "fileloc": 261,
+    "instructions": 78,
+    "loads": {
+      "L": 2
+    },
+    "name": "PCA",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 7811
+  },
+  "2": {
+    "basicblocks": 28,
+    "calls": "24",
+    "file": "gesvdj.hpp",
+    "fileloc": 129,
+    "instructions": 104,
+    "loads": {
+      "L": 4
+    },
+    "name": "GenBlockMat<16, false>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 109
+  },
+  "20": {
+    "basicblocks": 245,
+    "calls": "",
+    "file": "gesvdj.hpp",
+    "fileloc": 212,
+    "instructions": 1117,
+    "loads": {
+      "L": 68
+    },
+    "name": "unrollCol<double, 16, 1, 16>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 1117
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "23",
+    "file": "math_helper.hpp",
+    "fileloc": 82,
+    "instructions": 2,
+    "name": "sqrt",
+    "total_instructions": 4
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "x_hls_utils.h",
+    "fileloc": 494,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_double",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 296
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sqrtdouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "sqrt",
+    "total_instructions": 2
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "gesvdj.hpp",
+    "fileloc": 118,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "swapTwo<int>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 5
+  },
+  "25": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "pca.hpp",
+    "fileloc": 93,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "shiftBuffer<unsigned int, 3>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 17
+  },
+  "26": {
+    "basicblocks": 19,
+    "calls": "23",
+    "file": "pca.hpp",
+    "fileloc": 336,
+    "instructions": 61,
+    "loads": {
+      "L": 4
+    },
+    "name": "getLoadingsMatrix",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 63
+  },
+  "27": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "pca.hpp",
+    "fileloc": 93,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "shiftBuffer<double, 3>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 17
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "math_helper.hpp",
+    "fileloc": 38,
+    "instructions": 2,
+    "name": "abs",
+    "total_instructions": 962
+  },
+  "29": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "pca.hpp",
+    "fileloc": 319,
+    "instructions": 33,
+    "loads": {
+      "L": 2
+    },
+    "name": "getComponents",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 33
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "21 21 21",
+    "file": "gesvdj.hpp",
+    "fileloc": 43,
+    "instructions": 267,
+    "loads": {
+      "L": 16
+    },
+    "name": "jacobi_rotation_2x2<double, 16>",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 1353
+  },
+  "30": {
+    "basicblocks": 4,
+    "calls": "33 14",
+    "file": "covariance.hpp",
+    "fileloc": 264,
+    "instructions": 31,
+    "name": "covCoreWrapper<double, 15, 80, 1, 2, 16>",
+    "total_instructions": 293
+  },
+  "31": {
+    "basicblocks": 245,
+    "calls": "",
+    "file": "gesvdj.hpp",
+    "fileloc": 540,
+    "instructions": 1117,
+    "loads": {
+      "L": 68
+    },
+    "name": "unrollRow<double, 16, 1, 16>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 1117
+  },
+  "32": {
+    "basicblocks": 13,
+    "calls": "13",
+    "file": "gesvdj.hpp",
+    "fileloc": 1075,
+    "instructions": 37,
+    "name": "gesvdj_2D<double, 16, 1, 16>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 6642
+  },
+  "33": {
+    "basicblocks": 57,
+    "calls": "",
+    "file": "covariance.hpp",
+    "fileloc": 185,
+    "instructions": 178,
+    "loads": {
+      "L": 6
+    },
+    "name": "covCorePart1<double, 15, 80, 1, 2, 16>",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 182
+  },
+  "34": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "pca.hpp",
+    "fileloc": 306,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "getExplainedVariance",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 18
+  },
+  "35": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "pca.hpp",
+    "fileloc": 155,
+    "instructions": 33,
+    "loads": {
+      "L": 2
+    },
+    "name": "filterMat<unsigned int>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 33
+  },
+  "4": {
+    "basicblocks": 40,
+    "calls": "31 31 20",
+    "file": "gesvdj.hpp",
+    "fileloc": 856,
+    "instructions": 631,
+    "loads": {
+      "L": 99
+    },
+    "name": "funcDataflow<double, 16, 1, 16>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 3982
+  },
+  "5": {
+    "basicblocks": 42,
+    "calls": "16 10 35",
+    "file": "pca.hpp",
+    "fileloc": 167,
+    "instructions": 162,
+    "loads": {
+      "L": 6
+    },
+    "name": "implement",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 7130
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 475,
+    "instructions": 32,
+    "name": "data",
+    "total_instructions": 278
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "absdouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "abs",
+    "total_instructions": 960
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "15 30",
+    "file": "covariance.hpp",
+    "fileloc": 361,
+    "instructions": 3,
+    "name": "covCoreMatrix<double, 15, 80, 1, 2>",
+    "total_instructions": 603
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "17 17 11",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 956
+  }
+}

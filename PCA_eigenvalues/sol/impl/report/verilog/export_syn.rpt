@@ -1,0 +1,395 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Mon May 06 01:26:58 -0400 2024
+    * Version:         2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:         Principal_Component_Analysis.prj
+    * Solution:        sol (Vivado IP Flow Target)
+    * Product family:  virtexuplus
+    * Target device:   xcu250-figd2104-2L-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  3.333 ns
+    * C-Synthesis target clock:    3.333 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              47912
+FF:               56291
+DSP:              106
+BRAM:             27
+URAM:             2
+SRL:              3259
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 3.333       |
+| Post-Synthesis | 2.887       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                               | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                               | 47912 | 56291 | 106 | 27   | 2    |     |        |      |         |          |        |
+|   (inst)                                                                           | 35    | 542   |     |      |      |     |        |      |         |          |        |
+|   covMatrix_U                                                                      |       |       |     | 2    |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_8_max_dsp_1_U350                                               | 171   | 330   | 8   |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_8_max_dsp_1_U350)                                           | 1     | 128   |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_8_max_dsp_1_U351                                               | 170   | 330   | 8   |      |      |     |        |      |         |          |        |
+|   dsqrt_64ns_64ns_64_30_no_dsp_0_U346                                              | 1714  | 1803  |     |      |      |     |        |      |         |          |        |
+|   dsqrt_64ns_64ns_64_30_no_dsp_0_U347                                              | 1714  | 1803  |     |      |      |     |        |      |         |          |        |
+|     (dsqrt_64ns_64ns_64_30_no_dsp_0_U347)                                          |       | 64    |     |      |      |     |        |      |         |          |        |
+|   dsqrt_64ns_64ns_64_30_no_dsp_0_U348                                              | 1714  | 1803  |     |      |      |     |        |      |         |          |        |
+|   grp_aveImpl_double_15_80_1_2_16_s_fu_197                                         | 7584  | 9246  | 6   |      |      |     |        |      |         |          |        |
+|     (grp_aveImpl_double_15_80_1_2_16_s_fu_197)                                     | 127   | 3399  |     |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_8_full_dsp_1_U24                                             | 1415  | 627   | 3   |      |      |     |        |      |         |          |        |
+|     dadddsub_64ns_64ns_64_8_full_dsp_1_U23                                         | 1362  | 628   | 3   |      |      |     |        |      |         |          |        |
+|     ddiv_64ns_64ns_64_31_no_dsp_1_U25                                              | 3189  | 3091  |     |      |      |     |        |      |         |          |        |
+|     grp_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1_fu_368               | 21    | 7     |     |      |      |     |        |      |         |          |        |
+|       (grp_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1_fu_368)           |       | 5     |     |      |      |     |        |      |         |          |        |
+|     grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1_fu_376                        | 567   | 689   |     |      |      |     |        |      |         |          |        |
+|       (grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1_fu_376)                    | 479   | 687   |     |      |      |     |        |      |         |          |        |
+|     grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2_fu_389                        | 440   | 317   |     |      |      |     |        |      |         |          |        |
+|       (grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2_fu_389)                    | 350   | 315   |     |      |      |     |        |      |         |          |        |
+|     sitodp_32ns_64_5_no_dsp_1_U26                                                  | 202   | 232   |     |      |      |     |        |      |         |          |        |
+|       (sitodp_32ns_64_5_no_dsp_1_U26)                                              | 32    | 97    |     |      |      |     |        |      |         |          |        |
+|     values_1_U                                                                     | 133   | 128   |     |      |      |     |        |      |         |          |        |
+|     values_U                                                                       | 128   | 128   |     |      |      |     |        |      |         |          |        |
+|   grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207                                  | 10406 | 14264 | 25  |      |      |     |        |      |         |          |        |
+|     cols_c_U                                                                       | 38    | 69    |     |      |      |     |        |      |         |          |        |
+|     covCorePart1_double_15_80_1_2_16_U0                                            | 1677  | 2432  | 11  |      |      |     |        |      |         |          |        |
+|       (covCorePart1_double_15_80_1_2_16_U0)                                        | 127   | 276   |     |      |      |     |        |      |         |          |        |
+|         dadd_64ns_64ns_64_8_full_dsp_1_U37                                         | 750   | 692   | 3   |      |      |     |        |      |         |          |        |
+|         dmul_64ns_64ns_64_8_max_dsp_1_U38                                          | 270   | 394   | 8   |      |      |     |        |      |         |          |        |
+|         flow_control_loop_pipe_sequential_init_U                                   | 125   | 2     |     |      |      |     |        |      |         |          |        |
+|       values2_1_U                                                                  | 40    | 64    |     |      |      |     |        |      |         |          |        |
+|       values2_U                                                                    | 40    | 64    |     |      |      |     |        |      |         |          |        |
+|     covCorePart2_double_15_2_16_U0                                                 | 8509  | 11512 | 14  |      |      |     |        |      |         |          |        |
+|       (covCorePart2_double_15_2_16_U0)                                             | 42    | 365   |     |      |      |     |        |      |         |          |        |
+|       ddiv_64ns_64ns_64_31_no_dsp_1_U72                                            | 3189  | 3091  |     |      |      |     |        |      |         |          |        |
+|       grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80              | 5109  | 7889  | 14  |      |      |     |        |      |         |          |        |
+|         (grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80)          | 1752  | 6109  |     |      |      |     |        |      |         |          |        |
+|         dadd_64ns_64ns_64_8_full_dsp_1_U61                                         | 1540  | 691   | 3   |      |      |     |        |      |         |          |        |
+|         dadd_64ns_64ns_64_8_full_dsp_1_U62                                         | 1553  | 692   | 3   |      |      |     |        |      |         |          |        |
+|         dmul_64ns_64ns_64_8_max_dsp_1_U63                                          | 239   | 395   | 8   |      |      |     |        |      |         |          |        |
+|         flow_control_loop_pipe_sequential_init_U                                   | 25    | 2     |     |      |      |     |        |      |         |          |        |
+|       sitodp_32ns_64_5_no_dsp_1_U73                                                | 169   | 167   |     |      |      |     |        |      |         |          |        |
+|         (sitodp_32ns_64_5_no_dsp_1_U73)                                            |       | 32    |     |      |      |     |        |      |         |          |        |
+|     rows_c_U                                                                       | 38    | 69    |     |      |      |     |        |      |         |          |        |
+|     start_for_covCorePart2_double_15_2_16_U0_U                                     | 3     | 4     |     |      |      |     |        |      |         |          |        |
+|     values2Strm_1_U                                                                | 70    | 89    |     |      |      |     |        |      |         |          |        |
+|     values2Strm_U                                                                  | 71    | 89    |     |      |      |     |        |      |         |          |        |
+|   grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_216                        | 93    | 136   | 1   |      |      |     |        |      |         |          |        |
+|     (grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_216)                    | 86    | 134   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 3     | 2     |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_8s_8s_8ns_8_4_1_U88                                                 | 4     |       | 1   |      |      |     |        |      |         |          |        |
+|   grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253                                         | 214   | 127   | 8   |      |      |     |        |      |         |          |        |
+|     (grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253)                                     | 6     | 88    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 164   | 3     |     |      |      |     |        |      |         |          |        |
+|     mul_32ns_34ns_65_2_1_U337                                                      | 22    | 18    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32ns_34ns_65_2_1_U338                                                      | 22    | 18    | 4   |      |      |     |        |      |         |          |        |
+|   grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236                        | 970   | 877   |     |      |      |     |        |      |         |          |        |
+|     (grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236)                    | 77    | 376   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 11    | 2     |     |      |      |     |        |      |         |          |        |
+|     sparsemux_7_2_64_1_1_U324                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|     urem_32ns_3ns_2_36_1_U323                                                      | 818   | 499   |     |      |      |     |        |      |         |          |        |
+|       (urem_32ns_3ns_2_36_1_U323)                                                  | 64    | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_implement_fu_225                                                             | 22801 | 24722 | 42  | 11   | 2    |     |        |      |         |          |        |
+|     (grp_implement_fu_225)                                                         | 95    | 683   |     |      |      |     |        |      |         |          |        |
+|     dSortedBuf_U                                                                   | 66    |       |     | 4    |      |     |        |      |         |          |        |
+|     dataA_2D_U                                                                     |       |       |     |      | 1    |     |        |      |         |          |        |
+|     dataU_2D_U                                                                     | 128   |       |     |      | 1    |     |        |      |         |          |        |
+|     dcmp_64ns_64ns_1_2_no_dsp_1_U304                                               | 88    | 130   |     |      |      |     |        |      |         |          |        |
+|     eigVals_U                                                                      | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|     eigVecs_U                                                                      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     grp_gesvdj_2D_double_16_1_16_s_fu_284                                          | 19261 | 21451 | 40  | 4    |      |     |        |      |         |          |        |
+|       (grp_gesvdj_2D_double_16_1_16_s_fu_284)                                      | 37    | 54    |     |      |      |     |        |      |         |          |        |
+|         Order_U                                                                    | 20    |       |     | 2    |      |     |        |      |         |          |        |
+|         grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal_fu_328                     | 135   | 70    |     |      |      |     |        |      |         |          |        |
+|           (grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal_fu_328)                 | 34    | 68    |     |      |      |     |        |      |         |          |        |
+|         grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348               | 14088 | 14595 | 24  |      |      |     |        |      |         |          |        |
+|           (grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348)           | 322   | 1392  |     |      |      |     |        |      |         |          |        |
+|             dadd_64ns_64ns_64_6_no_dsp_0_U121                                      | 678   | 494   |     |      |      |     |        |      |         |          |        |
+|             dadd_64ns_64ns_64_6_no_dsp_0_U122                                      | 678   | 546   |     |      |      |     |        |      |         |          |        |
+|             dcmp_64ns_64ns_1_2_no_dsp_1_U128                                       | 54    | 65    |     |      |      |     |        |      |         |          |        |
+|               (dcmp_64ns_64ns_1_2_no_dsp_1_U128)                                   | 17    | 65    |     |      |      |     |        |      |         |          |        |
+|             dcmp_64ns_64ns_1_2_no_dsp_1_U129                                       | 55    | 65    |     |      |      |     |        |      |         |          |        |
+|               (dcmp_64ns_64ns_1_2_no_dsp_1_U129)                                   | 18    | 65    |     |      |      |     |        |      |         |          |        |
+|             dcmp_64ns_64ns_1_2_no_dsp_1_U130                                       | 66    | 65    |     |      |      |     |        |      |         |          |        |
+|               (dcmp_64ns_64ns_1_2_no_dsp_1_U130)                                   | 27    | 65    |     |      |      |     |        |      |         |          |        |
+|             dcmp_64ns_64ns_1_2_no_dsp_1_U131                                       | 48    | 1     |     |      |      |     |        |      |         |          |        |
+|               (dcmp_64ns_64ns_1_2_no_dsp_1_U131)                                   |       | 1     |     |      |      |     |        |      |         |          |        |
+|             dcmp_64ns_64ns_1_2_no_dsp_1_U132                                       | 49    | 1     |     |      |      |     |        |      |         |          |        |
+|               (dcmp_64ns_64ns_1_2_no_dsp_1_U132)                                   |       | 1     |     |      |      |     |        |      |         |          |        |
+|             dcmp_64ns_64ns_1_2_no_dsp_1_U133                                       | 70    | 1     |     |      |      |     |        |      |         |          |        |
+|               (dcmp_64ns_64ns_1_2_no_dsp_1_U133)                                   |       | 1     |     |      |      |     |        |      |         |          |        |
+|             dcmp_64ns_64ns_1_2_no_dsp_1_U134                                       | 70    | 1     |     |      |      |     |        |      |         |          |        |
+|               (dcmp_64ns_64ns_1_2_no_dsp_1_U134)                                   |       | 1     |     |      |      |     |        |      |         |          |        |
+|             ddiv_64ns_64ns_64_31_no_dsp_1_U127                                     | 3261  | 3220  |     |      |      |     |        |      |         |          |        |
+|             dmul_64ns_64ns_64_8_max_dsp_1_U124                                     | 209   | 329   | 8   |      |      |     |        |      |         |          |        |
+|             dmul_64ns_64ns_64_8_max_dsp_1_U125                                     | 185   | 329   | 8   |      |      |     |        |      |         |          |        |
+|             dmul_64ns_64ns_64_8_max_dsp_1_U126                                     | 206   | 393   | 8   |      |      |     |        |      |         |          |        |
+|             dsqrt_64ns_64ns_64_30_no_dsp_0_U135                                    | 1745  | 1843  |     |      |      |     |        |      |         |          |        |
+|             dsqrt_64ns_64ns_64_30_no_dsp_0_U136                                    | 1745  | 1844  |     |      |      |     |        |      |         |          |        |
+|             dsqrt_64ns_64ns_64_30_no_dsp_0_U137                                    | 1745  | 1868  |     |      |      |     |        |      |         |          |        |
+|             dsub_64ns_64ns_64_6_no_dsp_0_U120                                      | 678   | 547   |     |      |      |     |        |      |         |          |        |
+|             dsub_64ns_64ns_64_6_no_dsp_0_U123                                      | 598   | 441   |     |      |      |     |        |      |         |          |        |
+|         grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal_fu_320                  | 31    | 80    |     |      |      |     |        |      |         |          |        |
+|           (grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal_fu_320)              | 16    | 78    |     |      |      |     |        |      |         |          |        |
+|           flow_control_loop_pipe_sequential_init_U                                 | 15    | 2     |     |      |      |     |        |      |         |          |        |
+|         grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1_fu_336            | 176   | 90    |     |      |      |     |        |      |         |          |        |
+|           (grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1_fu_336)        | 161   | 88    |     |      |      |     |        |      |         |          |        |
+|           flow_control_loop_pipe_sequential_init_U                                 | 15    | 2     |     |      |      |     |        |      |         |          |        |
+|         grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1_fu_313             | 106   | 33    |     |      |      |     |        |      |         |          |        |
+|           (grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1_fu_313)         |       | 31    |     |      |      |     |        |      |         |          |        |
+|           flow_control_loop_pipe_sequential_init_U                                 | 106   | 2     |     |      |      |     |        |      |         |          |        |
+|         grp_funcDataflow_double_16_1_16_8_fu_390                                   | 4224  | 4979  | 16  |      |      |     |        |      |         |          |        |
+|           (grp_funcDataflow_double_16_1_16_8_fu_390)                               | 26    | 49    |     |      |      |     |        |      |         |          |        |
+|           Order1_1_U                                                               | 171   | 64    |     |      |      |     |        |      |         |          |        |
+|           Order1_2_U                                                               | 111   | 64    |     |      |      |     |        |      |         |          |        |
+|           Order1_U                                                                 | 79    | 64    |     |      |      |     |        |      |         |          |        |
+|           grp_unrollCol_double_16_1_16_10_fu_412                                   | 1647  | 1837  |     |      |      |     |        |      |         |          |        |
+|             (grp_unrollCol_double_16_1_16_10_fu_412)                               | 721   | 1353  |     |      |      |     |        |      |         |          |        |
+|             dadd_64ns_64ns_64_6_no_dsp_0_U188                                      | 897   | 482   |     |      |      |     |        |      |         |          |        |
+|             flow_control_loop_pipe_sequential_init_U                               | 29    | 2     |     |      |      |     |        |      |         |          |        |
+|           grp_unrollRow_double_16_1_16_9_fu_401                                    | 1738  | 2517  | 16  |      |      |     |        |      |         |          |        |
+|             (grp_unrollRow_double_16_1_16_9_fu_401)                                | 216   | 1373  |     |      |      |     |        |      |         |          |        |
+|             dadd_64ns_64ns_64_6_no_dsp_0_U180                                      | 897   | 482   |     |      |      |     |        |      |         |          |        |
+|             dmul_64ns_64ns_64_8_max_dsp_1_U181                                     | 301   | 330   | 8   |      |      |     |        |      |         |          |        |
+|             dmul_64ns_64ns_64_8_max_dsp_1_U182                                     | 302   | 330   | 8   |      |      |     |        |      |         |          |        |
+|             flow_control_loop_pipe_sequential_init_U                               | 22    | 2     |     |      |      |     |        |      |         |          |        |
+|           m_c_right1_1_U                                                           | 96    | 64    |     |      |      |     |        |      |         |          |        |
+|           m_c_right1_2_U                                                           | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|           m_c_right1_U                                                             | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|           m_s_right1_1_U                                                           | 96    | 64    |     |      |      |     |        |      |         |          |        |
+|           m_s_right1_2_U                                                           | 66    | 64    |     |      |      |     |        |      |         |          |        |
+|           m_s_right1_U                                                             | 66    | 64    |     |      |      |     |        |      |         |          |        |
+|           sparsemux_17_3_64_1_1_U196                                               |       |       |     |      |      |     |        |      |         |          |        |
+|           sparsemux_17_3_64_1_1_U197                                               |       |       |     |      |      |     |        |      |         |          |        |
+|         tmpOrder_U                                                                 | 70    |       |     | 2    |      |     |        |      |         |          |        |
+|       sitodp_32ns_64_5_no_dsp_1_U232                                               | 169   | 198   |     |      |      |     |        |      |         |          |        |
+|         (sitodp_32ns_64_5_no_dsp_1_U232)                                           | 32    | 64    |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_271                      | 153   | 63    |     |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_271)                  | 119   | 61    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 34    | 2     |     |      |      |     |        |      |         |          |        |
+|       mul_8s_5ns_8_1_1_U95                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_291                    | 93    | 114   | 1   |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_291)                | 47    | 112   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 46    | 2     |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_5ns_5ns_8_4_1_U239                                             |       |       | 1   |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_318                           | 15    | 7     |     |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_318)                       | 4     | 5     |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 11    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_NSort_shift_buf_Loop_fu_312                             | 12    | 7     |     |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_NSort_shift_buf_Loop_fu_312)                         | 3     | 5     |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 9     | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339     | 1199  | 916   |     |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339) | 403   | 414   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 3     | 2     |     |      |      |     |        |      |         |          |        |
+|       signFlip_U                                                                   | 4     | 1     |     |      |      |     |        |      |         |          |        |
+|       urem_32ns_3ns_2_36_1_U276                                                    | 789   | 499   |     |      |      |     |        |      |         |          |        |
+|         (urem_32ns_3ns_2_36_1_U276)                                                | 65    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324              | 944   | 700   | 1   |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324)          | 190   | 199   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 3     | 2     |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_8ns_8_4_1_U261                                              | 5     |       | 1   |      |      |     |        |      |         |          |        |
+|       sparsemux_7_2_8_1_1_U260                                                     | 8     |       |     |      |      |     |        |      |         |          |        |
+|       urem_32ns_3ns_2_36_1_U259                                                    | 738   | 499   |     |      |      |     |        |      |         |          |        |
+|         (urem_32ns_3ns_2_36_1_U259)                                                | 1     | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_VITIS_LOOP_125_1_fu_301                                 | 87    | 86    |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_VITIS_LOOP_238_2_fu_353                                 | 77    | 4     |     |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_VITIS_LOOP_238_2_fu_353)                             |       | 2     |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 77    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_implement_Pipeline_VITIS_LOOP_244_4_fu_364                                 | 126   | 113   |     |      |      |     |        |      |         |          |        |
+|       (grp_implement_Pipeline_VITIS_LOOP_244_4_fu_364)                             | 50    | 111   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                     | 12    | 2     |     |      |      |     |        |      |         |          |        |
+|       sparsemux_7_2_64_1_1_U296                                                    | 64    |       |     |      |      |     |        |      |         |          |        |
+|     iSortedBuf_U                                                                   | 9     |       |     | 1    |      |     |        |      |         |          |        |
+|     pcVecsNorm_1_U                                                                 | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|     pcVecsNorm_2_U                                                                 | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|     pcVecsNorm_U                                                                   | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|     pcVecs_1_U                                                                     | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|     pcVecs_2_U                                                                     | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|     pcVecs_U                                                                       | 64    | 64    |     |      |      |     |        |      |         |          |        |
+|   mul_32ns_32ns_64_2_1_U349                                                        | 47    | 34    | 4   |      |      |     |        |      |         |          |        |
+|   mul_32ns_34ns_65_2_1_U352                                                        | 22    | 18    | 4   |      |      |     |        |      |         |          |        |
+|   pca_m_pcVals_0_U                                                                 | 128   | 128   |     |      |      |     |        |      |         |          |        |
+|   pca_m_pcVals_1_U                                                                 | 128   | 128   |     |      |      |     |        |      |         |          |        |
+|   pca_m_pcVecs_3_U                                                                 |       |       |     | 4    |      |     |        |      |         |          |        |
+|   pca_m_pcVecs_4_U                                                                 | 1     |       |     | 4    |      |     |        |      |         |          |        |
+|   pca_m_pcVecs_U                                                                   |       |       |     | 4    |      |     |        |      |         |          |        |
+|   standarisedData_U                                                                |       |       |     | 2    |      |     |        |      |         |          |        |
++------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 2.77%  | OK     |
+| FD                                                        | 50%       | 1.63%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.63%  | OK     |
+| CARRY8                                                    | 25%       | 1.77%  | OK     |
+| MUXF7                                                     | 15%       | 0.02%  | OK     |
+| DSP                                                       | 80%       | 0.86%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.50%  | OK     |
+| URAM                                                      | 80%       | 0.16%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 0.51%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 32400     | 375    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.86   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 1.86   | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.300ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.208ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+------------------------------------------+-----------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                           | ENDPOINT PIN                                                    | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                          |                                                                 |              |            |                |          DELAY |        DELAY |
++-------+-------+------------------------------------------+-----------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.446 | grp_implement_fu_225/ap_CS_fsm_reg[18]/C | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[0]  |            9 |        153 |          2.882 |          2.286 |        0.596 |
+| Path2 | 0.446 | grp_implement_fu_225/ap_CS_fsm_reg[18]/C | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[10] |            9 |        153 |          2.882 |          2.286 |        0.596 |
+| Path3 | 0.446 | grp_implement_fu_225/ap_CS_fsm_reg[18]/C | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[11] |            9 |        153 |          2.882 |          2.286 |        0.596 |
+| Path4 | 0.446 | grp_implement_fu_225/ap_CS_fsm_reg[18]/C | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[12] |            9 |        153 |          2.882 |          2.286 |        0.596 |
+| Path5 | 0.446 | grp_implement_fu_225/ap_CS_fsm_reg[18]/C | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[13] |            9 |        153 |          2.882 |          2.286 |        0.596 |
++-------+-------+------------------------------------------+-----------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                      | Primitive Type         |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_implement_fu_225/ap_CS_fsm_reg[18]                                                                           | REGISTER.SDR.FDRE      |
+    | grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30 | CLB.LUT.LUT3           |
+    | grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15                                       | CLB.LUT.LUT5           |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST                                                          | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST                                                       | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST                                                        | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST                                                               | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST                                                                 | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST                                                              | ARITHMETIC.DSP.DSP48E2 |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                      | Primitive Type         |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_implement_fu_225/ap_CS_fsm_reg[18]                                                                           | REGISTER.SDR.FDRE      |
+    | grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30 | CLB.LUT.LUT3           |
+    | grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15                                       | CLB.LUT.LUT5           |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST                                                          | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST                                                       | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST                                                        | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST                                                               | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST                                                                 | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST                                                              | ARITHMETIC.DSP.DSP48E2 |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                      | Primitive Type         |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_implement_fu_225/ap_CS_fsm_reg[18]                                                                           | REGISTER.SDR.FDRE      |
+    | grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30 | CLB.LUT.LUT3           |
+    | grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15                                       | CLB.LUT.LUT5           |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST                                                          | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST                                                       | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST                                                        | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST                                                               | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST                                                                 | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST                                                              | ARITHMETIC.DSP.DSP48E2 |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                      | Primitive Type         |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_implement_fu_225/ap_CS_fsm_reg[18]                                                                           | REGISTER.SDR.FDRE      |
+    | grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30 | CLB.LUT.LUT3           |
+    | grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15                                       | CLB.LUT.LUT5           |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST                                                          | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST                                                       | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST                                                        | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST                                                               | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST                                                                 | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST                                                              | ARITHMETIC.DSP.DSP48E2 |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                      | Primitive Type         |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_implement_fu_225/ap_CS_fsm_reg[18]                                                                           | REGISTER.SDR.FDRE      |
+    | grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30 | CLB.LUT.LUT3           |
+    | grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15                                       | CLB.LUT.LUT5           |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST                                                          | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST                                                       | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST                                                        | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST                                                               | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST                                                            | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST                                                                 | ARITHMETIC.DSP.DSP48E2 |
+    | mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST                                                              | ARITHMETIC.DSP.DSP48E2 |
+    +------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+------------------------------------------------------------+
+| Report Type              | Report Location                                            |
++--------------------------+------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/dut_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/dut_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/dut_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/dut_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/dut_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/dut_utilization_hierarchical_synth.rpt |
++--------------------------+------------------------------------------------------------+
+
+

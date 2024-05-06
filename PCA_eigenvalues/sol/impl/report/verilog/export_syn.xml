@@ -1,0 +1,865 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>3.333</TargetClockPeriod>
+    <AchievedClockPeriod>2.887</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>2.887</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>2.887</CP_SYNTH>
+    <CP_TARGET>3.333</CP_TARGET>
+    <SLACK_FINAL>0.446</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>0.446</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>0.446</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>0.446</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>27</BRAM>
+      <CLB>0</CLB>
+      <DSP>106</DSP>
+      <FF>56291</FF>
+      <LATCH>0</LATCH>
+      <LUT>47912</LUT>
+      <SRL>3259</SRL>
+      <URAM>2</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>5376</BRAM>
+      <CLB>0</CLB>
+      <DSP>12288</DSP>
+      <FF>3456000</FF>
+      <LUT>1728000</LUT>
+      <URAM>1280</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="dut" DISPNAME="inst" RTLNAME="dut">
+      <SubModules count="20">covMatrix_U dmul_64ns_64ns_64_8_max_dsp_1_U350 dmul_64ns_64ns_64_8_max_dsp_1_U351 dsqrt_64ns_64ns_64_30_no_dsp_0_U346 dsqrt_64ns_64ns_64_30_no_dsp_0_U347 dsqrt_64ns_64ns_64_30_no_dsp_0_U348 grp_aveImpl_double_15_80_1_2_16_s_fu_197 grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207 grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_216 grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253 grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236 grp_implement_fu_225 mul_32ns_32ns_64_2_1_U349 mul_32ns_34ns_65_2_1_U352 pca_m_pcVals_0_U pca_m_pcVals_1_U pca_m_pcVecs_3_U pca_m_pcVecs_4_U pca_m_pcVecs_U standarisedData_U</SubModules>
+      <Resources BRAM="27" DSP="106" FF="56291" LUT="47912" URAM="2"/>
+      <LocalResources FF="542" LUT="35"/>
+    </RtlModule>
+    <RtlModule CELL="inst/covMatrix_U" BINDMODULE="dut_standarisedData_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="standarisedData_RAM_AUTO_1R1W" DISPNAME="covMatrix_U" RTLNAME="dut_standarisedData_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dmul_64ns_64ns_64_8_max_dsp_1_U350" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="1" TYPE="rtl" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U350" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="330" LUT="171"/>
+      <LocalResources FF="128" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dmul_64ns_64ns_64_8_max_dsp_1_U351" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U351" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="330" LUT="170"/>
+      <LocalResources FF="128"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U351" SOURCE="./pca.hpp:273" STORAGESIZE="64 225 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="covMatrix"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dsqrt_64ns_64ns_64_30_no_dsp_0_U346" BINDMODULE="dut_dsqrt_64ns_64ns_64_30_no_dsp_0" DEPTH="1" TYPE="resource" MODULENAME="dsqrt_64ns_64ns_64_30_no_dsp_0" DISPNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U346" RTLNAME="dut_dsqrt_64ns_64ns_64_30_no_dsp_0">
+      <Resources FF="1803" LUT="1714"/>
+      <LocalResources FF="64"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsqrt" DSP="0" ID="" IMPL="fabric" LATENCY="29" LOOP="" OPTYPE="dsqrt" PRAGMA="" RTLNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U346" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="sqrtVals"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dsqrt_64ns_64ns_64_30_no_dsp_0_U347" BINDMODULE="dut_dsqrt_64ns_64ns_64_30_no_dsp_0" DEPTH="1" TYPE="rtl" MODULENAME="dsqrt_64ns_64ns_64_30_no_dsp_0" DISPNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U347" RTLNAME="dut_dsqrt_64ns_64ns_64_30_no_dsp_0">
+      <Resources FF="1803" LUT="1714"/>
+      <LocalResources FF="64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dsqrt_64ns_64ns_64_30_no_dsp_0_U348" BINDMODULE="dut_dsqrt_64ns_64ns_64_30_no_dsp_0" DEPTH="1" TYPE="resource" MODULENAME="dsqrt_64ns_64ns_64_30_no_dsp_0" DISPNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U348" RTLNAME="dut_dsqrt_64ns_64ns_64_30_no_dsp_0">
+      <Resources FF="1803" LUT="1714"/>
+      <LocalResources FF="64"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsqrt" DSP="0" ID="" IMPL="fabric" LATENCY="29" LOOP="" OPTYPE="dsqrt" PRAGMA="" RTLNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U348" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="sqrtVals_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197" DEPTH="1" TYPE="function" MODULENAME="aveImpl_double_15_80_1_2_16_s" DISPNAME="grp_aveImpl_double_15_80_1_2_16_s_fu_197" RTLNAME="dut_aveImpl_double_15_80_1_2_16_s">
+      <SubModules count="9">dadd_64ns_64ns_64_8_full_dsp_1_U24 dadddsub_64ns_64ns_64_8_full_dsp_1_U23 ddiv_64ns_64ns_64_31_no_dsp_1_U25 grp_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1_fu_368 grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1_fu_376 grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2_fu_389 sitodp_32ns_64_5_no_dsp_1_U26 values_1_U values_U</SubModules>
+      <Resources DSP="6" FF="9246" LUT="7584"/>
+      <LocalResources FF="3399" LUT="127"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/dadd_64ns_64ns_64_8_full_dsp_1_U24" BINDMODULE="dut_dadd_64ns_64ns_64_8_full_dsp_1" DEPTH="2" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_8_full_dsp_1" DISPNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" RTLNAME="dut_dadd_64ns_64ns_64_8_full_dsp_1">
+      <Resources DSP="3" FF="627" LUT="1415"/>
+      <LocalResources FF="128" LUT="771"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1_4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1_5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1_6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_1_7"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i_1_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i_1_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i_1_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:91" STORAGESUBTYPE="" URAM="0" VARIABLE="values2_0_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:92" STORAGESUBTYPE="" URAM="0" VARIABLE="values2_1_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U24" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="value_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/dadddsub_64ns_64ns_64_8_full_dsp_1_U23" BINDMODULE="dut_dadddsub_64ns_64ns_64_8_full_dsp_1" DEPTH="2" TYPE="resource" MODULENAME="dadddsub_64ns_64ns_64_8_full_dsp_1" DISPNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" RTLNAME="dut_dadddsub_64ns_64ns_64_8_full_dsp_1">
+      <Resources DSP="3" FF="628" LUT="1362"/>
+      <LocalResources FF="129" LUT="717"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_s"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="add3_i_7"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i_s"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add15_i_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:91" STORAGESUBTYPE="" URAM="0" VARIABLE="values2_0"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:92" STORAGESUBTYPE="" URAM="0" VARIABLE="values2_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_ave" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_8_full_dsp_1_U23" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="value"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/ddiv_64ns_64ns_64_31_no_dsp_1_U25" BINDMODULE="dut_ddiv_64ns_64ns_64_31_no_dsp_1" DEPTH="2" TYPE="resource" MODULENAME="ddiv_64ns_64ns_64_31_no_dsp_1" DISPNAME="ddiv_64ns_64ns_64_31_no_dsp_1_U25" RTLNAME="dut_ddiv_64ns_64ns_64_31_no_dsp_1">
+      <Resources FF="3091" LUT="3189"/>
+      <LocalResources FF="64"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="30" LOOP="" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_31_no_dsp_1_U25" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:275" STORAGESUBTYPE="" URAM="0" VARIABLE="d_cols"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/grp_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1_fu_368" DEPTH="2" TYPE="function" MODULENAME="aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1" DISPNAME="grp_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1_fu_368" RTLNAME="dut_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="7" LUT="21"/>
+      <LocalResources FF="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/grp_aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1_fu_368/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="21"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1_fu_376" DEPTH="2" TYPE="function" MODULENAME="aveImpl_double_15_80_1_2_16_Pipeline_loop_a1" DISPNAME="grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1_fu_376" RTLNAME="dut_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="689" LUT="567"/>
+      <LocalResources FF="687" LUT="479"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a1_fu_376/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="88"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2_fu_389" DEPTH="2" TYPE="function" MODULENAME="aveImpl_double_15_80_1_2_16_Pipeline_loop_a2" DISPNAME="grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2_fu_389" RTLNAME="dut_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="317" LUT="440"/>
+      <LocalResources FF="315" LUT="350"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/grp_aveImpl_double_15_80_1_2_16_Pipeline_loop_a2_fu_389/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="90"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/sitodp_32ns_64_5_no_dsp_1_U26" BINDMODULE="dut_sitodp_32ns_64_5_no_dsp_1" DEPTH="2" TYPE="rtl" MODULENAME="sitodp_32ns_64_5_no_dsp_1" DISPNAME="sitodp_32ns_64_5_no_dsp_1_U26" RTLNAME="dut_sitodp_32ns_64_5_no_dsp_1">
+      <Resources FF="232" LUT="202"/>
+      <LocalResources FF="97" LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/values_1_U" BINDMODULE="dut_aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W" DISPNAME="values_1_U" RTLNAME="dut_aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="128" LUT="133"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="values_1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:278" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="values_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_aveImpl_double_15_80_1_2_16_s_fu_197/values_U" BINDMODULE="dut_aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W" DISPNAME="values_U" RTLNAME="dut_aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="128" LUT="128"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="values_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:278" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="values"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207" DEPTH="1" TYPE="function" MODULENAME="covCoreWrapper_double_15_80_1_2_16_s" DISPNAME="grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207" RTLNAME="dut_covCoreWrapper_double_15_80_1_2_16_s">
+      <SubModules count="7">cols_c_U covCorePart1_double_15_80_1_2_16_U0 covCorePart2_double_15_2_16_U0 rows_c_U start_for_covCorePart2_double_15_2_16_U0_U values2Strm_1_U values2Strm_U</SubModules>
+      <Resources DSP="25" FF="14264" LUT="10406"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/cols_c_U" BINDMODULE="dut_fifo_w32_d2_S" DEPTH="2" TYPE="resource" MODULENAME="fifo_w32_d2_S" DISPNAME="cols_c_U" RTLNAME="dut_fifo_w32_d2_S">
+      <Resources FF="69" LUT="38"/>
+      <LocalResources FF="5" LUT="5"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="cols_c_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:267" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="cols_c"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart1_double_15_80_1_2_16_U0" DEPTH="2" TYPE="function" MODULENAME="covCorePart1_double_15_80_1_2_16_s" DISPNAME="covCorePart1_double_15_80_1_2_16_U0" RTLNAME="dut_covCorePart1_double_15_80_1_2_16_s">
+      <SubModules count="3">grp_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2_fu_153 values2_1_U values2_U</SubModules>
+      <Resources DSP="11" FF="2432" LUT="1677"/>
+      <LocalResources FF="276" LUT="127"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart1_double_15_80_1_2_16_U0/grp_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2_fu_153" DEPTH="3" TYPE="function" MODULENAME="covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2" DISPNAME="grp_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2_fu_153" RTLNAME="dut_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2">
+      <SubModules count="3">dadd_64ns_64ns_64_8_full_dsp_1_U37 dmul_64ns_64ns_64_8_max_dsp_1_U38 flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources DSP="11" FF="2028" LUT="1470"/>
+      <LocalResources FF="940" LUT="325"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart1_double_15_80_1_2_16_U0/grp_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2_fu_153/dadd_64ns_64ns_64_8_full_dsp_1_U37" BINDMODULE="dut_dadd_64ns_64ns_64_8_full_dsp_1" DEPTH="4" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_8_full_dsp_1" DISPNAME="dadd_64ns_64ns_64_8_full_dsp_1_U37" RTLNAME="dut_dadd_64ns_64ns_64_8_full_dsp_1">
+      <Resources DSP="3" FF="692" LUT="750"/>
+      <LocalResources FF="193" LUT="34"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_c2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U37" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:232" STORAGESUBTYPE="" URAM="0" VARIABLE="add"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="loop_c2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U37" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:232" STORAGESUBTYPE="" URAM="0" VARIABLE="add102_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart1_double_15_80_1_2_16_U0/grp_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2_fu_153/dmul_64ns_64ns_64_8_max_dsp_1_U38" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="4" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U38" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="394" LUT="270"/>
+      <LocalResources FF="192" LUT="64"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="loop_c2" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U38" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:210" STORAGESUBTYPE="" URAM="0" VARIABLE="mul"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="loop_c2" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U38" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:210" STORAGESUBTYPE="" URAM="0" VARIABLE="mul40_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart1_double_15_80_1_2_16_U0/grp_covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2_fu_153/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="4" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="125"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart1_double_15_80_1_2_16_U0/values2_1_U" BINDMODULE="dut_covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W" DEPTH="3" TYPE="resource" MODULENAME="covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W" DISPNAME="values2_1_U" RTLNAME="dut_covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="64" LUT="40"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="values2_1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:186" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="values2_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart1_double_15_80_1_2_16_U0/values2_U" BINDMODULE="dut_covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W" DEPTH="3" TYPE="resource" MODULENAME="covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W" DISPNAME="values2_U" RTLNAME="dut_covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="64" LUT="40"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="values2_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:186" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="values2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0" DEPTH="2" TYPE="function" MODULENAME="covCorePart2_double_15_2_16_s" DISPNAME="covCorePart2_double_15_2_16_U0" RTLNAME="dut_covCorePart2_double_15_2_16_s">
+      <SubModules count="3">ddiv_64ns_64ns_64_31_no_dsp_1_U72 grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80 sitodp_32ns_64_5_no_dsp_1_U73</SubModules>
+      <Resources DSP="14" FF="11512" LUT="8509"/>
+      <LocalResources FF="365" LUT="42"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0/ddiv_64ns_64ns_64_31_no_dsp_1_U72" BINDMODULE="dut_ddiv_64ns_64ns_64_31_no_dsp_1" DEPTH="3" TYPE="resource" MODULENAME="ddiv_64ns_64ns_64_31_no_dsp_1" DISPNAME="ddiv_64ns_64ns_64_31_no_dsp_1_U72" RTLNAME="dut_ddiv_64ns_64ns_64_31_no_dsp_1">
+      <Resources FF="3091" LUT="3189"/>
+      <LocalResources FF="64"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="30" LOOP="" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_31_no_dsp_1_U72" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:242" STORAGESUBTYPE="" URAM="0" VARIABLE="d1_cols"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0/grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80" DEPTH="3" TYPE="function" MODULENAME="covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2" DISPNAME="grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80" RTLNAME="dut_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2">
+      <SubModules count="4">dadd_64ns_64ns_64_8_full_dsp_1_U61 dadd_64ns_64ns_64_8_full_dsp_1_U62 dmul_64ns_64ns_64_8_max_dsp_1_U63 flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources DSP="14" FF="7889" LUT="5109"/>
+      <LocalResources FF="6109" LUT="1752"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0/grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80/dadd_64ns_64ns_64_8_full_dsp_1_U61" BINDMODULE="dut_dadd_64ns_64ns_64_8_full_dsp_1" DEPTH="4" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_8_full_dsp_1" DISPNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" RTLNAME="dut_dadd_64ns_64ns_64_8_full_dsp_1">
+      <Resources DSP="3" FF="691" LUT="1540"/>
+      <LocalResources FF="192" LUT="888"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_7"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_8"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_9"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_10"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_11"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_12"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_13"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_14"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U61" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0/grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80/dadd_64ns_64ns_64_8_full_dsp_1_U62" BINDMODULE="dut_dadd_64ns_64ns_64_8_full_dsp_1" DEPTH="4" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_8_full_dsp_1" DISPNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" RTLNAME="dut_dadd_64ns_64ns_64_8_full_dsp_1">
+      <Resources DSP="3" FF="692" LUT="1553"/>
+      <LocalResources FF="193" LUT="901"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_16"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_17"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_18"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_19"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_20"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_21"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_22"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_23"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_24"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_25"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_26"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_27"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_28"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_29"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_30"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_8_full_dsp_1_U62" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:251" STORAGESUBTYPE="" URAM="0" VARIABLE="cov_31"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0/grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80/dmul_64ns_64ns_64_8_max_dsp_1_U63" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="4" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U63" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="395" LUT="239"/>
+      <LocalResources FF="193" LUT="65"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U63" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:255" STORAGESUBTYPE="" URAM="0" VARIABLE="mul"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="VITIS_LOOP_245_2" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U63" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:255" STORAGESUBTYPE="" URAM="0" VARIABLE="mul16_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0/grp_covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2_fu_80/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="4" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="25"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/covCorePart2_double_15_2_16_U0/sitodp_32ns_64_5_no_dsp_1_U73" BINDMODULE="dut_sitodp_32ns_64_5_no_dsp_1" DEPTH="3" TYPE="rtl" MODULENAME="sitodp_32ns_64_5_no_dsp_1" DISPNAME="sitodp_32ns_64_5_no_dsp_1_U73" RTLNAME="dut_sitodp_32ns_64_5_no_dsp_1">
+      <Resources FF="167" LUT="169"/>
+      <LocalResources FF="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/rows_c_U" BINDMODULE="dut_fifo_w32_d2_S" DEPTH="2" TYPE="resource" MODULENAME="fifo_w32_d2_S" DISPNAME="rows_c_U" RTLNAME="dut_fifo_w32_d2_S">
+      <Resources FF="69" LUT="38"/>
+      <LocalResources FF="5" LUT="6"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="rows_c_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:267" STORAGESIZE="32 2 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="rows_c"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/start_for_covCorePart2_double_15_2_16_U0_U" BINDMODULE="dut_start_for_covCorePart2_double_15_2_16_U0" DEPTH="2" TYPE="rtl" MODULENAME="start_for_covCorePart2_double_15_2_16_U0" DISPNAME="start_for_covCorePart2_double_15_2_16_U0_U" RTLNAME="dut_start_for_covCorePart2_double_15_2_16_U0">
+      <Resources FF="4" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/values2Strm_1_U" BINDMODULE="dut_fifo_w64_d32_A" DEPTH="2" TYPE="resource" MODULENAME="fifo_w64_d32_A" DISPNAME="values2Strm_1_U" RTLNAME="dut_fifo_w64_d32_A">
+      <Resources FF="89" LUT="70"/>
+      <LocalResources FF="25" LUT="29"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="values2Strm_1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:265" STORAGESIZE="64 32 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="values2Strm_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_covCoreWrapper_double_15_80_1_2_16_s_fu_207/values2Strm_U" BINDMODULE="dut_fifo_w64_d32_A" DEPTH="2" TYPE="resource" MODULENAME="fifo_w64_d32_A" DISPNAME="values2Strm_U" RTLNAME="dut_fifo_w64_d32_A">
+      <Resources FF="89" LUT="71"/>
+      <LocalResources FF="25" LUT="30"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="values2Strm_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\covariance.hpp:265" STORAGESIZE="64 32 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="values2Strm"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_216" DEPTH="1" TYPE="function" MODULENAME="dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2" DISPNAME="grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_216" RTLNAME="dut_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_8s_8s_8ns_8_4_1_U88</SubModules>
+      <Resources DSP="1" FF="136" LUT="93"/>
+      <LocalResources FF="134" LUT="86"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_216/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_216/mac_muladd_8s_8s_8ns_8_4_1_U88" BINDMODULE="dut_mac_muladd_8s_8s_8ns_8_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_8s_8s_8ns_8_4_1" DISPNAME="mac_muladd_8s_8s_8ns_8_4_1_U88" RTLNAME="dut_mac_muladd_8s_8s_8ns_8_4_1">
+      <Resources DSP="1" LUT="4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_277_1_VITIS_LOOP_278_2" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_8ns_8_4_1_U88" SOURCE="./pca.hpp:280" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_i11"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_277_1_VITIS_LOOP_278_2" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_8ns_8_4_1_U88" SOURCE="./pca.hpp:280" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln280"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253" DEPTH="1" TYPE="function" MODULENAME="dut_Pipeline_VITIS_LOOP_321_1" DISPNAME="grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253" RTLNAME="dut_dut_Pipeline_VITIS_LOOP_321_1">
+      <SubModules count="3">flow_control_loop_pipe_sequential_init_U mul_32ns_34ns_65_2_1_U337 mul_32ns_34ns_65_2_1_U338</SubModules>
+      <Resources DSP="8" FF="127" LUT="214"/>
+      <LocalResources FF="88" LUT="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="3" LUT="164"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253/mul_32ns_34ns_65_2_1_U337" BINDMODULE="dut_mul_32ns_34ns_65_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_34ns_65_2_1" DISPNAME="mul_32ns_34ns_65_2_1_U337" RTLNAME="dut_mul_32ns_34ns_65_2_1">
+      <Resources DSP="4" FF="18" LUT="22"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_321_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_34ns_65_2_1_U337" SOURCE="./pca.hpp:324" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln324_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_321_1_fu_253/mul_32ns_34ns_65_2_1_U338" BINDMODULE="dut_mul_32ns_34ns_65_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_34ns_65_2_1" DISPNAME="mul_32ns_34ns_65_2_1_U338" RTLNAME="dut_mul_32ns_34ns_65_2_1">
+      <Resources DSP="4" FF="18" LUT="22"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_321_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_34ns_65_2_1_U338" SOURCE="./pca.hpp:324" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln324_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236" DEPTH="1" TYPE="function" MODULENAME="dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3" DISPNAME="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236" RTLNAME="dut_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3">
+      <SubModules count="3">flow_control_loop_pipe_sequential_init_U sparsemux_7_2_64_1_1_U324 urem_32ns_3ns_2_36_1_U323</SubModules>
+      <Resources FF="877" LUT="970"/>
+      <LocalResources FF="376" LUT="77"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/sparsemux_7_2_64_1_1_U324" BINDMODULE="dut_sparsemux_7_2_64_1_1" DEPTH="2" TYPE="rtl" MODULENAME="sparsemux_7_2_64_1_1" DISPNAME="sparsemux_7_2_64_1_1_U324" RTLNAME="dut_sparsemux_7_2_64_1_1">
+      <Resources LUT="64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/urem_32ns_3ns_2_36_1_U323" BINDMODULE="dut_urem_32ns_3ns_2_36_1" DEPTH="2" TYPE="rtl" MODULENAME="urem_32ns_3ns_2_36_1" DISPNAME="urem_32ns_3ns_2_36_1_U323" RTLNAME="dut_urem_32ns_3ns_2_36_1">
+      <Resources FF="499" LUT="818"/>
+      <LocalResources FF="2" LUT="64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225" DEPTH="1" TYPE="function" MODULENAME="implement" DISPNAME="grp_implement_fu_225" RTLNAME="dut_implement">
+      <SubModules count="23">dSortedBuf_U dataA_2D_U dataU_2D_U dcmp_64ns_64ns_1_2_no_dsp_1_U304 eigVals_U eigVecs_U grp_gesvdj_2D_double_16_1_16_s_fu_284 grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_271 grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_291 grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_318 grp_implement_Pipeline_NSort_shift_buf_Loop_fu_312 grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339 grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324 grp_implement_Pipeline_VITIS_LOOP_125_1_fu_301 grp_implement_Pipeline_VITIS_LOOP_238_2_fu_353 grp_implement_Pipeline_VITIS_LOOP_244_4_fu_364 iSortedBuf_U pcVecsNorm_1_U pcVecsNorm_2_U pcVecsNorm_U pcVecs_1_U pcVecs_2_U pcVecs_U</SubModules>
+      <Resources BRAM="11" DSP="42" FF="24722" LUT="22801" URAM="2"/>
+      <LocalResources FF="683" LUT="95"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/dSortedBuf_U" BINDMODULE="dut_implement_dSortedBuf_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_dSortedBuf_RAM_AUTO_1R1W" DISPNAME="dSortedBuf_U" RTLNAME="dut_implement_dSortedBuf_RAM_AUTO_1R1W">
+      <Resources BRAM="4" LUT="66"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="dSortedBuf_U" SOURCE="./pca.hpp:114" STORAGESIZE="64 3 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="dSortedBuf"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/dataA_2D_U" BINDMODULE="dut_implement_dataA_2D_RAM_T2P_URAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_dataA_2D_RAM_T2P_URAM_1R1W" DISPNAME="dataA_2D_U" RTLNAME="dut_implement_dataA_2D_RAM_T2P_URAM_1R1W">
+      <Resources URAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="uram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="yes" RTLNAME="dataA_2D_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:78" STORAGESIZE="64 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="1" VARIABLE="dataA_2D"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/dataU_2D_U" BINDMODULE="dut_implement_dataA_2D_RAM_T2P_URAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_dataA_2D_RAM_T2P_URAM_1R1W" DISPNAME="dataU_2D_U" RTLNAME="dut_implement_dataA_2D_RAM_T2P_URAM_1R1W">
+      <Resources LUT="128" URAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="uram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="yes" RTLNAME="dataU_2D_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:79" STORAGESIZE="64 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="1" VARIABLE="dataU_2D"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/dcmp_64ns_64ns_1_2_no_dsp_1_U304" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="2" TYPE="resource" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U304" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="130" LUT="88"/>
+      <LocalResources FF="130" LUT="3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="NSort_main_Loop" OPTYPE="add" PRAGMA="" RTLNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U304" SOURCE="./pca.hpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln124"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/eigVals_U" BINDMODULE="dut_implement_eigVals_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVals_RAM_AUTO_1R1W" DISPNAME="eigVals_U" RTLNAME="dut_implement_eigVals_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="eigVals_U" SOURCE="./pca.hpp:172" STORAGESIZE="64 15 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="eigVals"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/eigVecs_U" BINDMODULE="dut_implement_eigVecs_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVecs_RAM_AUTO_1R1W" DISPNAME="eigVecs_U" RTLNAME="dut_implement_eigVecs_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="eigVecs_U" SOURCE="./pca.hpp:173" STORAGESIZE="64 225 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="eigVecs"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284" DEPTH="2" TYPE="function" MODULENAME="gesvdj_2D_double_16_1_16_s" DISPNAME="grp_gesvdj_2D_double_16_1_16_s_fu_284" RTLNAME="dut_gesvdj_2D_double_16_1_16_s">
+      <SubModules count="2">grp_Jacobi_svd_double_16_1_16_s_fu_85 sitodp_32ns_64_5_no_dsp_1_U232</SubModules>
+      <Resources BRAM="4" DSP="40" FF="21451" LUT="19261"/>
+      <LocalResources FF="54" LUT="37"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85" DEPTH="3" TYPE="function" MODULENAME="Jacobi_svd_double_16_1_16_s" DISPNAME="grp_Jacobi_svd_double_16_1_16_s_fu_85" RTLNAME="dut_Jacobi_svd_double_16_1_16_s">
+      <SubModules count="8">Order_U grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal_fu_328 grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348 grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal_fu_320 grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1_fu_336 grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1_fu_313 grp_funcDataflow_double_16_1_16_8_fu_390 tmpOrder_U</SubModules>
+      <Resources BRAM="4" DSP="40" FF="21199" LUT="19055"/>
+      <LocalResources FF="1352" LUT="205"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/Order_U" BINDMODULE="dut_Jacobi_svd_double_16_1_16_s_Order_RAM_T2P_BRAM_1R1W" DEPTH="4" TYPE="resource" MODULENAME="Jacobi_svd_double_16_1_16_s_Order_RAM_T2P_BRAM_1R1W" DISPNAME="Order_U" RTLNAME="dut_Jacobi_svd_double_16_1_16_s_Order_RAM_T2P_BRAM_1R1W">
+      <Resources BRAM="2" LUT="20"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="yes" RTLNAME="Order_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:956" STORAGESIZE="32 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="Order"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal_fu_328" DEPTH="4" TYPE="function" MODULENAME="Jacobi_svd_double_16_1_16_Pipeline_Loop_cal" DISPNAME="grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal_fu_328" RTLNAME="dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="70" LUT="135"/>
+      <LocalResources FF="68" LUT="34"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal_fu_328/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="5" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="101"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348" DEPTH="4" TYPE="function" MODULENAME="Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2" DISPNAME="grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348" RTLNAME="dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U grp_jacobi_rotation_2x2_double_16_s_fu_484</SubModules>
+      <Resources DSP="24" FF="14595" LUT="14088"/>
+      <LocalResources FF="1392" LUT="322"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="5" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="11" LUT="74"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484" DEPTH="5" TYPE="function" MODULENAME="jacobi_rotation_2x2_double_16_s" DISPNAME="grp_jacobi_rotation_2x2_double_16_s_fu_484" RTLNAME="dut_jacobi_rotation_2x2_double_16_s">
+      <SubModules count="18">dadd_64ns_64ns_64_6_no_dsp_0_U121 dadd_64ns_64ns_64_6_no_dsp_0_U122 dcmp_64ns_64ns_1_2_no_dsp_1_U128 dcmp_64ns_64ns_1_2_no_dsp_1_U129 dcmp_64ns_64ns_1_2_no_dsp_1_U130 dcmp_64ns_64ns_1_2_no_dsp_1_U131 dcmp_64ns_64ns_1_2_no_dsp_1_U132 dcmp_64ns_64ns_1_2_no_dsp_1_U133 dcmp_64ns_64ns_1_2_no_dsp_1_U134 ddiv_64ns_64ns_64_31_no_dsp_1_U127 dmul_64ns_64ns_64_8_max_dsp_1_U124 dmul_64ns_64ns_64_8_max_dsp_1_U125 dmul_64ns_64ns_64_8_max_dsp_1_U126 dsqrt_64ns_64ns_64_30_no_dsp_0_U135 dsqrt_64ns_64ns_64_30_no_dsp_0_U136 dsqrt_64ns_64ns_64_30_no_dsp_0_U137 dsub_64ns_64ns_64_6_no_dsp_0_U120 dsub_64ns_64ns_64_6_no_dsp_0_U123</SubModules>
+      <Resources DSP="24" FF="13192" LUT="13692"/>
+      <LocalResources FF="1139" LUT="1552"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dadd_64ns_64ns_64_6_no_dsp_0_U121" BINDMODULE="dut_dadd_64ns_64ns_64_6_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_6_no_dsp_0" DISPNAME="dadd_64ns_64ns_64_6_no_dsp_0_U121" RTLNAME="dut_dadd_64ns_64ns_64_6_no_dsp_0">
+      <Resources FF="494" LUT="678"/>
+      <LocalResources FF="140"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U121" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="m"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dadd_64ns_64ns_64_6_no_dsp_0_U122" BINDMODULE="dut_dadd_64ns_64ns_64_6_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_6_no_dsp_0" DISPNAME="dadd_64ns_64ns_64_6_no_dsp_0_U122" RTLNAME="dut_dadd_64ns_64ns_64_6_no_dsp_0">
+      <Resources FF="546" LUT="678"/>
+      <LocalResources FF="192"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U122" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:105" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpSum"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dcmp_64ns_64ns_1_2_no_dsp_1_U128" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="6" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U128" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="65" LUT="54"/>
+      <LocalResources FF="65" LUT="17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dcmp_64ns_64ns_1_2_no_dsp_1_U129" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="6" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U129" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="65" LUT="55"/>
+      <LocalResources FF="65" LUT="18"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dcmp_64ns_64ns_1_2_no_dsp_1_U130" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="6" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U130" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="65" LUT="66"/>
+      <LocalResources FF="65" LUT="27"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dcmp_64ns_64ns_1_2_no_dsp_1_U131" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="6" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U131" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="1" LUT="48"/>
+      <LocalResources FF="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dcmp_64ns_64ns_1_2_no_dsp_1_U132" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="6" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U132" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="1" LUT="49"/>
+      <LocalResources FF="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dcmp_64ns_64ns_1_2_no_dsp_1_U133" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="6" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U133" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="1" LUT="70"/>
+      <LocalResources FF="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dcmp_64ns_64ns_1_2_no_dsp_1_U134" BINDMODULE="dut_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="6" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U134" RTLNAME="dut_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="1" LUT="70"/>
+      <LocalResources FF="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/ddiv_64ns_64ns_64_31_no_dsp_1_U127" BINDMODULE="dut_ddiv_64ns_64ns_64_31_no_dsp_1" DEPTH="6" TYPE="resource" MODULENAME="ddiv_64ns_64ns_64_31_no_dsp_1" DISPNAME="ddiv_64ns_64ns_64_31_no_dsp_1_U127" RTLNAME="dut_ddiv_64ns_64ns_64_31_no_dsp_1">
+      <Resources FF="3220" LUT="3261"/>
+      <LocalResources FF="193"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="30" LOOP="" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_31_no_dsp_1_U127" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:106" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpDivider"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dmul_64ns_64ns_64_8_max_dsp_1_U124" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="6" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U124" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="329" LUT="209"/>
+      <LocalResources FF="128" LUT="24"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U124" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:85" STORAGESUBTYPE="" URAM="0" VARIABLE="d2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dmul_64ns_64ns_64_8_max_dsp_1_U125" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="6" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U125" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="329" LUT="185"/>
+      <LocalResources FF="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U125" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="deno2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dmul_64ns_64ns_64_8_max_dsp_1_U126" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="6" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U126" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="393" LUT="206"/>
+      <LocalResources FF="191"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U126" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dsqrt_64ns_64ns_64_30_no_dsp_0_U135" BINDMODULE="dut_dsqrt_64ns_64ns_64_30_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dsqrt_64ns_64ns_64_30_no_dsp_0" DISPNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U135" RTLNAME="dut_dsqrt_64ns_64ns_64_30_no_dsp_0">
+      <Resources FF="1843" LUT="1745"/>
+      <LocalResources FF="104"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsqrt" DSP="0" ID="" IMPL="fabric" LATENCY="29" LOOP="" OPTYPE="dsqrt" PRAGMA="" RTLNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U135" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="sqrtM"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dsqrt_64ns_64ns_64_30_no_dsp_0_U136" BINDMODULE="dut_dsqrt_64ns_64ns_64_30_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dsqrt_64ns_64ns_64_30_no_dsp_0" DISPNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U136" RTLNAME="dut_dsqrt_64ns_64ns_64_30_no_dsp_0">
+      <Resources FF="1844" LUT="1745"/>
+      <LocalResources FF="105"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsqrt" DSP="0" ID="" IMPL="fabric" LATENCY="29" LOOP="" OPTYPE="dsqrt" PRAGMA="" RTLNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U136" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dsqrt_64ns_64ns_64_30_no_dsp_0_U137" BINDMODULE="dut_dsqrt_64ns_64ns_64_30_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dsqrt_64ns_64ns_64_30_no_dsp_0" DISPNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U137" RTLNAME="dut_dsqrt_64ns_64ns_64_30_no_dsp_0">
+      <Resources FF="1868" LUT="1745"/>
+      <LocalResources FF="129"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsqrt" DSP="0" ID="" IMPL="fabric" LATENCY="29" LOOP="" OPTYPE="dsqrt" PRAGMA="" RTLNAME="dsqrt_64ns_64ns_64_30_no_dsp_0_U137" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_s"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dsub_64ns_64ns_64_6_no_dsp_0_U120" BINDMODULE="dut_dsub_64ns_64ns_64_6_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dsub_64ns_64ns_64_6_no_dsp_0" DISPNAME="dsub_64ns_64ns_64_6_no_dsp_0_U120" RTLNAME="dut_dsub_64ns_64ns_64_6_no_dsp_0">
+      <Resources FF="547" LUT="678"/>
+      <LocalResources FF="193"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsub" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="" OPTYPE="dsub" PRAGMA="yes" RTLNAME="dsub_64ns_64ns_64_6_no_dsp_0_U120" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="d"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348/grp_jacobi_rotation_2x2_double_16_s_fu_484/dsub_64ns_64ns_64_6_no_dsp_0_U123" BINDMODULE="dut_dsub_64ns_64ns_64_6_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dsub_64ns_64ns_64_6_no_dsp_0" DISPNAME="dsub_64ns_64ns_64_6_no_dsp_0_U123" RTLNAME="dut_dsub_64ns_64ns_64_6_no_dsp_0">
+      <Resources FF="441" LUT="598"/>
+      <LocalResources FF="88"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsub" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="" OPTYPE="dsub" PRAGMA="yes" RTLNAME="dsub_64ns_64ns_64_6_no_dsp_0_U123" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:108" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpSub"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal_fu_320" DEPTH="4" TYPE="function" MODULENAME="Jacobi_svd_double_16_1_16_Pipeline_Loop_precal" DISPNAME="grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal_fu_320" RTLNAME="dut_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="80" LUT="31"/>
+      <LocalResources FF="78" LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal_fu_320/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="5" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1_fu_336" DEPTH="4" TYPE="function" MODULENAME="Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1" DISPNAME="grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1_fu_336" RTLNAME="dut_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="90" LUT="176"/>
+      <LocalResources FF="88" LUT="161"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1_fu_336/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="5" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1_fu_313" DEPTH="4" TYPE="function" MODULENAME="Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1" DISPNAME="grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1_fu_313" RTLNAME="dut_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="33" LUT="106"/>
+      <LocalResources FF="31"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1_fu_313/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="5" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="106"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390" DEPTH="4" TYPE="function" MODULENAME="funcDataflow_double_16_1_16_8" DISPNAME="grp_funcDataflow_double_16_1_16_8_fu_390" RTLNAME="dut_funcDataflow_double_16_1_16_8">
+      <SubModules count="13">Order1_1_U Order1_2_U Order1_U grp_unrollCol_double_16_1_16_10_fu_412 grp_unrollRow_double_16_1_16_9_fu_401 m_c_right1_1_U m_c_right1_2_U m_c_right1_U m_s_right1_1_U m_s_right1_2_U m_s_right1_U sparsemux_17_3_64_1_1_U196 sparsemux_17_3_64_1_1_U197</SubModules>
+      <Resources DSP="16" FF="4979" LUT="4224"/>
+      <LocalResources FF="49" LUT="26"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/Order1_1_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W" DISPNAME="Order1_1_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="171"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="Order1_1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:867" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="Order1_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/Order1_2_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W" DISPNAME="Order1_2_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="111"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="Order1_2_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:867" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="Order1_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/Order1_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W" DISPNAME="Order1_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="79"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="Order1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:867" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="Order1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollCol_double_16_1_16_10_fu_412" DEPTH="5" TYPE="function" MODULENAME="unrollCol_double_16_1_16_10" DISPNAME="grp_unrollCol_double_16_1_16_10_fu_412" RTLNAME="dut_unrollCol_double_16_1_16_10">
+      <SubModules count="2">dadd_64ns_64ns_64_6_no_dsp_0_U188 flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="1837" LUT="1647"/>
+      <LocalResources FF="1353" LUT="721"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollCol_double_16_1_16_10_fu_412/dadd_64ns_64ns_64_6_no_dsp_0_U188" BINDMODULE="dut_dadd_64ns_64ns_64_6_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_6_no_dsp_0" DISPNAME="dadd_64ns_64ns_64_6_no_dsp_0_U188" RTLNAME="dut_dadd_64ns_64ns_64_6_no_dsp_0">
+      <Resources FF="482" LUT="897"/>
+      <LocalResources FF="128" LUT="256"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul33_Loop_Inner_Mul333" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U188" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:400" STORAGESUBTYPE="" URAM="0" VARIABLE="sum"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul33_Loop_Inner_Mul333" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U188" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:400" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul33_Loop_Inner_Mul333" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U188" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:400" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul33_Loop_Inner_Mul333" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U188" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:400" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollCol_double_16_1_16_10_fu_412/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="6" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="29"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollRow_double_16_1_16_9_fu_401" DEPTH="5" TYPE="function" MODULENAME="unrollRow_double_16_1_16_9" DISPNAME="grp_unrollRow_double_16_1_16_9_fu_401" RTLNAME="dut_unrollRow_double_16_1_16_9">
+      <SubModules count="4">dadd_64ns_64ns_64_6_no_dsp_0_U180 dmul_64ns_64ns_64_8_max_dsp_1_U181 dmul_64ns_64ns_64_8_max_dsp_1_U182 flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources DSP="16" FF="2517" LUT="1738"/>
+      <LocalResources FF="1373" LUT="216"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollRow_double_16_1_16_9_fu_401/dadd_64ns_64ns_64_6_no_dsp_0_U180" BINDMODULE="dut_dadd_64ns_64ns_64_6_no_dsp_0" DEPTH="6" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_6_no_dsp_0" DISPNAME="dadd_64ns_64ns_64_6_no_dsp_0_U180" RTLNAME="dut_dadd_64ns_64ns_64_6_no_dsp_0">
+      <Resources FF="482" LUT="897"/>
+      <LocalResources FF="128" LUT="256"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U180" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:728" STORAGESUBTYPE="" URAM="0" VARIABLE="sum"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U180" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:728" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U180" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:728" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="0" ID="" IMPL="fabric" LATENCY="5" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dadd" PRAGMA="yes" RTLNAME="dadd_64ns_64ns_64_6_no_dsp_0_U180" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:728" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollRow_double_16_1_16_9_fu_401/dmul_64ns_64ns_64_8_max_dsp_1_U181" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="6" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U181" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="330" LUT="301"/>
+      <LocalResources FF="128" LUT="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U181" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:726" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul0"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U181" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:727" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U181" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:726" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul0_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U181" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:727" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul1_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollRow_double_16_1_16_9_fu_401/dmul_64ns_64ns_64_8_max_dsp_1_U182" BINDMODULE="dut_dmul_64ns_64ns_64_8_max_dsp_1" DEPTH="6" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_8_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_8_max_dsp_1_U182" RTLNAME="dut_dmul_64ns_64ns_64_8_max_dsp_1">
+      <Resources DSP="8" FF="330" LUT="302"/>
+      <LocalResources FF="128" LUT="129"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U182" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:726" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul0_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U182" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:727" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul1_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U182" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:726" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul0_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="8" ID="" IMPL="maxdsp" LATENCY="7" LOOP="Loop_Inner_Mul_Loop_Inner_Mul111" OPTYPE="dmul" PRAGMA="yes" RTLNAME="dmul_64ns_64ns_64_8_max_dsp_1_U182" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:727" STORAGESUBTYPE="" URAM="0" VARIABLE="tmpMul1_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/grp_unrollRow_double_16_1_16_9_fu_401/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="6" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="22"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/m_c_right1_1_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DISPNAME="m_c_right1_1_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="96"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m_c_right1_1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:868" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="m_c_right1_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/m_c_right1_2_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DISPNAME="m_c_right1_2_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m_c_right1_2_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:868" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="m_c_right1_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/m_c_right1_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DISPNAME="m_c_right1_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m_c_right1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:868" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="m_c_right1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/m_s_right1_1_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DISPNAME="m_s_right1_1_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="96"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m_s_right1_1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:869" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="m_s_right1_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/m_s_right1_2_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DISPNAME="m_s_right1_2_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="66"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m_s_right1_2_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:869" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="m_s_right1_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/m_s_right1_U" BINDMODULE="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DEPTH="5" TYPE="resource" MODULENAME="funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W" DISPNAME="m_s_right1_U" RTLNAME="dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="66"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="m_s_right1_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:869" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="m_s_right1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/sparsemux_17_3_64_1_1_U196" BINDMODULE="dut_sparsemux_17_3_64_1_1" DEPTH="5" TYPE="rtl" MODULENAME="sparsemux_17_3_64_1_1" DISPNAME="sparsemux_17_3_64_1_1_U196" RTLNAME="dut_sparsemux_17_3_64_1_1"/>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/grp_funcDataflow_double_16_1_16_8_fu_390/sparsemux_17_3_64_1_1_U197" BINDMODULE="dut_sparsemux_17_3_64_1_1" DEPTH="5" TYPE="rtl" MODULENAME="sparsemux_17_3_64_1_1" DISPNAME="sparsemux_17_3_64_1_1_U197" RTLNAME="dut_sparsemux_17_3_64_1_1"/>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/grp_Jacobi_svd_double_16_1_16_s_fu_85/tmpOrder_U" BINDMODULE="dut_Jacobi_svd_double_16_1_16_s_tmpOrder_RAM_T2P_BRAM_1R1W" DEPTH="4" TYPE="resource" MODULENAME="Jacobi_svd_double_16_1_16_s_tmpOrder_RAM_T2P_BRAM_1R1W" DISPNAME="tmpOrder_U" RTLNAME="dut_Jacobi_svd_double_16_1_16_s_tmpOrder_RAM_T2P_BRAM_1R1W">
+      <Resources BRAM="2" LUT="70"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="yes" RTLNAME="tmpOrder_U" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:134" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="tmpOrder"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_gesvdj_2D_double_16_1_16_s_fu_284/sitodp_32ns_64_5_no_dsp_1_U232" BINDMODULE="dut_sitodp_32ns_64_5_no_dsp_1" DEPTH="3" TYPE="rtl" MODULENAME="sitodp_32ns_64_5_no_dsp_1" DISPNAME="sitodp_32ns_64_5_no_dsp_1_U232" RTLNAME="dut_sitodp_32ns_64_5_no_dsp_1">
+      <Resources FF="198" LUT="169"/>
+      <LocalResources FF="64" LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_271" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1" DISPNAME="grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_271" RTLNAME="dut_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_8s_5ns_8_1_1_U95</SubModules>
+      <Resources FF="63" LUT="153"/>
+      <LocalResources FF="61" LUT="119"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_271/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="34"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_271/mul_8s_5ns_8_1_1_U95" BINDMODULE="dut_mul_8s_5ns_8_1_1" DEPTH="3" TYPE="resource" MODULENAME="mul_8s_5ns_8_1_1" DISPNAME="mul_8s_5ns_8_1_1_U95" RTLNAME="dut_mul_8s_5ns_8_1_1">
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Loop_init_A_VITIS_LOOP_91_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_5ns_8_1_1_U95" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_85"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_291" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2" DISPNAME="grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_291" RTLNAME="dut_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_8s_5ns_5ns_8_4_1_U239</SubModules>
+      <Resources DSP="1" FF="114" LUT="93"/>
+      <LocalResources FF="112" LUT="47"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_291/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="46"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_291/mac_muladd_8s_5ns_5ns_8_4_1_U239" BINDMODULE="dut_mac_muladd_8s_5ns_5ns_8_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_5ns_5ns_8_4_1" DISPNAME="mac_muladd_8s_5ns_5ns_8_4_1_U239" RTLNAME="dut_mac_muladd_8s_5ns_5ns_8_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Loop_postcal_VITIS_LOOP_113_2" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_5ns_5ns_8_4_1_U239" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:119" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln119"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Loop_postcal_VITIS_LOOP_113_2" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_5ns_5ns_8_4_1_U239" SOURCE="C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:119" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln119"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_318" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_NSort_shift_buf_Loop12" DISPNAME="grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_318" RTLNAME="dut_implement_Pipeline_NSort_shift_buf_Loop12">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="7" LUT="15"/>
+      <LocalResources FF="5" LUT="4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_318/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_NSort_shift_buf_Loop_fu_312" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_NSort_shift_buf_Loop" DISPNAME="grp_implement_Pipeline_NSort_shift_buf_Loop_fu_312" RTLNAME="dut_implement_Pipeline_NSort_shift_buf_Loop">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="7" LUT="12"/>
+      <LocalResources FF="5" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_NSort_shift_buf_Loop_fu_312/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1" DISPNAME="grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339" RTLNAME="dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1">
+      <SubModules count="3">flow_control_loop_pipe_sequential_init_U signFlip_U urem_32ns_3ns_2_36_1_U276</SubModules>
+      <Resources FF="916" LUT="1199"/>
+      <LocalResources FF="414" LUT="403"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/signFlip_U" BINDMODULE="dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_bkb" DEPTH="3" TYPE="resource" MODULENAME="implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_bkb" DISPNAME="signFlip_U" RTLNAME="dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_bkb">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="signFlip_U" SOURCE="./pca.hpp:211" STORAGESIZE="1 3 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="signFlip"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/urem_32ns_3ns_2_36_1_U276" BINDMODULE="dut_urem_32ns_3ns_2_36_1" DEPTH="3" TYPE="rtl" MODULENAME="urem_32ns_3ns_2_36_1" DISPNAME="urem_32ns_3ns_2_36_1_U276" RTLNAME="dut_urem_32ns_3ns_2_36_1">
+      <Resources FF="499" LUT="789"/>
+      <LocalResources FF="2" LUT="65"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1" DISPNAME="grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324" RTLNAME="dut_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1">
+      <SubModules count="4">flow_control_loop_pipe_sequential_init_U mac_muladd_8s_8s_8ns_8_4_1_U261 sparsemux_7_2_8_1_1_U260 urem_32ns_3ns_2_36_1_U259</SubModules>
+      <Resources DSP="1" FF="700" LUT="944"/>
+      <LocalResources FF="199" LUT="190"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324/mac_muladd_8s_8s_8ns_8_4_1_U261" BINDMODULE="dut_mac_muladd_8s_8s_8ns_8_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_8ns_8_4_1" DISPNAME="mac_muladd_8s_8s_8ns_8_4_1_U261" RTLNAME="dut_mac_muladd_8s_8s_8ns_8_4_1">
+      <Resources DSP="1" LUT="5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="PCA_filtermat_loop_VITIS_LOOP_160_1" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_8ns_8_4_1_U261" SOURCE="./pca.hpp:160" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln160"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="PCA_filtermat_loop_VITIS_LOOP_160_1" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_8ns_8_4_1_U261" SOURCE="./pca.hpp:162" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln162"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324/sparsemux_7_2_8_1_1_U260" BINDMODULE="dut_sparsemux_7_2_8_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_7_2_8_1_1" DISPNAME="sparsemux_7_2_8_1_1_U260" RTLNAME="dut_sparsemux_7_2_8_1_1">
+      <Resources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_324/urem_32ns_3ns_2_36_1_U259" BINDMODULE="dut_urem_32ns_3ns_2_36_1" DEPTH="3" TYPE="rtl" MODULENAME="urem_32ns_3ns_2_36_1" DISPNAME="urem_32ns_3ns_2_36_1_U259" RTLNAME="dut_urem_32ns_3ns_2_36_1">
+      <Resources FF="499" LUT="738"/>
+      <LocalResources FF="2" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_VITIS_LOOP_125_1_fu_301" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_VITIS_LOOP_125_1" DISPNAME="grp_implement_Pipeline_VITIS_LOOP_125_1_fu_301" RTLNAME="dut_implement_Pipeline_VITIS_LOOP_125_1">
+      <Resources FF="86" LUT="87"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_VITIS_LOOP_238_2_fu_353" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_VITIS_LOOP_238_2" DISPNAME="grp_implement_Pipeline_VITIS_LOOP_238_2_fu_353" RTLNAME="dut_implement_Pipeline_VITIS_LOOP_238_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="4" LUT="77"/>
+      <LocalResources FF="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_VITIS_LOOP_238_2_fu_353/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="77"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_VITIS_LOOP_244_4_fu_364" DEPTH="2" TYPE="function" MODULENAME="implement_Pipeline_VITIS_LOOP_244_4" DISPNAME="grp_implement_Pipeline_VITIS_LOOP_244_4_fu_364" RTLNAME="dut_implement_Pipeline_VITIS_LOOP_244_4">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U sparsemux_7_2_64_1_1_U296</SubModules>
+      <Resources FF="113" LUT="126"/>
+      <LocalResources FF="111" LUT="50"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_VITIS_LOOP_244_4_fu_364/flow_control_loop_pipe_sequential_init_U" BINDMODULE="dut_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dut_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/grp_implement_Pipeline_VITIS_LOOP_244_4_fu_364/sparsemux_7_2_64_1_1_U296" BINDMODULE="dut_sparsemux_7_2_64_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_7_2_64_1_1" DISPNAME="sparsemux_7_2_64_1_1_U296" RTLNAME="dut_sparsemux_7_2_64_1_1">
+      <Resources LUT="64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/iSortedBuf_U" BINDMODULE="dut_implement_iSortedBuf_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_iSortedBuf_RAM_AUTO_1R1W" DISPNAME="iSortedBuf_U" RTLNAME="dut_implement_iSortedBuf_RAM_AUTO_1R1W">
+      <Resources BRAM="1" LUT="9"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="iSortedBuf_U" SOURCE="./pca.hpp:115" STORAGESIZE="8 3 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="iSortedBuf"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/pcVecsNorm_1_U" BINDMODULE="dut_implement_eigVals_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVals_RAM_AUTO_1R1W" DISPNAME="pcVecsNorm_1_U" RTLNAME="dut_implement_eigVals_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pcVecsNorm_1_U" SOURCE="./pca.hpp:209" STORAGESIZE="64 15 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pcVecsNorm_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/pcVecsNorm_2_U" BINDMODULE="dut_implement_eigVals_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVals_RAM_AUTO_1R1W" DISPNAME="pcVecsNorm_2_U" RTLNAME="dut_implement_eigVals_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pcVecsNorm_2_U" SOURCE="./pca.hpp:209" STORAGESIZE="64 15 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pcVecsNorm_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/pcVecsNorm_U" BINDMODULE="dut_implement_eigVals_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVals_RAM_AUTO_1R1W" DISPNAME="pcVecsNorm_U" RTLNAME="dut_implement_eigVals_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pcVecsNorm_U" SOURCE="./pca.hpp:209" STORAGESIZE="64 15 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pcVecsNorm"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/pcVecs_1_U" BINDMODULE="dut_implement_eigVals_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVals_RAM_AUTO_1R1W" DISPNAME="pcVecs_1_U" RTLNAME="dut_implement_eigVals_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pcVecs_1_U" SOURCE="./pca.hpp:200" STORAGESIZE="64 15 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pcVecs_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/pcVecs_2_U" BINDMODULE="dut_implement_eigVals_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVals_RAM_AUTO_1R1W" DISPNAME="pcVecs_2_U" RTLNAME="dut_implement_eigVals_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pcVecs_2_U" SOURCE="./pca.hpp:200" STORAGESIZE="64 15 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pcVecs_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_implement_fu_225/pcVecs_U" BINDMODULE="dut_implement_eigVals_RAM_AUTO_1R1W" DEPTH="2" TYPE="resource" MODULENAME="implement_eigVals_RAM_AUTO_1R1W" DISPNAME="pcVecs_U" RTLNAME="dut_implement_eigVals_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="pcVecs_U" SOURCE="./pca.hpp:200" STORAGESIZE="64 15 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="pcVecs"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32ns_32ns_64_2_1_U349" BINDMODULE="dut_mul_32ns_32ns_64_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32ns_32ns_64_2_1" DISPNAME="mul_32ns_32ns_64_2_1_U349" RTLNAME="dut_mul_32ns_32ns_64_2_1">
+      <Resources DSP="4" FF="34" LUT="47"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U349" SOURCE="dut.cpp:31" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln31"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32ns_34ns_65_2_1_U352" BINDMODULE="dut_mul_32ns_34ns_65_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32ns_34ns_65_2_1" DISPNAME="mul_32ns_34ns_65_2_1_U352" RTLNAME="dut_mul_32ns_34ns_65_2_1">
+      <Resources DSP="4" FF="18" LUT="22"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsqrt" DSP="0" ID="" IMPL="fabric" LATENCY="29" LOOP="" OPTYPE="dsqrt" PRAGMA="" RTLNAME="mul_32ns_34ns_65_2_1_U352" SOURCE="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="sqrtVals_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pca_m_pcVals_0_U" BINDMODULE="dut_pca_m_pcVals_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pca_m_pcVals_0_RAM_AUTO_1R1W" DISPNAME="pca_m_pcVals_0_U" RTLNAME="dut_pca_m_pcVals_0_RAM_AUTO_1R1W">
+      <Resources FF="128" LUT="128"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="pca_m_pcVals_0_U" SOURCE="dut.cpp:40" STORAGESIZE="64 3 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="pca_m_pcVals_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pca_m_pcVals_1_U" BINDMODULE="dut_pca_m_pcVals_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pca_m_pcVals_0_RAM_AUTO_1R1W" DISPNAME="pca_m_pcVals_1_U" RTLNAME="dut_pca_m_pcVals_0_RAM_AUTO_1R1W">
+      <Resources FF="128" LUT="128"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="pca_m_pcVals_1_U" SOURCE="dut.cpp:40" STORAGESIZE="64 3 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="pca_m_pcVals_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pca_m_pcVecs_3_U" BINDMODULE="dut_pca_m_pcVecs_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pca_m_pcVecs_RAM_AUTO_1R1W" DISPNAME="pca_m_pcVecs_3_U" RTLNAME="dut_pca_m_pcVecs_RAM_AUTO_1R1W">
+      <Resources BRAM="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="pca_m_pcVecs_3_U" SOURCE="dut.cpp:40" STORAGESIZE="64 30 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="pca_m_pcVecs_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pca_m_pcVecs_4_U" BINDMODULE="dut_pca_m_pcVecs_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pca_m_pcVecs_RAM_AUTO_1R1W" DISPNAME="pca_m_pcVecs_4_U" RTLNAME="dut_pca_m_pcVecs_RAM_AUTO_1R1W">
+      <Resources BRAM="4" LUT="1"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="pca_m_pcVecs_4_U" SOURCE="dut.cpp:40" STORAGESIZE="64 30 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="pca_m_pcVecs_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pca_m_pcVecs_U" BINDMODULE="dut_pca_m_pcVecs_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pca_m_pcVecs_RAM_AUTO_1R1W" DISPNAME="pca_m_pcVecs_U" RTLNAME="dut_pca_m_pcVecs_RAM_AUTO_1R1W">
+      <Resources BRAM="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="pca_m_pcVecs_U" SOURCE="dut.cpp:40" STORAGESIZE="64 30 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="pca_m_pcVecs"/>
+    </RtlModule>
+    <RtlModule CELL="inst/standarisedData_U" BINDMODULE="dut_standarisedData_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="standarisedData_RAM_AUTO_1R1W" DISPNAME="standarisedData_U" RTLNAME="dut_standarisedData_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="standarisedData_U" SOURCE="./pca.hpp:268" STORAGESIZE="64 225 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="standarisedData"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="2.882" DATAPATH_LOGIC_DELAY="2.286" DATAPATH_NET_DELAY="0.596" ENDPOINT_PIN="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[0]" LOGIC_LEVELS="9" MAX_FANOUT="153" SLACK="0.446" STARTPOINT_PIN="grp_implement_fu_225/ap_CS_fsm_reg[18]/C">
+      <CELL NAME="grp_implement_fu_225/ap_CS_fsm_reg[18]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="1031"/>
+      <CELL NAME="grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT3" LINE_NUMBER="69"/>
+      <CELL NAME="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="167"/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.882" DATAPATH_LOGIC_DELAY="2.286" DATAPATH_NET_DELAY="0.596" ENDPOINT_PIN="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[10]" LOGIC_LEVELS="9" MAX_FANOUT="153" SLACK="0.446" STARTPOINT_PIN="grp_implement_fu_225/ap_CS_fsm_reg[18]/C">
+      <CELL NAME="grp_implement_fu_225/ap_CS_fsm_reg[18]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="1031"/>
+      <CELL NAME="grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT3" LINE_NUMBER="69"/>
+      <CELL NAME="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="167"/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.882" DATAPATH_LOGIC_DELAY="2.286" DATAPATH_NET_DELAY="0.596" ENDPOINT_PIN="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[11]" LOGIC_LEVELS="9" MAX_FANOUT="153" SLACK="0.446" STARTPOINT_PIN="grp_implement_fu_225/ap_CS_fsm_reg[18]/C">
+      <CELL NAME="grp_implement_fu_225/ap_CS_fsm_reg[18]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="1031"/>
+      <CELL NAME="grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT3" LINE_NUMBER="69"/>
+      <CELL NAME="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="167"/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.882" DATAPATH_LOGIC_DELAY="2.286" DATAPATH_NET_DELAY="0.596" ENDPOINT_PIN="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[12]" LOGIC_LEVELS="9" MAX_FANOUT="153" SLACK="0.446" STARTPOINT_PIN="grp_implement_fu_225/ap_CS_fsm_reg[18]/C">
+      <CELL NAME="grp_implement_fu_225/ap_CS_fsm_reg[18]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="1031"/>
+      <CELL NAME="grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT3" LINE_NUMBER="69"/>
+      <CELL NAME="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="167"/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.882" DATAPATH_LOGIC_DELAY="2.286" DATAPATH_NET_DELAY="0.596" ENDPOINT_PIN="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST/ALU_OUT[13]" LOGIC_LEVELS="9" MAX_FANOUT="153" SLACK="0.446" STARTPOINT_PIN="grp_implement_fu_225/ap_CS_fsm_reg[18]/C">
+      <CELL NAME="grp_implement_fu_225/ap_CS_fsm_reg[18]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="1031"/>
+      <CELL NAME="grp_implement_fu_225/grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_339/tmp_product_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT3" LINE_NUMBER="69"/>
+      <CELL NAME="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_236/tmp_product_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="167"/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+      <CELL NAME="mul_32ns_34ns_65_2_1_U352/buff0_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/dut_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/dut_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/dut_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/dut_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/dut_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/dut_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Mon May 06 01:26:58 -0400 2024"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4023990 on Oct 11 2023)"/>
+    <item NAME="Project" VALUE="Principal_Component_Analysis.prj"/>
+    <item NAME="Solution" VALUE="sol (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="virtexuplus"/>
+    <item NAME="Target device" VALUE="xcu250-figd2104-2L-e"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="3.333 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="3.333 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

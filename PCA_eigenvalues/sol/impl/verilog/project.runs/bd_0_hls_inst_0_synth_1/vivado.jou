@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 01:17:45 2024
+# Process ID: 30864
+# Current directory: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On: KratX, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16858 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
