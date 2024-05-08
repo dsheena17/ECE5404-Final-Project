@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'Jacobi_svd_double_16_1_16_s'" level="0">
+<item name = "Date">Wed May  8 02:27:06 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">Principal_Component_Analysis.prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 2.541 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">13670, 414744, 45.562 us, 1.382 ms, 13670, 414744, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1_fu_313">Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1, 514, 514, 1.713 us, 1.713 us, 514, 514, no</column>
+<column name="grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_precal_fu_320">Jacobi_svd_double_16_1_16_Pipeline_Loop_precal, 11, 11, 36.663 ns, 36.663 ns, 11, 11, no</column>
+<column name="grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_cal_fu_328">Jacobi_svd_double_16_1_16_Pipeline_Loop_cal, 512, 512, 1.706 us, 1.706 us, 512, 512, no</column>
+<column name="grp_Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1_fu_336">Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1, 15, 15, 49.995 ns, 49.995 ns, 15, 15, no</column>
+<column name="grp_Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2_fu_348">Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2, 154, 154, 0.513 us, 0.513 us, 154, 154, no</column>
+<column name="grp_funcDataflow_double_16_1_16_8_fu_390">funcDataflow_double_16_1_16_8, 612, 612, 2.040 us, 2.040 us, 612, 612, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop_even">9709, 272363, 19 ~ 533, -, -, 511, no</column>
+<column name="- While_Loop">3443, 141863, 287 ~ 11822, -, -, 12, no</column>
+<column name=" + Loop_innerWhile">285, 11820, 19 ~ 788, -, -, 15, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

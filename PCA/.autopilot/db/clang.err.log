@@ -1,0 +1,18 @@
+In file included from dut.cpp:23:
+In file included from C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:32:
+In file included from C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include\xf_solver_L2.hpp:30:
+C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/geqrf.hpp:89:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable = temp core = DMul_meddsp
+        ^
+C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/geqrf.hpp:99:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable = temp core = DMul_meddsp
+        ^
+In file included from dut.cpp:23:
+In file included from C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:33:
+C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:189:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS resource variable = values2 core = RAM_2P_LUTRAM
+        ^
+C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:282:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS resource variable = values core = RAM_2P_LUTRAM
+        ^
+4 warnings generated.

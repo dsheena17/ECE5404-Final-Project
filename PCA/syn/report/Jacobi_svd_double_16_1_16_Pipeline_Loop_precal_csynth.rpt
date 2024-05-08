@@ -1,0 +1,168 @@
+
+
+================================================================
+== Vitis HLS Report for 'Jacobi_svd_double_16_1_16_Pipeline_Loop_precal'
+================================================================
+* Date:           Wed May  8 02:27:14 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        Principal_Component_Analysis.prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  1.583 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       11|       11|  36.663 ns|  36.663 ns|   11|   11|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop_precal  |        9|        9|         3|          1|          1|     8|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      132|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      -|        -|        -|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|       36|     -|
+|Register             |        -|      -|       86|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|       86|      168|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln151_fu_132_p2       |         +|   0|  0|  12|           4|           1|
+    |icmp_ln151_fu_126_p2      |      icmp|   0|  0|  12|           4|           5|
+    |icmp_ln156_fu_168_p2      |      icmp|   0|  0|  38|          31|          31|
+    |or_ln155_fu_157_p2        |        or|   0|  0|   4|           4|           1|
+    |select_ln156_1_fu_186_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln156_fu_179_p3    |    select|   0|  0|  32|           1|          32|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 132|          46|         104|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_5     |   9|          2|    4|          8|
+    |j_fu_52                  |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg   |   1|   0|    1|          0|
+    |icmp_ln156_reg_244                 |   1|   0|    1|          0|
+    |j_fu_52                            |   4|   0|    4|          0|
+    |or_ln155_reg_239                   |   3|   0|    4|          1|
+    |or_ln155_reg_239_pp0_iter1_reg     |   3|   0|    4|          1|
+    |select_ln156_1_reg_265             |  32|   0|   32|          0|
+    |select_ln156_reg_260               |  32|   0|   32|          0|
+    |trunc_ln154_reg_234                |   3|   0|    3|          0|
+    |trunc_ln154_reg_234_pp0_iter1_reg  |   3|   0|    3|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              |  86|   0|   88|          2|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |                    Source Object                   |    C Type    |
++-------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_precal|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_precal|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_precal|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_precal|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_precal|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_precal|  return value|
+|i_2                |   in|    4|     ap_none|                                                 i_2|        scalar|
+|Order_address0     |  out|    8|   ap_memory|                                               Order|         array|
+|Order_ce0          |  out|    1|   ap_memory|                                               Order|         array|
+|Order_we0          |  out|    1|   ap_memory|                                               Order|         array|
+|Order_d0           |  out|   32|   ap_memory|                                               Order|         array|
+|Order_address1     |  out|    8|   ap_memory|                                               Order|         array|
+|Order_ce1          |  out|    1|   ap_memory|                                               Order|         array|
+|Order_we1          |  out|    1|   ap_memory|                                               Order|         array|
+|Order_d1           |  out|   32|   ap_memory|                                               Order|         array|
+|lshr_ln            |   in|   31|     ap_none|                                             lshr_ln|        scalar|
+|tmpOrder_address0  |  out|    4|   ap_memory|                                            tmpOrder|         array|
+|tmpOrder_ce0       |  out|    1|   ap_memory|                                            tmpOrder|         array|
+|tmpOrder_q0        |   in|   32|   ap_memory|                                            tmpOrder|         array|
+|tmpOrder_address1  |  out|    4|   ap_memory|                                            tmpOrder|         array|
+|tmpOrder_ce1       |  out|    1|   ap_memory|                                            tmpOrder|         array|
+|tmpOrder_q1        |   in|   32|   ap_memory|                                            tmpOrder|         array|
++-------------------+-----+-----+------------+----------------------------------------------------+--------------+
+

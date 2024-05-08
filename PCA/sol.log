@@ -1,0 +1,1204 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcu250-figd2104-2L-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.459 seconds; current allocated memory: 0.730 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 181.613 MB.
+INFO: [HLS 200-10] Analyzing design file 'dut.cpp' ... 
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/geqrf.hpp:89:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/geqrf.hpp:99:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:189:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:282:9)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/potrf.hpp:170:39)
+WARNING: [HLS 207-5292] unused parameter 'lda' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/getrf_nopivot.hpp:58:66)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/getrf_nopivot.hpp:119:47)
+WARNING: [HLS 207-5292] unused parameter 'lda' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/getrf.hpp:60:76)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/getrf.hpp:156:50)
+WARNING: [HLS 207-5292] unused parameter 'lda' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/geqrf.hpp:146:68)
+WARNING: [HLS 207-5292] unused parameter 'considerAsZero' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:43:41)
+WARNING: [HLS 207-5292] unused parameter 'Dim_inner_extend' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:213:20)
+WARNING: [HLS 207-5292] unused parameter 'Dim_inner_extend' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:541:20)
+WARNING: [HLS 207-5292] unused parameter 'Dim_inner' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:858:23)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1125:18)
+WARNING: [HLS 207-5292] unused parameter 'm' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvj.hpp:137:71)
+WARNING: [HLS 207-5292] unused parameter 'n' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvj.hpp:137:78)
+WARNING: [HLS 207-5292] unused parameter 'n' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvj.hpp:154:81)
+WARNING: [HLS 207-5292] unused parameter 'n' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvj.hpp:195:27)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/pomatrixinverse.hpp:249:49)
+WARNING: [HLS 207-5292] unused parameter 'lda' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gematrixinverse.hpp:112:50)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gematrixinverse.hpp:146:49)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/trtrs.hpp:95:72)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/polinearsolver.hpp:241:70)
+WARNING: [HLS 207-5292] unused parameter 'lda' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gelinearsolver.hpp:74:50)
+WARNING: [HLS 207-5292] unused parameter 'j' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gelinearsolver.hpp:107:29)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gelinearsolver.hpp:142:70)
+WARNING: [HLS 207-5292] unused parameter 'inidxrow' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gtsv_pcr.hpp:621:36)
+WARNING: [HLS 207-5292] unused parameter 'outidxrow' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gtsv_pcr.hpp:622:36)
+WARNING: [HLS 207-5292] unused parameter 'n' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/LinearSolver/gtsv_pcr.hpp:829:28)
+WARNING: [HLS 207-5292] unused parameter 'info' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:49:89)
+WARNING: [HLS 207-5292] unused parameter 'xcols' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:185:43)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 20.366 seconds; current allocated memory: 201.863 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 7,883 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,579 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,655 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,571 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,505 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,591 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,447 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,447 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,447 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,465 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,380 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,317 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,317 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,317 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,374 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,522 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'double xf::fintech::internal::addTree16<double>(double*)' into 'void xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>(int, int, double (*) [80])' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:325:11)
+INFO: [HLS 214-131] Inlining function 'hls::sqrt(double)' into 'xf::solver::internal::m::sqrt(double)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include\hw/math_helper.hpp:86:12)
+INFO: [HLS 214-131] Inlining function 'void xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::shiftBuffer<double, 3u>(unsigned int, double*)' into 'void xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::nsort<unsigned int>(double const*, unsigned int, double*, unsigned int*)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:127:21)
+INFO: [HLS 214-131] Inlining function 'void xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::shiftBuffer<unsigned int, 3u>(unsigned int, unsigned int*)' into 'void xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::nsort<unsigned int>(double const*, unsigned int, double*, unsigned int*)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:128:21)
+INFO: [HLS 214-131] Inlining function 'hls::sqrt(double)' into 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::getLoadingsMatrix(double (*) [3])' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343:16)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1036_2' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1036:44)
+INFO: [HLS 214-291] Loop 'Loop_Inner_Mul3333' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:378:21)
+INFO: [HLS 214-291] Loop 'Loop_Inner_Mul1111' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:706:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_248_3' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:248:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_250_4' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:250:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_204_1' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:204:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_216_3' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:216:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_208_2' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:208:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_222_4' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:222:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_296_3' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:296:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_305_5' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:305:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_298_4' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:298:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_311_6' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:311:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_331_8' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:331:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_333_9' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:333:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_285_2' is marked as complete unroll implied by the pipeline pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:285:20)
+WARNING: [HLS 214-398] Updating loop lower bound from 256 to 16 for loop 'VITIS_LOOP_113_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113:27) in function 'xf::solver::syevj<double, 15, 1>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:49:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 256 to 16 for loop 'VITIS_LOOP_113_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113:27) in function 'xf::solver::syevj<double, 15, 1>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:49:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 512 to 16 for loop 'Loop_init_J' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082:9) in function 'xf::solver::gesvdj_2D<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1075:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 512 to 16 for loop 'Loop_init_J' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082:9) in function 'xf::solver::gesvdj_2D<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1075:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 512 to 16 for loop 'Loop_init_I' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079:5) in function 'xf::solver::gesvdj_2D<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1075:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 512 to 16 for loop 'Loop_init_I' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079:5) in function 'xf::solver::gesvdj_2D<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1075:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 256 to 8 for loop 'VITIS_LOOP_1005_1' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1005:32) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 256 to 8 for loop 'VITIS_LOOP_1005_1' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1005:32) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 256 to 8 for loop 'Loop_jacobi2x2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1032:17) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 256 to 8 for loop 'Loop_jacobi2x2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1032:17) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 511 to 15 for loop 'Loop_innerWhile' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1002:9) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 511 to 15 for loop 'Loop_innerWhile' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1002:9) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 256 to 8 for loop 'Loop_precal' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:151:9) in function 'xf::solver::internal::GenBlockMat<16, false>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:129:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 256 to 8 for loop 'Loop_precal' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:151:9) in function 'xf::solver::internal::GenBlockMat<16, false>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:129:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 512 to 16 for loop 'VITIS_LOOP_887_3' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:887:20) in function 'xf::solver::internal::funcDataflow<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:864:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 512 to 16 for loop 'VITIS_LOOP_887_3' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:887:20) in function 'xf::solver::internal::funcDataflow<double, 16, 1, 16>'. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:864:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_341_1' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:341:20) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::getLoadingsMatrix' completely with a factor of 3 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:336:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_245_5' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:245:31) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:167:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_239_3' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:239:31) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:167:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_136_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:136:27) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::nsort<unsigned int>' completely with a factor of 3 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:113:0)
+INFO: [HLS 214-186] Unrolling loop 'NSort_Init_Loop' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:117:9) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::nsort<unsigned int>' completely with a factor of 3 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:113:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1036_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1036:44) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>' completely with a factor of 3 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_916_6' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:916:23) in function 'xf::solver::internal::funcDataflow<double, 16, 1, 16>' completely with a factor of 1 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:864:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_905_5' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:905:23) in function 'xf::solver::internal::funcDataflow<double, 16, 1, 16>' completely with a factor of 1 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:864:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_895_4' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:895:23) in function 'xf::solver::internal::funcDataflow<double, 16, 1, 16>' completely with a factor of 1 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:864:0)
+INFO: [HLS 214-186] Unrolling loop 'Loop_Inner_Mul3333' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:378:21) in function 'xf::solver::internal::unrollCol<double, 16, 1, 16>' completely with a factor of 4 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:232:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'Loop_Inner_Mul3333' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:378:21) in function 'xf::solver::internal::unrollCol<double, 16, 1, 16>' has been removed because the loop is unrolled completely (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:232:0)
+INFO: [HLS 214-186] Unrolling loop 'Loop_Inner_Mul1111' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:706:21) in function 'xf::solver::internal::unrollRow<double, 16, 1, 16>' completely with a factor of 4 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:560:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'Loop_Inner_Mul1111' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:706:21) in function 'xf::solver::internal::unrollRow<double, 16, 1, 16>' has been removed because the loop is unrolled completely (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:560:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_248_3' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:248:20) in function 'xf::fintech::internal::covCorePart2<double, 15, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:241:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_250_4' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:250:35) in function 'xf::fintech::internal::covCorePart2<double, 15, 2, 16>' completely with a factor of 16 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:241:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_204_1' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:204:20) in function 'xf::fintech::internal::covCorePart1<double, 15, 80, 1, 2, 16>' completely with a factor of 1 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:185:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_208_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:208:43) in function 'xf::fintech::internal::covCorePart1<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:185:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_216_3' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:216:43) in function 'xf::fintech::internal::covCorePart1<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:185:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_222_4' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:222:35) in function 'xf::fintech::internal::covCorePart1<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:185:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_296_3' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:296:20) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 1 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_298_4' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:298:39) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_305_5' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:305:39) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_311_6' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:311:31) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_323_7' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:323:27) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_87_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:87:19) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 4 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_81_1' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:81:19) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 8 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_331_8' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:331:20) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 1 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_333_9' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:333:39) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_285_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:285:20) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>' completely with a factor of 2 (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:274:0)
+INFO: [HLS 214-178] Inlining function 'void xf::solver::internal::swapTwo<int>(int&, int&)' into 'void xf::solver::internal::GenBlockMat<16, false>(int, int (*) [16])' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:129:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const' into 'fp_struct<double>::to_double() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_copysign<double>(double, double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'double generic_copysign<double>(double, double)' into 'double generic_fabs<double>(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'double generic_fabs<double>(double)' into 'hls::abs(double)' (C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\absdouble.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'hls::abs(double)' into 'xf::solver::internal::m::abs(double)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include\hw/math_helper.hpp:38:0)
+INFO: [HLS 214-178] Inlining function 'xf::solver::internal::m::sqrt(double)' into 'void xf::solver::internal::jacobi_rotation_2x2<double, 16>(double*, double, double&, double&, double&, double&)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:43:0)
+INFO: [HLS 214-178] Inlining function 'void xf::solver::internal::GenBlockMat<16, false>(int, int (*) [16])' into 'void xf::solver::internal::Jacobi_svd<double, 16, 1, 16>(double (*) [1][16][16], double (*) [1][16][16], int)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+INFO: [HLS 214-178] Inlining function 'xf::solver::internal::m::abs(double)' into 'void xf::solver::internal::Jacobi_svd<double, 16, 1, 16>(double (*) [1][16][16], double (*) [1][16][16], int)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:933:0)
+INFO: [HLS 214-178] Inlining function 'void xf::solver::syevj<double, 15, 1>(int, double*, int, double*, double*, int, int&)' into 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement(unsigned int, double*)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:167:0)
+INFO: [HLS 214-178] Inlining function 'void xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::nsort<unsigned int>(double const*, unsigned int, double*, unsigned int*)' into 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement(unsigned int, double*)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:167:0)
+INFO: [HLS 214-178] Inlining function 'void xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::filterMat<unsigned int>(double*, unsigned int, unsigned int, unsigned int*, double*)' into 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement(unsigned int, double*)' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:167:0)
+INFO: [HLS 214-178] Inlining function 'void xf::fintech::covCoreMatrix<double, 15, 80, 1, 2>(int, int, double (*) [80], double (*) [15])' into 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::PCA(unsigned int, unsigned int, double (*) [80])' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:261:0)
+INFO: [HLS 214-178] Inlining function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::PCA(unsigned int, unsigned int, double (*) [80])' into 'dut' (dut.cpp:34:0)
+INFO: [HLS 214-178] Inlining function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::getLoadingsMatrix(double (*) [3])' into 'dut' (dut.cpp:34:0)
+INFO: [HLS 214-248] Applying array_partition to 'values': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:278:8)
+INFO: [HLS 214-248] Applying array_partition to 'values2': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:186:8)
+INFO: [HLS 214-248] Applying array_partition to 'values2Strm': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:265:21)
+INFO: [HLS 214-248] Applying array_partition to 'Order1': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:867:6)
+INFO: [HLS 214-248] Applying array_partition to 'm_c_right1': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:868:7)
+INFO: [HLS 214-248] Applying array_partition to 'm_s_right1': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:869:7)
+INFO: [HLS 214-248] Applying array_partition to 'm_c_right': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1024:15)
+INFO: [HLS 214-248] Applying array_partition to 'm_s_right': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1025:15)
+INFO: [HLS 214-248] Applying array_partition to 'dataA_2D.i': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:78:7)
+INFO: [HLS 214-248] Applying array_partition to 'dataU_2D.i': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:79:7)
+INFO: [HLS 214-248] Applying array_partition to 'eigIndexes': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:185:22)
+INFO: [HLS 214-248] Applying array_partition to 'pcVals': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:186:12)
+INFO: [HLS 214-248] Applying array_partition to 'pcVecs': Cyclic partitioning with factor 3 on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:200:12)
+INFO: [HLS 214-248] Applying array_partition to 'pcVecsNorm': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'sqrtVals.i': Complete partitioning on dimension 1. (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:338:12)
+INFO: [HLS 214-248] Applying array_partition to 'outputLoadings': Complete partitioning on dimension 2. (dut.cpp:34:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_125_1> at C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:125:31 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_238_2> at C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:238:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_244_4> at C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:244:27 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.358 seconds; current allocated memory: 203.449 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 203.449 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 212.488 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 218.086 MB.
+INFO: [XFORM 203-102] Partitioning array 'matrix' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1030) automatically.
+INFO: [XFORM 203-102] Partitioning array 'pca.m_pcVals' (dut.cpp:36) in dimension 1 automatically.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'eigVals' in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement'.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'eigVals' in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement'.
+INFO: [XFORM 203-712] Applying dataflow to function 'xf::fintech::internal::covCoreWrapper<double, 15, 80, 1, 2, 16>' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:265:1), detected/extracted 2 process function(s): 
+	 'xf::fintech::internal::covCorePart1<double, 15, 80, 1, 2, 16>'
+	 'xf::fintech::internal::covCorePart2<double, 15, 2, 16>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:153:9) to (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:151:9) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1007:9) to (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1005:32) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:203:9) to (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:228:25) in function 'xf::fintech::internal::covCorePart1<double, 15, 80, 1, 2, 16>'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:295:9) to (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:293:9) in function 'xf::fintech::internal::aveImpl<double, 15, 80, 1, 2, 16>'... converting 5 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'xf::solver::internal::unrollRow<double, 16, 1, 16>' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:564:13)...4 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'xf::solver::internal::unrollCol<double, 16, 1, 16>' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:236:13)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.599 seconds; current allocated memory: 245.516 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Loop_Inner_Mul'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:564:9) and 'Loop_Inner_Mul111'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:566:13) in function 'xf::solver::internal::unrollRow<double, 16, 1, 16>' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Loop_Inner_Mul33'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:236:9) and 'Loop_Inner_Mul333'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:238:13) in function 'xf::solver::internal::unrollCol<double, 16, 1, 16>' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Loop_init_I'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079:5) and 'Loop_init_J'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082:9) in function 'xf::solver::gesvdj_2D<double, 16, 1, 16>' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Loop_init_A'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:89:5) and 'VITIS_LOOP_91_1'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91:19) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Loop_postcal'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:112:5) and 'VITIS_LOOP_113_2'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113:27) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'PCA_filtermat_loop'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:158:9) and 'VITIS_LOOP_160_1'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:160:31) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'PCA_Sign_Normalization_Loop'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:213:9) and 'VITIS_LOOP_214_1'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:214:31) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_277_1'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:277:31) and 'VITIS_LOOP_278_2'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:278:35) in function 'dut' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_350_2'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350:27) and 'VITIS_LOOP_351_3'(C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351:31) in function 'dut' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop_Inner_Mul' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:564:9) in function 'xf::solver::internal::unrollRow<double, 16, 1, 16>'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:568:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:569:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:570:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:571:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:572:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:573:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:574:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:575:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:576:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:577:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:578:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:579:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:580:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:581:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:582:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:583:9) in loop 'Loop_Inner_Mul111' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop_Inner_Mul33' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:236:9) in function 'xf::solver::internal::unrollCol<double, 16, 1, 16>'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:240:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:241:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:242:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:243:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:244:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:245:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:246:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:247:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:248:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:249:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:250:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:251:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:252:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:253:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:254:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+WARNING: [HLS 200-1946] Dependence pragma (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:255:9) in loop 'Loop_Inner_Mul333' may become invalid because the loop was flattened with the outer loop 'Loop_Inner_Mul33'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_883_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:883:23) in function 'xf::solver::internal::funcDataflow<double, 16, 1, 16>'.
+WARNING: [HLS 200-960] Cannot flatten loop 'While_Loop' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:991:5) in function 'xf::solver::internal::Jacobi_svd<double, 16, 1, 16>' either the parent loop or sub loop is do-while loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop_init_I' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079:5) in function 'xf::solver::gesvdj_2D<double, 16, 1, 16>'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_243_1' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:243:23) in function 'xf::fintech::internal::covCorePart2<double, 15, 2, 16>' the outer loop is not a perfect loop because either the parent loop or the sub loop has no invariant trip count.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop_init_A' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:89:5) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop_postcal' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:112:5) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement'.
+INFO: [XFORM 203-541] Flattening a loop nest 'PCA_filtermat_loop' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:158:9) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement'.
+INFO: [XFORM 203-541] Flattening a loop nest 'PCA_Sign_Normalization_Loop' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:213:9) in function 'xf::fintech::PCA<double, 3u, 1u, 15u, 80u, (xf::fintech::pcaImplementationMethod)0>::implement'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_277_1' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:277:31) in function 'dut'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_350_2' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350:27) in function 'dut'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'dataA16'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.564 seconds; current allocated memory: 526.773 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dut' ...
+WARNING: [SYN 201-103] Legalizing function name 'aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_VITIS_LOOP_283_1' to 'aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1'.
+WARNING: [SYN 201-103] Legalizing function name 'aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a1' to 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a1'.
+WARNING: [SYN 201-103] Legalizing function name 'aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2' to 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2'.
+WARNING: [SYN 201-103] Legalizing function name 'aveImpl<double, 15, 80, 1, 2, 16>' to 'aveImpl_double_15_80_1_2_16_s'.
+WARNING: [SYN 201-103] Legalizing function name 'covCorePart1<double, 15, 80, 1, 2, 16>_Pipeline_loop_c2' to 'covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2'.
+WARNING: [SYN 201-103] Legalizing function name 'covCorePart1<double, 15, 80, 1, 2, 16>' to 'covCorePart1_double_15_80_1_2_16_s'.
+WARNING: [SYN 201-103] Legalizing function name 'covCorePart2<double, 15, 2, 16>_Pipeline_VITIS_LOOP_245_2' to 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2'.
+WARNING: [SYN 201-103] Legalizing function name 'covCorePart2<double, 15, 2, 16>' to 'covCorePart2_double_15_2_16_s'.
+WARNING: [SYN 201-103] Legalizing function name 'covCoreWrapper<double, 15, 80, 1, 2, 16>' to 'covCoreWrapper_double_15_80_1_2_16_s'.
+WARNING: [SYN 201-103] Legalizing function name 'Jacobi_svd<double, 16, 1, 16>_Pipeline_VITIS_LOOP_142_1' to 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1'.
+WARNING: [SYN 201-103] Legalizing function name 'Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_precal' to 'Jacobi_svd_double_16_1_16_Pipeline_Loop_precal'.
+WARNING: [SYN 201-103] Legalizing function name 'Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_cal' to 'Jacobi_svd_double_16_1_16_Pipeline_Loop_cal'.
+WARNING: [SYN 201-103] Legalizing function name 'Jacobi_svd<double, 16, 1, 16>_Pipeline_VITIS_LOOP_1005_1' to 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1'.
+WARNING: [SYN 201-103] Legalizing function name 'jacobi_rotation_2x2<double, 16>' to 'jacobi_rotation_2x2_double_16_s'.
+WARNING: [SYN 201-103] Legalizing function name 'Jacobi_svd<double, 16, 1, 16>_Pipeline_Loop_jacobi2x2' to 'Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2'.
+WARNING: [SYN 201-103] Legalizing function name 'unrollRow<double, 16, 1, 16>9' to 'unrollRow_double_16_1_16_9'.
+WARNING: [SYN 201-103] Legalizing function name 'unrollCol<double, 16, 1, 16>10' to 'unrollCol_double_16_1_16_10'.
+WARNING: [SYN 201-103] Legalizing function name 'funcDataflow<double, 16, 1, 16>8' to 'funcDataflow_double_16_1_16_8'.
+WARNING: [SYN 201-103] Legalizing function name 'Jacobi_svd<double, 16, 1, 16>' to 'Jacobi_svd_double_16_1_16_s'.
+WARNING: [SYN 201-103] Legalizing function name 'gesvdj_2D<double, 16, 1, 16>' to 'gesvdj_2D_double_16_1_16_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_283_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_283_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.802 seconds; current allocated memory: 532.395 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 533.531 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_a1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 19, loop 'loop_a1'
+WARNING: [HLS 200-871] Estimated clock period (2.767 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a1' consists of the following:
+	'store' operation 0 bit ('j_write_ln293', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:293) of constant 0 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:293 [18]  (0.387 ns)
+	'load' operation 31 bit ('j') on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:293 [21]  (0.000 ns)
+	'add' operation 11 bit ('add_ln300_2', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:300) [28]  (0.735 ns)
+	'getelementptr' operation 11 bit ('input_r_addr', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:300) [30]  (0.000 ns)
+	'load' operation 64 bit ('input_r_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:300) on array 'input_r' [37]  (1.645 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.236 seconds; current allocated memory: 534.406 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 534.625 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_a2'.
+WARNING: [HLS 200-885] The II Violation in module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2' (loop 'loop_a2'): Unable to schedule 'load' operation 64 bit ('input_r_load_3', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:334) on array 'input_r' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'input_r'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 12, loop 'loop_a2'
+WARNING: [HLS 200-871] Estimated clock period (2.767 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2' consists of the following:
+	'store' operation 0 bit ('j_write_ln328', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:328) of constant 0 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:328 [16]  (0.387 ns)
+	'load' operation 31 bit ('j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:334) on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:328 [19]  (0.000 ns)
+	'add' operation 11 bit ('add_ln334_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:334) [29]  (0.735 ns)
+	'getelementptr' operation 11 bit ('input_r_addr_3', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:334) [31]  (0.000 ns)
+	'load' operation 64 bit ('input_r_load_3', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:334) on array 'input_r' [42]  (1.645 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.194 seconds; current allocated memory: 534.824 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 534.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'aveImpl_double_15_80_1_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 536.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'values' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'values_1' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 537.051 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_c2'.
+WARNING: [HLS 200-885] The II Violation in module 'covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2' (loop 'loop_c2'): Unable to schedule 'load' operation 64 bit ('input_r_load_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:210) on array 'input_r' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'input_r'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 20, loop 'loop_c2'
+WARNING: [HLS 200-871] Estimated clock period (2.767 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2' consists of the following:
+	'store' operation 0 bit ('k_write_ln201', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:201) of constant 0 on local variable 'k', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:201 [30]  (0.387 ns)
+	'load' operation 31 bit ('k') on local variable 'k', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:201 [33]  (0.000 ns)
+	'add' operation 11 bit ('add_ln206_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:206) [40]  (0.735 ns)
+	'getelementptr' operation 11 bit ('input_r_addr', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:206) [42]  (0.000 ns)
+	'load' operation 64 bit ('input_r_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:206) on array 'input_r' [56]  (1.645 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 537.895 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 537.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'covCorePart1_double_15_80_1_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 538.387 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 538.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_245_2'.
+WARNING: [HLS 200-880] The II Violation in module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' (loop 'VITIS_LOOP_245_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation 0 bit ('outCovMatrix_addr_1_write_ln256', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:256) of variable 'mul', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255 on array 'outCovMatrix' and 'store' operation 0 bit ('outCovMatrix_addr_write_ln255', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255) of variable 'mul', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255 on array 'outCovMatrix'.
+WARNING: [HLS 200-880] The II Violation in module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' (loop 'VITIS_LOOP_245_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation 0 bit ('outCovMatrix_addr_3_write_ln256', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:256) of variable 'mul16_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255 on array 'outCovMatrix' and 'store' operation 0 bit ('outCovMatrix_addr_write_ln255', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255) of variable 'mul', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255 on array 'outCovMatrix'.
+WARNING: [HLS 200-880] The II Violation in module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' (loop 'VITIS_LOOP_245_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation 0 bit ('outCovMatrix_addr_3_write_ln256', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:256) of variable 'mul16_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255 on array 'outCovMatrix' and 'store' operation 0 bit ('outCovMatrix_addr_write_ln255', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255) of variable 'mul', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:255 on array 'outCovMatrix'.
+WARNING: [HLS 200-880] The II Violation in module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' (loop 'VITIS_LOOP_245_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between fifo read operation ('values2Strm_0_read_4', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) on port 'values2Strm_0' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) and fifo read operation ('values2Strm_0_read', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) on port 'values2Strm_0' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251).
+WARNING: [HLS 200-880] The II Violation in module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' (loop 'VITIS_LOOP_245_2'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between fifo read operation ('values2Strm_0_read_11', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) on port 'values2Strm_0' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) and fifo read operation ('values2Strm_0_read', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) on port 'values2Strm_0' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251).
+WARNING: [HLS 200-880] The II Violation in module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' (loop 'VITIS_LOOP_245_2'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between fifo read operation ('values2Strm_0_read_15', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) on port 'values2Strm_0' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) and fifo read operation ('values2Strm_0_read', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251) on port 'values2Strm_0' (C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:251).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 16, Depth = 149, loop 'VITIS_LOOP_245_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.407 seconds; current allocated memory: 541.293 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 541.602 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'covCorePart2_double_15_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.128 seconds; current allocated memory: 542.043 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.116 seconds; current allocated memory: 542.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'covCoreWrapper_double_15_80_1_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 542.418 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 542.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln280) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_277_1_VITIS_LOOP_278_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_277_1_VITIS_LOOP_278_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 542.844 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 542.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'Loop_init_A_VITIS_LOOP_91_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'Loop_init_A_VITIS_LOOP_91_1'
+WARNING: [HLS 200-871] Estimated clock period (2.466 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1' consists of the following:
+	'store' operation 0 bit ('j_write_ln91', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) of constant 0 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 [14]  (0.387 ns)
+	'load' operation 5 bit ('j_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 [22]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln91', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) [27]  (0.707 ns)
+	'select' operation 5 bit ('select_ln89', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:89->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) [28]  (0.278 ns)
+	'add' operation 5 bit ('add_ln91', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) [74]  (0.707 ns)
+	'store' operation 0 bit ('j_write_ln91', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) of variable 'add_ln91', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:91->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 [77]  (0.387 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 543.215 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 543.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_142_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_142_1'
+WARNING: [HLS 200-871] Estimated clock period (2.463 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1' consists of the following:
+	'store' operation 0 bit ('i_write_ln142', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:142->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) of constant 0 on local variable 'i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:142->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966 [8]  (0.387 ns)
+	'load' operation 31 bit ('i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:142->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) on local variable 'i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:142->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966 [11]  (0.000 ns)
+	'sub' operation 32 bit ('sub_ln145', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:145->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) [21]  (0.880 ns)
+	'store' operation 0 bit ('tmpOrder_addr_write_ln145', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:145->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) of variable 'sub_ln145', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:145->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966 on array 'tmpOrder' [23]  (1.196 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.202 seconds; current allocated memory: 543.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 543.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_precal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_precal'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Loop_precal'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 543.688 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 543.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_cal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop_cal'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'Loop_cal'
+WARNING: [HLS 200-871] Estimated clock period (2.457 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_cal' consists of the following:
+	'store' operation 0 bit ('j_1_write_ln172', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:172->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) of constant 1 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:172->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966 [10]  (0.387 ns)
+	'load' operation 31 bit ('j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:175->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:172->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966 [14]  (0.000 ns)
+	'add' operation 31 bit ('add_ln175', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:175->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) [23]  (0.874 ns)
+	'getelementptr' operation 4 bit ('tmpOrder_addr', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:175->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) [25]  (0.000 ns)
+	'load' operation 32 bit ('tmp4', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:175->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:966) on array 'tmpOrder' [26]  (1.196 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 543.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 544.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1005_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, loop 'VITIS_LOOP_1005_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.183 seconds; current allocated memory: 544.793 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 545.230 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'jacobi_rotation_2x2_double_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'jacobi_rotation_2x2<double, 16>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 133, function 'jacobi_rotation_2x2<double, 16>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 546.641 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 547.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'Loop_jacobi2x2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 139, loop 'Loop_jacobi2x2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.265 seconds; current allocated memory: 550.863 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 553.363 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unrollRow_double_16_1_16_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'Loop_Inner_Mul_Loop_Inner_Mul111'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 26, loop 'Loop_Inner_Mul_Loop_Inner_Mul111'
+WARNING: [HLS 200-871] Estimated clock period (2.541 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'unrollRow_double_16_1_16_9' consists of the following:
+	'store' operation 0 bit ('tmpSumCS_write_ln592', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:592) of constant 0 on local variable 'tmpSumCS', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:592 [13]  (0.387 ns)
+	'load' operation 4 bit ('tmpSumCS_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:566) on local variable 'tmpSumCS', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:592 [21]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln566', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:566) [26]  (0.708 ns)
+	'select' operation 4 bit ('select_ln564', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:564) [27]  (0.351 ns)
+	'add' operation 4 bit ('add_ln566', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:566) [148]  (0.708 ns)
+	'store' operation 0 bit ('tmpSumCS_write_ln592', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:592) of variable 'add_ln566', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:566 on local variable 'tmpSumCS', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:592 [151]  (0.387 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.435 seconds; current allocated memory: 554.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 555.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unrollCol_double_16_1_16_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'Loop_Inner_Mul33_Loop_Inner_Mul333'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 26, loop 'Loop_Inner_Mul33_Loop_Inner_Mul333'
+WARNING: [HLS 200-871] Estimated clock period (2.541 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'unrollCol_double_16_1_16_10' consists of the following:
+	'store' operation 0 bit ('tmpSumCS_write_ln264', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:264) of constant 0 on local variable 'tmpSumCS', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:264 [13]  (0.387 ns)
+	'load' operation 4 bit ('tmpSumCS_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:238) on local variable 'tmpSumCS', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:264 [21]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln238', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:238) [26]  (0.708 ns)
+	'select' operation 4 bit ('select_ln236', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:236) [27]  (0.351 ns)
+	'add' operation 4 bit ('add_ln238', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:238) [143]  (0.708 ns)
+	'store' operation 0 bit ('tmpSumCS_write_ln264', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:264) of variable 'add_ln238', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:238 on local variable 'tmpSumCS', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:264 [146]  (0.387 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.414 seconds; current allocated memory: 555.672 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 556.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'funcDataflow_double_16_1_16_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_883_2_VITIS_LOOP_887_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_883_2_VITIS_LOOP_887_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 556.551 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 556.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Jacobi_svd_double_16_1_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.162 seconds; current allocated memory: 557.715 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'tmpOrder' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 557.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gesvdj_2D_double_16_1_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'Loop_init_I_Loop_init_J'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, loop 'Loop_init_I_Loop_init_J'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 558.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 558.500 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln119) to 3 in order to utilize available DSP registers.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'Loop_postcal_VITIS_LOOP_113_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'Loop_postcal_VITIS_LOOP_113_2'
+WARNING: [HLS 200-871] Estimated clock period (2.496 ns) exceeds the target (target clock period: 3.333 ns, clock uncertainty: 0.900 ns, effective delay budget: 2.433 ns).
+WARNING: [HLS 200-1016] The critical path in module 'implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2' consists of the following:
+	'store' operation 0 bit ('j_1_write_ln113', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) of constant 0 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 [16]  (0.387 ns)
+	'load' operation 5 bit ('j_1_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 [24]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln113', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) [29]  (0.707 ns)
+	'select' operation 5 bit ('select_ln112', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:112->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) [30]  (0.278 ns)
+	'add' operation 5 bit ('add_ln113', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) [71]  (0.707 ns)
+	'store' operation 0 bit ('j_1_write_ln113', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174) of variable 'add_ln113', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/EigenSolver/syevj.hpp:113->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:174 [74]  (0.387 ns)
+	blocking operation 0.02975 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.306 seconds; current allocated memory: 559.180 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 559.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_VITIS_LOOP_125_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_125_1'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation 1 bit ('and_ln126_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:126->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:189)) in the first pipeline iteration (II = 1 cycles).
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation 1 bit ('and_ln126_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:126->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:189)) in the first pipeline iteration (II = 2 cycles).
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation 1 bit ('and_ln126_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:126->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:189)) in the first pipeline iteration (II = 3 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 5, loop 'VITIS_LOOP_125_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 559.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 559.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_NSort_shift_buf_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'NSort_shift_buf_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'NSort_shift_buf_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 559.676 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 559.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_NSort_shift_buf_Loop12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'NSort_shift_buf_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'NSort_shift_buf_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.185 seconds; current allocated memory: 559.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 559.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln162) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PCA_filtermat_loop_VITIS_LOOP_160_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 38, loop 'PCA_filtermat_loop_VITIS_LOOP_160_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 560.523 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 560.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 39, loop 'PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.214 seconds; current allocated memory: 561.395 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.128 seconds; current allocated memory: 561.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_VITIS_LOOP_238_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_238_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_238_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.234 seconds; current allocated memory: 561.871 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 562.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement_Pipeline_VITIS_LOOP_244_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_244_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_244_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.221 seconds; current allocated memory: 562.234 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 562.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'implement' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 562.902 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 563.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_350_2_VITIS_LOOP_351_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 13, loop 'VITIS_LOOP_350_2_VITIS_LOOP_351_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 564.211 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 564.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dut' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 564.594 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 564.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'aveImpl_double_15_80_1_2_16_Pipeline_VITIS_LOOP_283_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 566.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a1' pipeline 'loop_a1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.248 seconds; current allocated memory: 568.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2' pipeline 'loop_a2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.237 seconds; current allocated memory: 570.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'aveImpl_double_15_80_1_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'aveImpl_double_15_80_1_2_16_s'.
+INFO: [RTMG 210-278] Implementing memory 'dut_aveImpl_double_15_80_1_2_16_s_values_RAM_2P_LUTRAM_1R1W' using distributed RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 573.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2' pipeline 'loop_c2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'covCorePart1_double_15_80_1_2_16_Pipeline_loop_c2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.372 seconds; current allocated memory: 577.082 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'covCorePart1_double_15_80_1_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'covCorePart1_double_15_80_1_2_16_s'.
+INFO: [RTMG 210-278] Implementing memory 'dut_covCorePart1_double_15_80_1_2_16_s_values2_RAM_2P_LUTRAM_1R1W' using distributed RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.246 seconds; current allocated memory: 579.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2' pipeline 'VITIS_LOOP_245_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_8_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'covCorePart2_double_15_2_16_Pipeline_VITIS_LOOP_245_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.403 seconds; current allocated memory: 582.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'covCorePart2_double_15_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'covCorePart2_double_15_2_16_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.395 seconds; current allocated memory: 585.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'covCoreWrapper_double_15_80_1_2_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'covCoreWrapper_double_15_80_1_2_16_s'.
+INFO: [RTMG 210-285] Implementing FIFO 'values2Strm_U(dut_fifo_w64_d32_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'values2Strm_1_U(dut_fifo_w64_d32_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'rows_c_U(dut_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cols_c_U(dut_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_covCorePart2_double_15_2_16_U0_U(dut_start_for_covCorePart2_double_15_2_16_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.295 seconds; current allocated memory: 587.188 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2' pipeline 'VITIS_LOOP_277_1_VITIS_LOOP_278_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_8ns_8_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 587.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1' pipeline 'Loop_init_A_VITIS_LOOP_91_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_5ns_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 589.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_142_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 590.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_precal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_precal' pipeline 'Loop_precal' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Jacobi_svd_double_16_1_16_Pipeline_Loop_precal'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 590.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_cal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_cal' pipeline 'Loop_cal' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Jacobi_svd_double_16_1_16_Pipeline_Loop_cal'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.204 seconds; current allocated memory: 591.539 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1' pipeline 'VITIS_LOOP_1005_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Jacobi_svd_double_16_1_16_Pipeline_VITIS_LOOP_1005_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.225 seconds; current allocated memory: 592.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'jacobi_rotation_2x2_double_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'jacobi_rotation_2x2_double_16_s' is 27288 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_6_no_dsp_0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_0': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_6_no_dsp_0': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'jacobi_rotation_2x2_double_16_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.478 seconds; current allocated memory: 597.363 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2' pipeline 'Loop_jacobi2x2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2' is 27867 from HDL expression: (((1'b0 == ap_block_pp0_stage0_11001_ignoreCallOp260) & (1'b1 == ap_CS_fsm_pp0_stage0)) | ((1'b0 == ap_block_pp0_stage1_11001_ignoreCallOp252) & (1'b1 == ap_CS_fsm_pp0_stage1)))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Jacobi_svd_double_16_1_16_Pipeline_Loop_jacobi2x2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.413 seconds; current allocated memory: 624.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'unrollRow_double_16_1_16_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'unrollRow_double_16_1_16_9' pipeline 'Loop_Inner_Mul_Loop_Inner_Mul111' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_6_no_dsp_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'unrollRow_double_16_1_16_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.429 seconds; current allocated memory: 629.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'unrollCol_double_16_1_16_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'unrollCol_double_16_1_16_10' pipeline 'Loop_Inner_Mul33_Loop_Inner_Mul333' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_6_no_dsp_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'unrollCol_double_16_1_16_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.359 seconds; current allocated memory: 631.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'funcDataflow_double_16_1_16_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'funcDataflow_double_16_1_16_8'.
+INFO: [RTMG 210-278] Implementing memory 'dut_funcDataflow_double_16_1_16_8_Order1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_funcDataflow_double_16_1_16_8_m_c_right1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.397 seconds; current allocated memory: 634.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Jacobi_svd_double_16_1_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Jacobi_svd_double_16_1_16_s'.
+INFO: [RTMG 210-278] Implementing memory 'dut_Jacobi_svd_double_16_1_16_s_tmpOrder_RAM_T2P_BRAM_1R1W' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_Jacobi_svd_double_16_1_16_s_Order_RAM_T2P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.353 seconds; current allocated memory: 637.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gesvdj_2D_double_16_1_16_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gesvdj_2D_double_16_1_16_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.339 seconds; current allocated memory: 640.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2' pipeline 'Loop_postcal_VITIS_LOOP_113_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_5ns_5ns_8_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.256 seconds; current allocated memory: 641.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_VITIS_LOOP_125_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_VITIS_LOOP_125_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.249 seconds; current allocated memory: 642.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_NSort_shift_buf_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'implement_Pipeline_NSort_shift_buf_Loop' pipeline 'NSort_shift_buf_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_NSort_shift_buf_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 643.406 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_NSort_shift_buf_Loop12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'implement_Pipeline_NSort_shift_buf_Loop12' pipeline 'NSort_shift_buf_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_NSort_shift_buf_Loop12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 643.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1' pipeline 'PCA_filtermat_loop_VITIS_LOOP_160_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_8ns_8_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_65_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_32ns_3ns_2_36_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.341 seconds; current allocated memory: 646.500 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1' pipeline 'PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1' pipeline type 'loop pipeline'
+INFO: [SYN 201-210] Renamed object name 'implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_AUTO_1R1W' to 'implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_bkb' due to the length limit 80
+INFO: [RTGEN 206-104] Estimated max fanout for 'implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1' is 6589 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_65_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_32ns_3ns_2_36_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1'.
+INFO: [RTMG 210-278] Implementing memory 'dut_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_signFlip_RAM_bkb' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.521 seconds; current allocated memory: 649.383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_VITIS_LOOP_238_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_VITIS_LOOP_238_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.283 seconds; current allocated memory: 651.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement_Pipeline_VITIS_LOOP_244_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'implement_Pipeline_VITIS_LOOP_244_4' pipeline 'VITIS_LOOP_244_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement_Pipeline_VITIS_LOOP_244_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.237 seconds; current allocated memory: 652.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'implement' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_65_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'implement'.
+INFO: [RTMG 210-278] Implementing memory 'dut_implement_dSortedBuf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_implement_iSortedBuf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_implement_dataA_2D_RAM_T2P_URAM_1R1W' using ultra RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_implement_eigVals_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_implement_eigVecs_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.476 seconds; current allocated memory: 654.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3' pipeline 'VITIS_LOOP_350_2_VITIS_LOOP_351_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.36 seconds; current allocated memory: 657.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dut' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'dut/rows' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dut/cols' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dut/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dut/outputLoadings_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dut/outputLoadings_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dut/outputLoadings_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dut' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsqrt_64ns_64ns_64_30_no_dsp_0': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dut'.
+INFO: [RTMG 210-278] Implementing memory 'dut_standarisedData_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_pca_m_pcVals_0_RAM_AUTO_0R0W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_pca_m_pcVals_1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dut_pca_m_pcVecs_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.67 seconds; current allocated memory: 659.691 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.272 seconds; current allocated memory: 663.965 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.233 seconds; current allocated memory: 676.672 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dut.
+INFO: [VLOG 209-307] Generating Verilog RTL for dut.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 308.93 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 63.968 seconds; current allocated memory: 498.195 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 234.433 seconds; current allocated memory: 12.809 MB.
+INFO: [HLS 200-1510] Running: export_design -flow syn -rtl verilog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO: [HLS 200-802] Generated output file Principal_Component_Analysis.prj/sol/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 587.592 seconds; current allocated memory: 4.871 MB.
+INFO: [HLS 200-1510] Running: export_design -flow impl -rtl verilog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO: [HLS 200-802] Generated output file Principal_Component_Analysis.prj/sol/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1672.14 seconds; current allocated memory: 0.000 MB.

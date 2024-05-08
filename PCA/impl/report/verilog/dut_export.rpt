@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2023.2
+Project:             Principal_Component_Analysis.prj
+Solution:            sol
+Device target:       xcu250-figd2104-2L-e
+Report date:         Wed May 08 04:07:22 -0400 2024
+
+#=== Post-Implementation Resource usage ===
+SLICE:            0
+LUT:          44205
+FF:           53332
+DSP:             98
+BRAM:            19
+URAM:             2
+LATCH:            0
+SRL:           2363
+CLB:           9606
+
+#=== Final timing ===
+CP required:                     3.333
+CP achieved post-synthesis:      2.666
+CP achieved post-implementation: 3.152
+Timing met

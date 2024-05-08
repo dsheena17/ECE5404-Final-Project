@@ -1,0 +1,3305 @@
+---
+MainSourceFile:  'C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/Principal_Component_Analysis.prj/sol/.autopilot/db/dut.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          233963
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          461287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          461751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          462216
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          745102
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      91
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      92
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      93
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      94
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      95
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      125
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      126
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      127
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      128
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      129
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      130
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      131
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      132
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      133
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      134
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      184
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      185
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      186
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      213
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      214
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      216
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      217
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      218
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      254
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      255
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1149622
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1150436
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_289_1:  '
+    FileOffset:      289
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1153083
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_289_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_449_1:  '
+    FileOffset:      449
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1155806
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_449_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_629_1:  '
+    FileOffset:      629
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1158967
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_629_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_633_2:  '
+    FileOffset:      633
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1159048
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_633_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_743_1:  '
+    FileOffset:      743
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1161357
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_743_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_840_1:  '
+    FileOffset:      840
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1162851
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_840_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_859_2:  '
+    FileOffset:      859
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1163081
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_859_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1173_1:  '
+    FileOffset:      1173
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1169263
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1173_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1256_1:  '
+    FileOffset:      1256
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1170866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1178714
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_2:  '
+    FileOffset:      74
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1178864
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1178961
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_4:  '
+    FileOffset:      145
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1180821
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_5:  '
+    FileOffset:      151
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1180971
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_6:  '
+    FileOffset:      155
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1181068
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_7:  '
+    FileOffset:      170
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1181449
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_8:  '
+    FileOffset:      178
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1181680
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_9:  '
+    FileOffset:      243
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1185127
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_10:  '
+    FileOffset:      249
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1185279
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_11:  '
+    FileOffset:      253
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1185379
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_12:  '
+    FileOffset:      268
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1185761
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_276_13:  '
+    FileOffset:      276
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1185999
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_276_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_505_14:  '
+    FileOffset:      505
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1201554
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_505_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_15:  '
+    FileOffset:      511
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1201706
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_515_16:  '
+    FileOffset:      515
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1201805
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_515_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_525_17:  '
+    FileOffset:      525
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1201982
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_525_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_529_18:  '
+    FileOffset:      529
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1202080
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_529_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_539_19:  '
+    FileOffset:      539
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1202365
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_539_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_547_20:  '
+    FileOffset:      547
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1202620
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_547_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_908_21:  '
+    FileOffset:      908
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1234859
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_908_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_914_22:  '
+    FileOffset:      914
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1235011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_914_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_918_23:  '
+    FileOffset:      918
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1235111
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_918_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1034_1:  '
+    FileOffset:      1034
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1237787
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1034_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1040_2:  '
+    FileOffset:      1040
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1237937
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1040_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1044_3:  '
+    FileOffset:      1044
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1238035
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1044_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1131_4:  '
+    FileOffset:      1131
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1241505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1131_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1137_5:  '
+    FileOffset:      1137
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1241656
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1137_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1141_6:  '
+    FileOffset:      1141
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1241755
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1141_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1160_7:  '
+    FileOffset:      1160
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1242235
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1160_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1167_8:  '
+    FileOffset:      1167
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1242477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1167_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1283_9:  '
+    FileOffset:      1283
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1248049
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1283_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1289_10:  '
+    FileOffset:      1289
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1248201
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1289_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1293_11:  '
+    FileOffset:      1293
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1248300
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1293_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1313_12:  '
+    FileOffset:      1313
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1248809
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1313_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1320_13:  '
+    FileOffset:      1320
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1249058
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1320_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1582_14:  '
+    FileOffset:      1582
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1266415
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1582_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1588_15:  '
+    FileOffset:      1588
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1266567
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1588_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1592_16:  '
+    FileOffset:      1592
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1266667
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1592_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1616_17:  '
+    FileOffset:      1616
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1267141
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1616_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1623_18:  '
+    FileOffset:      1623
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1267408
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1623_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2053_19:  '
+    FileOffset:      2053
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1305979
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2053_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2059_20:  '
+    FileOffset:      2059
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1306131
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2059_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2063_21:  '
+    FileOffset:      2063
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1306231
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2063_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2193_1:  '
+    FileOffset:      2193
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1308851
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2193_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2200_2:  '
+    FileOffset:      2200
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1309014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2200_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2204_3:  '
+    FileOffset:      2204
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1309106
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2204_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2251_4:  '
+    FileOffset:      2251
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1310715
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2251_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2258_5:  '
+    FileOffset:      2258
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1310877
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2262_6:  '
+    FileOffset:      2262
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1310969
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2262_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2280_7:  '
+    FileOffset:      2280
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1311342
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2280_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2335_8:  '
+    FileOffset:      2335
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1313808
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2335_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2342_9:  '
+    FileOffset:      2342
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1313975
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2342_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2346_10:  '
+    FileOffset:      2346
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1314068
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2346_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2364_11:  '
+    FileOffset:      2364
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1314449
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2364_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2453_12:  '
+    FileOffset:      2453
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1319890
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2453_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2460_13:  '
+    FileOffset:      2460
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1320058
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2460_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2464_14:  '
+    FileOffset:      2464
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1320152
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2464_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2474_15:  '
+    FileOffset:      2474
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1320323
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2474_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2478_16:  '
+    FileOffset:      2478
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1320414
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2478_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2489_17:  '
+    FileOffset:      2489
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1320696
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2489_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2497_18:  '
+    FileOffset:      2497
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1320883
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2497_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2822_19:  '
+    FileOffset:      2822
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1355353
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2822_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2829_20:  '
+    FileOffset:      2829
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1355521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2829_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2833_21:  '
+    FileOffset:      2833
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1355615
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2833_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2921_1:  '
+    FileOffset:      2921
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1357417
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2928_2:  '
+    FileOffset:      2928
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1357525
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2928_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2932_3:  '
+    FileOffset:      2932
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1357596
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2932_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2947_4:  '
+    FileOffset:      2947
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1357884
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2947_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2979_5:  '
+    FileOffset:      2979
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1359098
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2979_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2986_6:  '
+    FileOffset:      2986
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1359209
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2986_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2990_7:  '
+    FileOffset:      2990
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1359282
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2990_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3005_8:  '
+    FileOffset:      3005
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1359577
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3005_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3055_9:  '
+    FileOffset:      3055
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1362910
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3055_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3062_10:  '
+    FileOffset:      3062
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1363021
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3062_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3066_11:  '
+    FileOffset:      3066
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1363094
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3066_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3081_12:  '
+    FileOffset:      3081
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1363390
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3081_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3218_13:  '
+    FileOffset:      3218
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1382702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3218_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3225_14:  '
+    FileOffset:      3225
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1382816
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3225_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3229_15:  '
+    FileOffset:      3229
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1382891
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3229_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3244_16:  '
+    FileOffset:      3244
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1383178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3244_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3404_17:  '
+    FileOffset:      3404
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1408788
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3404_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3411_18:  '
+    FileOffset:      3411
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1408902
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3411_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3415_19:  '
+    FileOffset:      3415
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1408979
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3415_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_log_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1443047
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_921_1:  '
+    FileOffset:      921
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_log_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1451436
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1345_1:  '
+    FileOffset:      1345
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_log_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1470409
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1345_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_240_1:  '
+    FileOffset:      240
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_sqrt_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1485265
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_240_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_2:  '
+    FileOffset:      268
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_sqrt_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1485786
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1501700
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_2:  '
+    FileOffset:      109
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1502850
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1503159
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_4:  '
+    FileOffset:      153
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1503669
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1505583
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1505948
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_315_3:  '
+    FileOffset:      315
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1506256
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_315_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_433_1:  '
+    FileOffset:      433
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1508084
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_433_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_447_2:  '
+    FileOffset:      447
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1508409
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_447_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_diff_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1511062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_diff_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1513954
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_diff_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1515241
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_1:  '
+    FileOffset:      16
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1526140
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1526315
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1526476
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1526638
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_1:  '
+    FileOffset:      60
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1526812
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1526987
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1527148
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_1:  '
+    FileOffset:      93
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1527310
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_mad_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1598094
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cbrt_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1599838
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1604345
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_2:  '
+    FileOffset:      81
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1605076
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_3:  '
+    FileOffset:      169
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1606761
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      39
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\potrf.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      77
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\potrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_1:  '
+    FileOffset:      86
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\potrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1663593
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      176
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\potrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_180_1:  '
+    FileOffset:      180
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\potrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1665670
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_180_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_2:  '
+    FileOffset:      190
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\potrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1665914
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      63
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf_nopivot.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_70_1:  '
+    FileOffset:      70
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf_nopivot.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1667453
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_70_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      124
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf_nopivot.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_128_1:  '
+    FileOffset:      128
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf_nopivot.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1668683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_128_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_138_2:  '
+    FileOffset:      138
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf_nopivot.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1668923
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_138_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      67
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      68
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_101_1:  '
+    FileOffset:      101
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1671210
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_101_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      161
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_165_1:  '
+    FileOffset:      165
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1672576
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_165_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_172_2:  '
+    FileOffset:      172
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1672716
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_172_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_3:  '
+    FileOffset:      181
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1672918
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_4:  '
+    FileOffset:      187
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\getrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1673037
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: DMul_meddsp pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      89
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_1:  '
+    FileOffset:      95
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1674711
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: DMul_meddsp pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      99
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_2:  '
+    FileOffset:      104
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1674955
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_111_3:  '
+    FileOffset:      111
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1675118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_111_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_1:  '
+    FileOffset:      178
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1676947
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_186_2:  '
+    FileOffset:      186
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1677146
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_186_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_193_3:  '
+    FileOffset:      193
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1677309
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_193_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_221_4:  '
+    FileOffset:      221
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1678134
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_221_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      276
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_280_1:  '
+    FileOffset:      280
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1679124
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_280_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_2:  '
+    FileOffset:      281
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1679162
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_290_3:  '
+    FileOffset:      290
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1679356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_290_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_291_4:  '
+    FileOffset:      291
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1679394
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_291_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      303
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1679828
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_308_2:  '
+    FileOffset:      308
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1679866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_308_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_317_3:  '
+    FileOffset:      317
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1680053
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_317_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_318_4:  '
+    FileOffset:      318
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\geqrf.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1680091
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_318_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op'
+    FileOffset:      57
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      83
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      84
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op'
+    FileOffset:      88
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      102
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op'
+    FileOffset:      104
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op'
+    FileOffset:      107
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      137
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_142_1:  '
+    FileOffset:      142
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1683211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_142_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_234_1:  '
+    FileOffset:      234
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1685531
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_234_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      395
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      396
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op'
+    FileOffset:      397
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_562_1:  '
+    FileOffset:      562
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1699451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_562_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      723
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      724
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op'
+    FileOffset:      725
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_875_1:  '
+    FileOffset:      875
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1713241
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_875_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_883_2:  '
+    FileOffset:      883
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1713422
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_883_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_887_3:  '
+    FileOffset:      887
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1713509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_887_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_895_4:  '
+    FileOffset:      895
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1713755
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_895_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_905_5:  '
+    FileOffset:      905
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1714398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_905_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_916_6:  '
+    FileOffset:      916
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1715132
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_916_6: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      957
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1005_1:  '
+    FileOffset:      1005
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1717241
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1005_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1036_2:  '
+    FileOffset:      1036
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1718238
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1036_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      1157
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      1158
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1168_1:  '
+    FileOffset:      1168
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1721088
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1168_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1187_2:  '
+    FileOffset:      1187
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvdj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1721702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1187_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op'
+    FileOffset:      61
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      87
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      88
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op'
+    FileOffset:      92
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dmul + maxdsp is invalid combination for bind_op'
+    FileOffset:      106
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dadd + fabric is invalid combination for bind_op'
+    FileOffset:      108
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, dsub + fabric is invalid combination for bind_op'
+    FileOffset:      111
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_1:  '
+    FileOffset:      143
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1725588
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_161_1:  '
+    FileOffset:      161
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1726141
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_161_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      209
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      212
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_1:  '
+    FileOffset:      226
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1728198
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_245_2:  '
+    FileOffset:      245
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1728740
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_245_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_264_3:  '
+    FileOffset:      264
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1729315
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_264_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_4:  '
+    FileOffset:      281
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1729844
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_292_5:  '
+    FileOffset:      292
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1730178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_292_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_302_6:  '
+    FileOffset:      302
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1730541
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_302_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_322_1:  '
+    FileOffset:      322
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1731253
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_322_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_2:  '
+    FileOffset:      325
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1731357
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      385
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      388
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      390
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      393
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      396
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      399
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      402
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_s2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      406
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_418_1:  '
+    FileOffset:      418
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1733913
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_418_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_432_2:  '
+    FileOffset:      432
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1734251
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_432_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_447_3:  '
+    FileOffset:      447
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1734620
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_447_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_531_4:  '
+    FileOffset:      531
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1736885
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_531_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_535_5:  '
+    FileOffset:      535
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1736972
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_535_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_545_6:  '
+    FileOffset:      545
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1737210
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_545_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_551_7:  '
+    FileOffset:      551
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1737367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_551_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_557_8:  '
+    FileOffset:      557
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1737534
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_557_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_572_9:  '
+    FileOffset:      572
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1737851
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_572_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_586_10:  '
+    FileOffset:      586
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1738155
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_586_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_603_11:  '
+    FileOffset:      603
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\MatrixDecomposition\gesvj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1738547
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_603_11: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      36
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      74
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_1:  '
+    FileOffset:      83
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1740808
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_1:  '
+    FileOffset:      135
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1742029
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_1:  '
+    FileOffset:      156
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1742773
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      170
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_174_1:  '
+    FileOffset:      174
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1743534
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_174_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_2:  '
+    FileOffset:      175
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1743572
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_176_3:  '
+    FileOffset:      176
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1743632
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_176_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_4:  '
+    FileOffset:      187
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1743893
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_188_5:  '
+    FileOffset:      188
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1743953
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_188_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_6:  '
+    FileOffset:      199
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1744234
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_217_1:  '
+    FileOffset:      217
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1744709
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_217_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_218_2:  '
+    FileOffset:      218
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1744765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_218_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_219_3:  '
+    FileOffset:      219
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1744807
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_219_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      255
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_259_1:  '
+    FileOffset:      259
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1745647
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_259_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_271_2:  '
+    FileOffset:      271
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\pomatrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1745941
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_271_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1746842
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1747586
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      75
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_79_1:  '
+    FileOffset:      79
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1748357
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_79_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_80_2:  '
+    FileOffset:      80
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1748395
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_80_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_3:  '
+    FileOffset:      81
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1748455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_92_4:  '
+    FileOffset:      92
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1748719
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_92_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_5:  '
+    FileOffset:      93
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1748779
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_6:  '
+    FileOffset:      104
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1749060
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_1:  '
+    FileOffset:      113
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1749279
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      151
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_1:  '
+    FileOffset:      156
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1750241
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_168_2:  '
+    FileOffset:      168
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gematrixinverse.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1750535
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_168_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\trtrs.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1751417
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\trtrs.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1752161
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      103
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\trtrs.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_107_1:  '
+    FileOffset:      107
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\trtrs.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1753181
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_107_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_2:  '
+    FileOffset:      113
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\trtrs.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1753310
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_3:  '
+    FileOffset:      114
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\trtrs.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1753352
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_125_4:  '
+    FileOffset:      125
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\trtrs.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1753725
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_125_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      36
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      74
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_1:  '
+    FileOffset:      83
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1755921
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_1:  '
+    FileOffset:      135
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1757142
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_1:  '
+    FileOffset:      156
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1757886
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_174_1:  '
+    FileOffset:      174
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1758557
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_174_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_2:  '
+    FileOffset:      175
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1758613
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_186_3:  '
+    FileOffset:      186
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1758866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_186_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_203_1:  '
+    FileOffset:      203
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1759404
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_203_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_204_2:  '
+    FileOffset:      204
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1759464
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_204_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_205_3:  '
+    FileOffset:      205
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1759510
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_205_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      249
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_1:  '
+    FileOffset:      253
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1760515
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_259_2:  '
+    FileOffset:      259
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1760644
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_259_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_260_3:  '
+    FileOffset:      260
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1760686
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_260_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_4:  '
+    FileOffset:      268
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\polinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1760917
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1761771
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_62_1:  '
+    FileOffset:      62
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1762385
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_62_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_75_1:  '
+    FileOffset:      75
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1762748
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_75_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_1:  '
+    FileOffset:      87
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1763129
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_2:  '
+    FileOffset:      88
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1763185
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_3:  '
+    FileOffset:      100
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1763445
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_1:  '
+    FileOffset:      113
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1763837
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_152_1:  '
+    FileOffset:      152
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1764414
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_152_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_2:  '
+    FileOffset:      155
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1764521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_168_3:  '
+    FileOffset:      168
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gelinearsolver.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          1764894
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_168_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_76_1:  '
+    FileOffset:      76
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2458803
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_76_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_237_1:  '
+    FileOffset:      237
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2463374
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_237_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_267_2:  '
+    FileOffset:      267
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2464184
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_267_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_3:  '
+    FileOffset:      301
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2465296
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_333_4:  '
+    FileOffset:      333
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2466167
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_333_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_435_1:  '
+    FileOffset:      435
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2470195
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_435_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_475_2:  '
+    FileOffset:      475
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2471208
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_475_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_545_3:  '
+    FileOffset:      545
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2473103
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_545_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_558_4:  '
+    FileOffset:      558
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2473508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_558_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_581_5:  '
+    FileOffset:      581
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2474435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_581_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_597_6:  '
+    FileOffset:      597
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2474860
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_597_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_651_1:  '
+    FileOffset:      651
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2476670
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_651_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_691_2:  '
+    FileOffset:      691
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2477683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_691_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_761_3:  '
+    FileOffset:      761
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2479578
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_761_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_774_4:  '
+    FileOffset:      774
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2479983
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_774_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_798_5:  '
+    FileOffset:      798
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2480911
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_798_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_815_6:  '
+    FileOffset:      815
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2481337
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_815_6: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      859
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      860
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      861
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      862
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_874_1:  '
+    FileOffset:      874
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2483328
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_874_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_879_2:  '
+    FileOffset:      879
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2483416
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_879_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_892_3:  '
+    FileOffset:      892
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2484002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_892_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      921
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      922
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      923
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      924
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\LinearSolver\gtsv_pcr.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      80
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\EigenSolver\syevj.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_t2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      81
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\EigenSolver\syevj.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_1:  '
+    FileOffset:      91
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\EigenSolver\syevj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2487242
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_2:  '
+    FileOffset:      113
+    FilePath:        'C:\Vitis_Libraries\solver\L2\include\hw\EigenSolver\syevj.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2487899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_66_1:  '
+    FileOffset:      66
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2489650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_66_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_1:  '
+    FileOffset:      81
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2490041
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_2:  '
+    FileOffset:      87
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2490216
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_1:  '
+    FileOffset:      102
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2490610
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_2:  '
+    FileOffset:      108
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2490780
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_3:  '
+    FileOffset:      114
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2490947
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_121_4:  '
+    FileOffset:      121
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2491123
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_121_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_133_1:  '
+    FileOffset:      133
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2491525
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_133_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_2:  '
+    FileOffset:      140
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2491777
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_148_3:  '
+    FileOffset:      148
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2492093
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_148_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_160_1:  '
+    FileOffset:      160
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2492514
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_160_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_165_2:  '
+    FileOffset:      165
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2492672
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_165_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_173_3:  '
+    FileOffset:      173
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2492995
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_173_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      189
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_204_1:  '
+    FileOffset:      204
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2494092
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_204_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_208_2:  '
+    FileOffset:      208
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2494263
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_208_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_216_3:  '
+    FileOffset:      216
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2494633
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_216_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_222_4:  '
+    FileOffset:      222
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2494821
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_222_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_1:  '
+    FileOffset:      243
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2495660
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_245_2:  '
+    FileOffset:      245
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2495737
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_245_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_3:  '
+    FileOffset:      248
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2495837
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_250_4:  '
+    FileOffset:      250
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2495911
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_250_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: RAM_2P_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      282
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_283_1:  '
+    FileOffset:      283
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2497064
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_283_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_285_2:  '
+    FileOffset:      285
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2497116
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_285_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_296_3:  '
+    FileOffset:      296
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2497405
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_296_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_298_4:  '
+    FileOffset:      298
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2497495
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_298_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_305_5:  '
+    FileOffset:      305
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2497801
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_305_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_311_6:  '
+    FileOffset:      311
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2497965
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_311_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_323_7:  '
+    FileOffset:      323
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2498469
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_323_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_331_8:  '
+    FileOffset:      331
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2498680
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_331_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_333_9:  '
+    FileOffset:      333
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\covariance.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2498770
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_333_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_125_1:  '
+    FileOffset:      125
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2502057
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_125_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_2:  '
+    FileOffset:      136
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2502414
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_160_1:  '
+    FileOffset:      160
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2502918
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_160_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_214_1:  '
+    FileOffset:      214
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2504139
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_214_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_238_2:  '
+    FileOffset:      238
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2504515
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_238_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_239_3:  '
+    FileOffset:      239
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2504566
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_239_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_244_4:  '
+    FileOffset:      244
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2504691
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_244_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_245_5:  '
+    FileOffset:      245
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2504751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_245_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_277_1:  '
+    FileOffset:      277
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2505475
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_277_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_278_2:  '
+    FileOffset:      278
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2505531
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_278_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_291_3:  '
+    FileOffset:      291
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2505776
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_291_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_292_4:  '
+    FileOffset:      292
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2505832
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_292_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_308_1:  '
+    FileOffset:      308
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2506118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_308_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_1:  '
+    FileOffset:      321
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2506300
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_322_2:  '
+    FileOffset:      322
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2506359
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_322_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_341_1:  '
+    FileOffset:      341
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2506724
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_341_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_350_2:  '
+    FileOffset:      350
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2506843
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_350_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_351_3:  '
+    FileOffset:      351
+    FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\include\xf_fintech\pca.hpp'
+    Replacements:    
+      - FilePath:        'C:\Vitis_Libraries\quantitative_finance\L1\tests\pca\Principal_Component_Analysis.prj\sol\.autopilot\db\dut.pp.0.cpp'
+        Offset:          2506902
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_351_3: '
+...

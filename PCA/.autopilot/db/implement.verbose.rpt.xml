@@ -1,0 +1,278 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'implement'" level="0">
+<item name = "Date">Wed May  8 02:27:22 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">Principal_Component_Analysis.prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 3.237 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_267">implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1, 261, 261, 0.870 us, 0.870 us, 261, 261, no</column>
+<column name="grp_gesvdj_2D_double_16_1_16_s_fu_280">gesvdj_2D_double_16_1_16_s, 13934, 415008, 46.442 us, 1.383 ms, 13934, 415008, no</column>
+<column name="grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_287">implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2, 260, 260, 0.867 us, 0.867 us, 260, 260, no</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_125_1_fu_297">implement_Pipeline_VITIS_LOOP_125_1, 5, 18, 16.665 ns, 59.994 ns, 5, 18, no</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop_fu_308">implement_Pipeline_NSort_shift_buf_Loop, 2, 4, 6.666 ns, 13.332 ns, 2, 4, no</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_314">implement_Pipeline_NSort_shift_buf_Loop12, 2, 4, 6.666 ns, 13.332 ns, 2, 4, no</column>
+<column name="grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_320">implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_335">implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_238_2_fu_349">implement_Pipeline_VITIS_LOOP_238_2, 5, 5, 16.665 ns, 16.665 ns, 5, 5, no</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_244_4_fu_360">implement_Pipeline_VITIS_LOOP_244_4, ?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- NSort_main_Loop">?, ?, 10 ~ 28, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 274, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">2, 46, 39389, 18701, 0</column>
+<column name="Memory">2, -, 520, 529, 2</column>
+<column name="Multiplexer">-, -, -, 1010, -</column>
+<column name="Register">-, -, 807, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">~0, 1, 4, 4, ~0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, 1, 1, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="dcmp_64ns_64ns_1_2_no_dsp_1_U302">dcmp_64ns_64ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="grp_gesvdj_2D_double_16_1_16_s_fu_280">gesvdj_2D_double_16_1_16_s, 2, 40, 31781, 11902, 0</column>
+<column name="grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_267">implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1, 0, 0, 388, 493, 0</column>
+<column name="grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_287">implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2, 0, 1, 379, 376, 0</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop_fu_308">implement_Pipeline_NSort_shift_buf_Loop, 0, 0, 7, 56, 0</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_314">implement_Pipeline_NSort_shift_buf_Loop12, 0, 0, 7, 56, 0</column>
+<column name="grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_335">implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1, 0, 0, 3444, 2690, 0</column>
+<column name="grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_320">implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1, 0, 1, 2955, 2379, 0</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_125_1_fu_297">implement_Pipeline_VITIS_LOOP_125_1, 0, 0, 86, 293, 0</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_238_2_fu_349">implement_Pipeline_VITIS_LOOP_238_2, 0, 0, 4, 59, 0</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_244_4_fu_360">implement_Pipeline_VITIS_LOOP_244_4, 0, 0, 165, 344, 0</column>
+<column name="mul_32ns_34ns_65_2_1_U305">mul_32ns_34ns_65_2_1, 0, 4, 173, 53, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="dSortedBuf_U">implement_dSortedBuf_RAM_AUTO_1R1W, 0, 64, 65, 0, 3, 64, 1, 192</column>
+<column name="dataA_2D_U">implement_dataA_2D_RAM_T2P_URAM_1R1W, 0, 0, 0, 1, 256, 64, 1, 16384</column>
+<column name="dataU_2D_U">implement_dataA_2D_RAM_T2P_URAM_1R1W, 0, 0, 0, 1, 256, 64, 1, 16384</column>
+<column name="eigVals_U">implement_eigVals_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="pcVecs_U">implement_eigVals_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="pcVecs_1_U">implement_eigVals_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="pcVecs_2_U">implement_eigVals_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="pcVecsNorm_U">implement_eigVals_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="pcVecsNorm_1_U">implement_eigVals_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="pcVecsNorm_2_U">implement_eigVals_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="eigVecs_U">implement_eigVecs_RAM_AUTO_1R1W, 2, 0, 0, 0, 225, 64, 1, 14400</column>
+<column name="iSortedBuf_U">implement_iSortedBuf_RAM_AUTO_1R1W, 0, 8, 9, 0, 3, 8, 1, 24</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln124_fu_409_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln57_fu_384_p2">+, 0, 0, 39, 32, 1</column>
+<column name="mul56_fu_492_p2">-, 0, 0, 39, 32, 32</column>
+<column name="sub_ln158_fu_480_p2">-, 0, 0, 41, 34, 34</column>
+<column name="ap_block_state19_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln124_1_fu_404_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln124_fu_396_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="ap_block_state11_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state21_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln57_fu_389_p3">select, 0, 0, 32, 1, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">107, 22, 1, 22</column>
+<column name="dSortedBuf_address0">37, 7, 2, 14</column>
+<column name="dSortedBuf_address1">26, 5, 2, 10</column>
+<column name="dSortedBuf_ce0">20, 4, 1, 4</column>
+<column name="dSortedBuf_ce1">14, 3, 1, 3</column>
+<column name="dSortedBuf_d0">20, 4, 64, 256</column>
+<column name="dSortedBuf_we0">14, 3, 1, 3</column>
+<column name="dataA_2D_address0">20, 4, 8, 32</column>
+<column name="dataA_2D_ce0">20, 4, 1, 4</column>
+<column name="dataA_2D_ce1">9, 2, 1, 2</column>
+<column name="dataA_2D_d0">14, 3, 64, 192</column>
+<column name="dataA_2D_we0">14, 3, 1, 3</column>
+<column name="dataA_2D_we1">9, 2, 1, 2</column>
+<column name="dataU_2D_address0">14, 3, 8, 24</column>
+<column name="dataU_2D_ce0">14, 3, 1, 3</column>
+<column name="dataU_2D_ce1">9, 2, 1, 2</column>
+<column name="dataU_2D_we0">9, 2, 1, 2</column>
+<column name="dataU_2D_we1">9, 2, 1, 2</column>
+<column name="eigVals_address0">20, 4, 4, 16</column>
+<column name="eigVals_ce0">20, 4, 1, 4</column>
+<column name="eigVals_d0">14, 3, 64, 192</column>
+<column name="eigVals_we0">14, 3, 1, 3</column>
+<column name="eigVecs_address0">14, 3, 8, 24</column>
+<column name="eigVecs_ce0">14, 3, 1, 3</column>
+<column name="eigVecs_we0">9, 2, 1, 2</column>
+<column name="grp_fu_709_ce">20, 4, 1, 4</column>
+<column name="grp_fu_709_opcode">20, 4, 5, 20</column>
+<column name="grp_fu_709_p0">20, 4, 64, 256</column>
+<column name="grp_fu_709_p1">20, 4, 64, 256</column>
+<column name="grp_fu_713_ce">9, 2, 1, 2</column>
+<column name="grp_fu_717_ce">9, 2, 1, 2</column>
+<column name="grp_fu_721_ce">14, 3, 1, 3</column>
+<column name="grp_fu_721_p0">14, 3, 32, 96</column>
+<column name="grp_fu_721_p1">14, 3, 34, 102</column>
+<column name="iSortedBuf_address0">31, 6, 2, 12</column>
+<column name="iSortedBuf_address1">26, 5, 2, 10</column>
+<column name="iSortedBuf_ce0">14, 3, 1, 3</column>
+<column name="iSortedBuf_ce1">14, 3, 1, 3</column>
+<column name="iSortedBuf_d0">20, 4, 8, 32</column>
+<column name="iSortedBuf_we0">14, 3, 1, 3</column>
+<column name="id_fu_66">9, 2, 32, 64</column>
+<column name="pcVecsNorm_1_address0">14, 3, 4, 12</column>
+<column name="pcVecsNorm_1_ce0">14, 3, 1, 3</column>
+<column name="pcVecsNorm_1_we0">9, 2, 1, 2</column>
+<column name="pcVecsNorm_2_address0">14, 3, 4, 12</column>
+<column name="pcVecsNorm_2_ce0">14, 3, 1, 3</column>
+<column name="pcVecsNorm_2_we0">9, 2, 1, 2</column>
+<column name="pcVecsNorm_address0">14, 3, 4, 12</column>
+<column name="pcVecsNorm_ce0">14, 3, 1, 3</column>
+<column name="pcVecsNorm_we0">9, 2, 1, 2</column>
+<column name="pcVecs_1_address0">20, 4, 4, 16</column>
+<column name="pcVecs_1_ce0">20, 4, 1, 4</column>
+<column name="pcVecs_1_we0">9, 2, 1, 2</column>
+<column name="pcVecs_2_address0">20, 4, 4, 16</column>
+<column name="pcVecs_2_ce0">20, 4, 1, 4</column>
+<column name="pcVecs_2_we0">9, 2, 1, 2</column>
+<column name="pcVecs_address0">20, 4, 4, 16</column>
+<column name="pcVecs_ce0">20, 4, 1, 4</column>
+<column name="pcVecs_we0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln124_reg_585">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">21, 0, 21, 0</column>
+<column name="eigIndexes_1_reg_653">8, 0, 8, 0</column>
+<column name="eigIndexes_2_reg_663">8, 0, 8, 0</column>
+<column name="eigIndexes_reg_643">8, 0, 8, 0</column>
+<column name="eigVals_load_reg_600">64, 0, 64, 0</column>
+<column name="empty_85_reg_538">1, 0, 1, 0</column>
+<column name="empty_86_reg_623">1, 0, 1, 0</column>
+<column name="empty_reg_531">8, 0, 8, 0</column>
+<column name="grp_gesvdj_2D_double_16_1_16_s_fu_280_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_267_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_287_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_314_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop_fu_308_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_335_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_320_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_125_1_fu_297_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_238_2_fu_349_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_244_4_fu_360_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln124_reg_578">1, 0, 1, 0</column>
+<column name="id_fu_66">32, 0, 32, 0</column>
+<column name="j_2_loc_fu_74">2, 0, 2, 0</column>
+<column name="mul56_reg_704">32, 0, 32, 0</column>
+<column name="pcVals_1_reg_648">64, 0, 64, 0</column>
+<column name="pcVals_2_reg_658">64, 0, 64, 0</column>
+<column name="pcVals_reg_638">64, 0, 64, 0</column>
+<column name="pcVecs_1_load_reg_694">64, 0, 64, 0</column>
+<column name="pcVecs_2_load_reg_699">64, 0, 64, 0</column>
+<column name="pcVecs_load_reg_689">64, 0, 64, 0</column>
+<column name="select_ln57_reg_543">32, 0, 32, 0</column>
+<column name="sub_ln158_reg_668">34, 0, 34, 0</column>
+<column name="targetBlock_reg_616">1, 0, 1, 0</column>
+<column name="tmp_reg_634">1, 0, 1, 0</column>
+<column name="trunc_ln124_reg_590">8, 0, 8, 0</column>
+<column name="trunc_ln126_1_reg_611">52, 0, 52, 0</column>
+<column name="trunc_ln126_reg_606">63, 0, 63, 0</column>
+<column name="zext_ln125_loc_fu_70">2, 0, 2, 0</column>
+<column name="zext_ln125_reload_cast_reg_629">2, 0, 64, 62</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, implement, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, implement, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, implement, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, implement, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, implement, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_302_p_din0">out, 64, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_302_p_din1">out, 64, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_302_p_dout0">in, 64, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_302_p_ce">out, 1, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_306_p_din0">out, 64, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_306_p_din1">out, 64, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_306_p_dout0">in, 64, ap_ctrl_hs, implement, return value</column>
+<column name="grp_fu_306_p_ce">out, 1, ap_ctrl_hs, implement, return value</column>
+<column name="this_m_pcVals_0_address0">out, 2, ap_memory, this_m_pcVals_0, array</column>
+<column name="this_m_pcVals_0_ce0">out, 1, ap_memory, this_m_pcVals_0, array</column>
+<column name="this_m_pcVals_0_we0">out, 1, ap_memory, this_m_pcVals_0, array</column>
+<column name="this_m_pcVals_0_d0">out, 64, ap_memory, this_m_pcVals_0, array</column>
+<column name="this_m_pcVals_1_address0">out, 2, ap_memory, this_m_pcVals_1, array</column>
+<column name="this_m_pcVals_1_ce0">out, 1, ap_memory, this_m_pcVals_1, array</column>
+<column name="this_m_pcVals_1_we0">out, 1, ap_memory, this_m_pcVals_1, array</column>
+<column name="this_m_pcVals_1_d0">out, 64, ap_memory, this_m_pcVals_1, array</column>
+<column name="this_m_pcVecs_address0">out, 7, ap_memory, this_m_pcVecs, array</column>
+<column name="this_m_pcVecs_ce0">out, 1, ap_memory, this_m_pcVecs, array</column>
+<column name="this_m_pcVecs_we0">out, 1, ap_memory, this_m_pcVecs, array</column>
+<column name="this_m_pcVecs_d0">out, 64, ap_memory, this_m_pcVecs, array</column>
+<column name="this_m_pcVecs_address1">out, 7, ap_memory, this_m_pcVecs, array</column>
+<column name="this_m_pcVecs_ce1">out, 1, ap_memory, this_m_pcVecs, array</column>
+<column name="this_m_pcVecs_we1">out, 1, ap_memory, this_m_pcVecs, array</column>
+<column name="this_m_pcVecs_d1">out, 64, ap_memory, this_m_pcVecs, array</column>
+<column name="noVars">in, 32, ap_none, noVars, scalar</column>
+<column name="standarisedData_address0">out, 8, ap_memory, standarisedData, array</column>
+<column name="standarisedData_ce0">out, 1, ap_memory, standarisedData, array</column>
+<column name="standarisedData_q0">in, 64, ap_memory, standarisedData, array</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,186 @@
+
+
+================================================================
+== Vitis HLS Report for 'aveImpl_double_15_80_1_2_16_Pipeline_loop_a2'
+================================================================
+* Date:           Wed May  8 02:27:11 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        Principal_Component_Analysis.prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.767 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      171|      171|  0.570 us|  0.570 us|  171|  171|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_a2  |      169|      169|        12|          2|          1|    80|       yes|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      115|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      -|        -|        -|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|      115|     -|
+|Register             |        -|      -|      451|       64|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|      451|      294|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln328_fu_137_p2    |         +|   0|  0|  38|          31|           1|
+    |add_ln334_1_fu_158_p2  |         +|   0|  0|  18|          11|          11|
+    |add_ln334_fu_147_p2    |         +|   0|  0|  18|          11|          11|
+    |icmp_ln328_fu_131_p2   |      icmp|   0|  0|  39|          32|          32|
+    |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 115|          86|          57|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |  14|          3|    1|          3|
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_3     |   9|          2|   31|         62|
+    |grp_fu_115_p0            |  14|          3|   64|        192|
+    |grp_fu_115_p1            |  14|          3|   64|        192|
+    |input_r_address0         |  14|          3|   11|         33|
+    |input_r_address1         |  14|          3|   11|         33|
+    |j_fu_50                  |   9|          2|   31|         62|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 115|         25|  216|        583|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   2|   0|    2|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |icmp_ln328_reg_211                |   1|   0|    1|          0|
+    |input_r_addr_3_reg_220            |  11|   0|   11|          0|
+    |input_r_addr_reg_215              |  11|   0|   11|          0|
+    |input_r_load_3_reg_230            |  64|   0|   64|          0|
+    |input_r_load_reg_225              |  64|   0|   64|          0|
+    |j_fu_50                           |  31|   0|   31|          0|
+    |sub151_1_reg_250                  |  64|   0|   64|          0|
+    |sub_reg_245                       |  64|   0|   64|          0|
+    |input_r_addr_3_reg_220            |  64|  32|   11|          0|
+    |input_r_addr_reg_215              |  64|  32|   11|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 451|  64|  345|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |                    Source Object                   |    C Type    |
++---------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|grp_fu_401_p_din0    |  out|   64|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|grp_fu_401_p_din1    |  out|   64|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|grp_fu_401_p_opcode  |  out|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|grp_fu_401_p_dout0   |   in|   64|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|grp_fu_401_p_ce      |  out|    1|  ap_ctrl_hs|  aveImpl<double, 15, 80, 1, 2, 16>_Pipeline_loop_a2|  return value|
+|cols                 |   in|   32|     ap_none|                                                cols|        scalar|
+|add_ln300            |   in|   11|     ap_none|                                           add_ln300|        scalar|
+|input_r_address0     |  out|   11|   ap_memory|                                             input_r|         array|
+|input_r_ce0          |  out|    1|   ap_memory|                                             input_r|         array|
+|input_r_we0          |  out|    1|   ap_memory|                                             input_r|         array|
+|input_r_d0           |  out|   64|   ap_memory|                                             input_r|         array|
+|input_r_q0           |   in|   64|   ap_memory|                                             input_r|         array|
+|input_r_address1     |  out|   11|   ap_memory|                                             input_r|         array|
+|input_r_ce1          |  out|    1|   ap_memory|                                             input_r|         array|
+|input_r_we1          |  out|    1|   ap_memory|                                             input_r|         array|
+|input_r_d1           |  out|   64|   ap_memory|                                             input_r|         array|
+|input_r_q1           |   in|   64|   ap_memory|                                             input_r|         array|
+|add_ln300_1          |   in|   11|     ap_none|                                         add_ln300_1|        scalar|
+|value_r              |   in|   64|     ap_none|                                             value_r|        scalar|
+|cmp33_1              |   in|    1|     ap_none|                                             cmp33_1|        scalar|
+|value_1              |   in|   64|     ap_none|                                             value_1|        scalar|
++---------------------+-----+-----+------------+----------------------------------------------------+--------------+
+

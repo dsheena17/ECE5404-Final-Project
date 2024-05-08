@@ -1,0 +1,1470 @@
+
+
+================================================================
+== Vitis HLS Report for 'dut'
+================================================================
+* Date:           Wed May  8 02:27:11 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        Principal_Component_Analysis.prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  3.237 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+-----------+-------+-------+----------+
+        |                                                           |                                                |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline |
+        |                          Instance                         |                     Module                     |   min   |   max   |    min    |    max    |  min  |  max  |   Type   |
+        +-----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+-----------+-------+-------+----------+
+        |grp_aveImpl_double_15_80_1_2_16_s_fu_119                   |aveImpl_double_15_80_1_2_16_s                   |     4794|     4794|  15.978 us|  15.978 us|   4794|   4794|        no|
+        |grp_covCoreWrapper_double_15_80_1_2_16_s_fu_129            |covCoreWrapper_double_15_80_1_2_16_s            |    40981|    40981|   0.137 ms|   0.137 ms|  40982|  40982|  dataflow|
+        |grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_138  |dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2  |        ?|        ?|          ?|          ?|      ?|      ?|        no|
+        |grp_implement_fu_147                                       |implement                                       |        ?|        ?|          ?|          ?|      ?|      ?|        no|
+        |grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156  |dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3  |        ?|        ?|          ?|          ?|      ?|      ?|        no|
+        +-----------------------------------------------------------+------------------------------------------------+---------+---------+-----------+-----------+-------+-------+----------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 42
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.21>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%cols_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %cols" [dut.cpp:31]   --->   Operation 43 'read' 'cols_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%rows_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %rows" [dut.cpp:31]   --->   Operation 44 'read' 'rows_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln31 = trunc i32 %rows_read" [dut.cpp:31]   --->   Operation 45 'trunc' 'trunc_ln31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (1.20ns)   --->   "%standarisedData = alloca i64 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:268->dut.cpp:36]   --->   Operation 46 'alloca' 'standarisedData' <Predicate = true> <Delay = 1.20>
+ST_1 : Operation 47 [1/1] (1.20ns)   --->   "%covMatrix = alloca i64 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:273->dut.cpp:36]   --->   Operation 47 'alloca' 'covMatrix' <Predicate = true> <Delay = 1.20>
+ST_1 : Operation 48 [1/1] (0.71ns)   --->   "%pca_m_pcVals_0 = alloca i64 1" [dut.cpp:36]   --->   Operation 48 'alloca' 'pca_m_pcVals_0' <Predicate = true> <Delay = 0.71>
+ST_1 : Operation 49 [1/1] (0.71ns)   --->   "%pca_m_pcVals_1 = alloca i64 1" [dut.cpp:36]   --->   Operation 49 'alloca' 'pca_m_pcVals_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 3> <RAM>
+ST_1 : Operation 50 [1/1] (1.20ns)   --->   "%pca_m_pcVecs = alloca i64 1" [dut.cpp:36]   --->   Operation 50 'alloca' 'pca_m_pcVecs' <Predicate = true> <Delay = 1.20>
+ST_1 : Operation 51 [2/2] (2.21ns)   --->   "%call_ln363 = call void @aveImpl<double, 15, 80, 1, 2, 16>, i32 %rows_read, i32 %cols_read, i64 %input_r" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:363->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:276->dut.cpp:36]   --->   Operation 51 'call' 'call_ln363' <Predicate = true> <Delay = 2.21> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 52 [1/2] (0.00ns)   --->   "%call_ln363 = call void @aveImpl<double, 15, 80, 1, 2, 16>, i32 %rows_read, i32 %cols_read, i64 %input_r" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:363->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:276->dut.cpp:36]   --->   Operation 52 'call' 'call_ln363' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 2.29>
+ST_3 : Operation 53 [2/2] (1.21ns)   --->   "%call_ln364 = call void @covCoreWrapper<double, 15, 80, 1, 2, 16>, i32 %rows_read, i32 %cols_read, i64 %input_r, i64 %covMatrix" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:364->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:276->dut.cpp:36]   --->   Operation 53 'call' 'call_ln364' <Predicate = true> <Delay = 1.21> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%zext_ln31 = zext i32 %rows_read" [dut.cpp:31]   --->   Operation 54 'zext' 'zext_ln31' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [2/2] (2.29ns)   --->   "%mul_ln31 = mul i64 %zext_ln31, i64 %zext_ln31" [dut.cpp:31]   --->   Operation 55 'mul' 'mul_ln31' <Predicate = true> <Delay = 2.29> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 2.29> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.29>
+ST_4 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln364 = call void @covCoreWrapper<double, 15, 80, 1, 2, 16>, i32 %rows_read, i32 %cols_read, i64 %input_r, i64 %covMatrix" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech/covariance.hpp:364->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:276->dut.cpp:36]   --->   Operation 56 'call' 'call_ln364' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 57 [1/2] (2.29ns)   --->   "%mul_ln31 = mul i64 %zext_ln31, i64 %zext_ln31" [dut.cpp:31]   --->   Operation 57 'mul' 'mul_ln31' <Predicate = true> <Delay = 2.29> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 2.29> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 58 [2/2] (0.00ns)   --->   "%call_ln31 = call void @dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2, i64 %mul_ln31, i32 %rows_read, i8 %trunc_ln31, i64 %covMatrix, i64 %standarisedData" [dut.cpp:31]   --->   Operation 58 'call' 'call_ln31' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 59 [1/2] (0.00ns)   --->   "%call_ln31 = call void @dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2, i64 %mul_ln31, i32 %rows_read, i8 %trunc_ln31, i64 %covMatrix, i64 %standarisedData" [dut.cpp:31]   --->   Operation 59 'call' 'call_ln31' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 1.00>
+ST_7 : Operation 60 [2/2] (1.00ns)   --->   "%call_ln298 = call void @implement, i64 %pca_m_pcVals_0, i64 %pca_m_pcVals_1, i64 %pca_m_pcVecs, i32 %rows_read, i64 %standarisedData" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:298->dut.cpp:36]   --->   Operation 60 'call' 'call_ln298' <Predicate = true> <Delay = 1.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 61 [1/2] (0.00ns)   --->   "%call_ln298 = call void @implement, i64 %pca_m_pcVals_0, i64 %pca_m_pcVals_1, i64 %pca_m_pcVecs, i32 %rows_read, i64 %standarisedData" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:298->dut.cpp:36]   --->   Operation 61 'call' 'call_ln298' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.71>
+ST_9 : Operation 62 [1/1] (0.00ns)   --->   "%pca_m_pcVals_1_addr = getelementptr i64 %pca_m_pcVals_1, i64 0, i64 0" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 62 'getelementptr' 'pca_m_pcVals_1_addr' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 63 [2/2] (0.71ns)   --->   "%pca_m_pcVals_1_load = load i2 %pca_m_pcVals_1_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 63 'load' 'pca_m_pcVals_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 3> <RAM>
+
+State 10 <SV = 9> <Delay = 0.71>
+ST_10 : Operation 64 [1/2] (0.71ns)   --->   "%pca_m_pcVals_1_load = load i2 %pca_m_pcVals_1_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 64 'load' 'pca_m_pcVals_1_load' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 3> <RAM>
+ST_10 : Operation 65 [1/1] (0.00ns)   --->   "%pca_m_pcVals_1_addr_1 = getelementptr i64 %pca_m_pcVals_1, i64 0, i64 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 65 'getelementptr' 'pca_m_pcVals_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 66 [2/2] (0.71ns)   --->   "%pca_m_pcVals_1_load_1 = load i2 %pca_m_pcVals_1_addr_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 66 'load' 'pca_m_pcVals_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 3> <RAM>
+ST_10 : Operation 67 [1/1] (0.00ns)   --->   "%pca_m_pcVals_1_addr_2 = getelementptr i64 %pca_m_pcVals_1, i64 0, i64 2" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 67 'getelementptr' 'pca_m_pcVals_1_addr_2' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 68 [2/2] (0.71ns)   --->   "%pca_m_pcVals_1_load_2 = load i2 %pca_m_pcVals_1_addr_2" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 68 'load' 'pca_m_pcVals_1_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 3> <RAM>
+
+State 11 <SV = 10> <Delay = 0.71>
+ST_11 : Operation 69 [1/2] (0.71ns)   --->   "%pca_m_pcVals_1_load_1 = load i2 %pca_m_pcVals_1_addr_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 69 'load' 'pca_m_pcVals_1_load_1' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 3> <RAM>
+ST_11 : Operation 70 [1/2] (0.71ns)   --->   "%pca_m_pcVals_1_load_2 = load i2 %pca_m_pcVals_1_addr_2" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 70 'load' 'pca_m_pcVals_1_load_2' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 3> <RAM>
+
+State 12 <SV = 11> <Delay = 2.05>
+ST_12 : Operation 71 [30/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 71 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 72 [30/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 72 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 73 [30/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 73 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 2.05>
+ST_13 : Operation 74 [29/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 74 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_13 : Operation 75 [29/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 75 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_13 : Operation 76 [29/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 76 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 2.05>
+ST_14 : Operation 77 [28/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 77 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_14 : Operation 78 [28/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 78 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_14 : Operation 79 [28/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 79 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 2.05>
+ST_15 : Operation 80 [27/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 80 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_15 : Operation 81 [27/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 81 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_15 : Operation 82 [27/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 82 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 2.05>
+ST_16 : Operation 83 [26/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 83 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_16 : Operation 84 [26/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 84 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_16 : Operation 85 [26/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 85 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 2.05>
+ST_17 : Operation 86 [25/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 86 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_17 : Operation 87 [25/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 87 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_17 : Operation 88 [25/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 88 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 2.05>
+ST_18 : Operation 89 [24/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 89 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_18 : Operation 90 [24/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 90 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_18 : Operation 91 [24/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 91 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 2.05>
+ST_19 : Operation 92 [23/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 92 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_19 : Operation 93 [23/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 93 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_19 : Operation 94 [23/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 94 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 2.05>
+ST_20 : Operation 95 [22/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 95 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_20 : Operation 96 [22/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 96 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_20 : Operation 97 [22/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 97 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 2.05>
+ST_21 : Operation 98 [21/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 98 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_21 : Operation 99 [21/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 99 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_21 : Operation 100 [21/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 100 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 2.05>
+ST_22 : Operation 101 [20/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 101 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_22 : Operation 102 [20/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 102 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_22 : Operation 103 [20/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 103 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 2.05>
+ST_23 : Operation 104 [19/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 104 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_23 : Operation 105 [19/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 105 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_23 : Operation 106 [19/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 106 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 2.05>
+ST_24 : Operation 107 [18/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 107 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_24 : Operation 108 [18/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 108 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_24 : Operation 109 [18/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 109 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 2.05>
+ST_25 : Operation 110 [17/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 110 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_25 : Operation 111 [17/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 111 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_25 : Operation 112 [17/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 112 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 2.05>
+ST_26 : Operation 113 [16/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 113 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_26 : Operation 114 [16/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 114 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_26 : Operation 115 [16/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 115 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 2.05>
+ST_27 : Operation 116 [15/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 116 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_27 : Operation 117 [15/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 117 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_27 : Operation 118 [15/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 118 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 2.05>
+ST_28 : Operation 119 [14/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 119 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_28 : Operation 120 [14/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 120 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_28 : Operation 121 [14/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 121 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 2.05>
+ST_29 : Operation 122 [13/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 122 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_29 : Operation 123 [13/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 123 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_29 : Operation 124 [13/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 124 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 2.05>
+ST_30 : Operation 125 [12/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 125 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_30 : Operation 126 [12/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 126 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_30 : Operation 127 [12/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 127 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 2.05>
+ST_31 : Operation 128 [11/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 128 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_31 : Operation 129 [11/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 129 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_31 : Operation 130 [11/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 130 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 2.05>
+ST_32 : Operation 131 [10/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 131 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_32 : Operation 132 [10/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 132 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_32 : Operation 133 [10/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 133 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 2.05>
+ST_33 : Operation 134 [9/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 134 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_33 : Operation 135 [9/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 135 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_33 : Operation 136 [9/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 136 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 2.05>
+ST_34 : Operation 137 [8/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 137 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_34 : Operation 138 [8/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 138 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_34 : Operation 139 [8/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 139 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 2.05>
+ST_35 : Operation 140 [7/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 140 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_35 : Operation 141 [7/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 141 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_35 : Operation 142 [7/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 142 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 2.05>
+ST_36 : Operation 143 [6/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 143 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_36 : Operation 144 [6/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 144 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_36 : Operation 145 [6/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 145 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 2.05>
+ST_37 : Operation 146 [5/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 146 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_37 : Operation 147 [5/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 147 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_37 : Operation 148 [5/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 148 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 2.05>
+ST_38 : Operation 149 [4/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 149 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_38 : Operation 150 [4/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 150 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_38 : Operation 151 [4/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 151 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 2.05>
+ST_39 : Operation 152 [3/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 152 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_39 : Operation 153 [3/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 153 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_39 : Operation 154 [3/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 154 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 2.05>
+ST_40 : Operation 155 [2/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 155 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_40 : Operation 156 [2/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 156 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_40 : Operation 157 [2/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 157 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 2.05>
+ST_41 : Operation 158 [1/30] (2.05ns)   --->   "%sqrtVals = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 158 'dsqrt' 'sqrtVals' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_41 : Operation 159 [1/30] (2.05ns)   --->   "%sqrtVals_1 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_1" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 159 'dsqrt' 'sqrtVals_1' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_41 : Operation 160 [1/30] (2.05ns)   --->   "%sqrtVals_2 = dsqrt i64 @llvm.sqrt.f64, i64 %pca_m_pcVals_1_load_2" [C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c++\sqrtdouble.cpp:8->C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:343->dut.cpp:37]   --->   Operation 160 'dsqrt' 'sqrtVals_2' <Predicate = true> <Delay = 2.05> <CoreInst = "DSqrt">   --->   Core 52 'DSqrt' <Latency = 29> <II = 1> <Delay = 2.05> <FuncUnit> <Opcode : 'dsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_41 : Operation 161 [1/1] (0.00ns)   --->   "%zext_ln298 = zext i32 %rows_read" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:298->dut.cpp:36]   --->   Operation 161 'zext' 'zext_ln298' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 162 [1/1] (0.00ns)   --->   "%p_shl2 = bitconcatenate i34 @_ssdm_op_BitConcatenate.i34.i32.i2, i32 %rows_read, i2 0" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:298->dut.cpp:36]   --->   Operation 162 'bitconcatenate' 'p_shl2' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 163 [1/1] (0.90ns)   --->   "%sub_ln298 = sub i34 %p_shl2, i34 %zext_ln298" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:298->dut.cpp:36]   --->   Operation 163 'sub' 'sub_ln298' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.90> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 164 [2/2] (0.00ns)   --->   "%call_ln298 = call void @dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3, i34 %sub_ln298, i64 %outputLoadings_2, i64 %outputLoadings_0, i64 %outputLoadings_1, i64 %sqrtVals, i64 %sqrtVals_1, i64 %sqrtVals_2, i64 %pca_m_pcVecs" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:298->dut.cpp:36]   --->   Operation 164 'call' 'call_ln298' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 42 <SV = 41> <Delay = 0.00>
+ST_42 : Operation 165 [1/1] (0.00ns)   --->   "%spectopmodule_ln31 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_28" [dut.cpp:31]   --->   Operation 165 'spectopmodule' 'spectopmodule_ln31' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 166 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %rows"   --->   Operation 166 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 167 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rows, void @empty_11, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 167 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 168 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %cols"   --->   Operation 168 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 169 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cols, void @empty_11, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 169 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 170 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_r, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 170 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 171 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %input_r"   --->   Operation 171 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 172 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outputLoadings_0, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 172 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 173 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %outputLoadings_0"   --->   Operation 173 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 174 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outputLoadings_1, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 174 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 175 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %outputLoadings_1"   --->   Operation 175 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 176 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outputLoadings_2, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 176 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 177 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %outputLoadings_2"   --->   Operation 177 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 178 [1/2] (0.00ns)   --->   "%call_ln298 = call void @dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3, i34 %sub_ln298, i64 %outputLoadings_2, i64 %outputLoadings_0, i64 %outputLoadings_1, i64 %sqrtVals, i64 %sqrtVals_1, i64 %sqrtVals_2, i64 %pca_m_pcVecs" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:298->dut.cpp:36]   --->   Operation 178 'call' 'call_ln298' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 179 [1/1] (0.00ns)   --->   "%ret_ln38 = ret" [dut.cpp:38]   --->   Operation 179 'ret' 'ret_ln38' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ rows]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ cols]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ input_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ outputLoadings_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ outputLoadings_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ outputLoadings_2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+cols_read             (read          ) [ 0011100000000000000000000000000000000000000]
+rows_read             (read          ) [ 0011111111111111111111111111111111111111110]
+trunc_ln31            (trunc         ) [ 0011111000000000000000000000000000000000000]
+standarisedData       (alloca        ) [ 0011111110000000000000000000000000000000000]
+covMatrix             (alloca        ) [ 0011111000000000000000000000000000000000000]
+pca_m_pcVals_0        (alloca        ) [ 0011111110000000000000000000000000000000000]
+pca_m_pcVals_1        (alloca        ) [ 0011111111100000000000000000000000000000000]
+pca_m_pcVecs          (alloca        ) [ 0011111111111111111111111111111111111111111]
+call_ln363            (call          ) [ 0000000000000000000000000000000000000000000]
+zext_ln31             (zext          ) [ 0000100000000000000000000000000000000000000]
+call_ln364            (call          ) [ 0000000000000000000000000000000000000000000]
+mul_ln31              (mul           ) [ 0000011000000000000000000000000000000000000]
+call_ln31             (call          ) [ 0000000000000000000000000000000000000000000]
+call_ln298            (call          ) [ 0000000000000000000000000000000000000000000]
+pca_m_pcVals_1_addr   (getelementptr ) [ 0000000000100000000000000000000000000000000]
+pca_m_pcVals_1_load   (load          ) [ 0000000000011111111111111111111111111111110]
+pca_m_pcVals_1_addr_1 (getelementptr ) [ 0000000000010000000000000000000000000000000]
+pca_m_pcVals_1_addr_2 (getelementptr ) [ 0000000000010000000000000000000000000000000]
+pca_m_pcVals_1_load_1 (load          ) [ 0000000000001111111111111111111111111111110]
+pca_m_pcVals_1_load_2 (load          ) [ 0000000000001111111111111111111111111111110]
+sqrtVals              (dsqrt         ) [ 0000000000000000000000000000000000000000001]
+sqrtVals_1            (dsqrt         ) [ 0000000000000000000000000000000000000000001]
+sqrtVals_2            (dsqrt         ) [ 0000000000000000000000000000000000000000001]
+zext_ln298            (zext          ) [ 0000000000000000000000000000000000000000000]
+p_shl2                (bitconcatenate) [ 0000000000000000000000000000000000000000000]
+sub_ln298             (sub           ) [ 0000000000000000000000000000000000000000001]
+spectopmodule_ln31    (spectopmodule ) [ 0000000000000000000000000000000000000000000]
+specbitsmap_ln0       (specbitsmap   ) [ 0000000000000000000000000000000000000000000]
+specinterface_ln0     (specinterface ) [ 0000000000000000000000000000000000000000000]
+specbitsmap_ln0       (specbitsmap   ) [ 0000000000000000000000000000000000000000000]
+specinterface_ln0     (specinterface ) [ 0000000000000000000000000000000000000000000]
+specinterface_ln0     (specinterface ) [ 0000000000000000000000000000000000000000000]
+specbitsmap_ln0       (specbitsmap   ) [ 0000000000000000000000000000000000000000000]
+specinterface_ln0     (specinterface ) [ 0000000000000000000000000000000000000000000]
+specbitsmap_ln0       (specbitsmap   ) [ 0000000000000000000000000000000000000000000]
+specinterface_ln0     (specinterface ) [ 0000000000000000000000000000000000000000000]
+specbitsmap_ln0       (specbitsmap   ) [ 0000000000000000000000000000000000000000000]
+specinterface_ln0     (specinterface ) [ 0000000000000000000000000000000000000000000]
+specbitsmap_ln0       (specbitsmap   ) [ 0000000000000000000000000000000000000000000]
+call_ln298            (call          ) [ 0000000000000000000000000000000000000000000]
+ret_ln38              (ret           ) [ 0000000000000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="rows">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rows"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="cols">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="cols"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="input_r">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="input_r"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="outputLoadings_0">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputLoadings_0"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="outputLoadings_1">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputLoadings_1"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="outputLoadings_2">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputLoadings_2"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="aveImpl<double, 15, 80, 1, 2, 16>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="covCoreWrapper<double, 15, 80, 1, 2, 16>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="implement"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="llvm.sqrt.f64"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i34.i32.i2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_28"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_11"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_12"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_13"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="standarisedData_alloca_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="1" slack="0"/>
+<pin id="56" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="standarisedData/1 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="covMatrix_alloca_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="1" slack="0"/>
+<pin id="60" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="covMatrix/1 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="pca_m_pcVals_0_alloca_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="1" slack="0"/>
+<pin id="64" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="pca_m_pcVals_0/1 "/>
+</bind>
+</comp>
+
+<comp id="66" class="1004" name="pca_m_pcVals_1_alloca_fu_66">
+<pin_list>
+<pin id="67" dir="0" index="0" bw="1" slack="0"/>
+<pin id="68" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="pca_m_pcVals_1/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="pca_m_pcVecs_alloca_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="1" slack="0"/>
+<pin id="72" dir="1" index="1" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="pca_m_pcVecs/1 "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="cols_read_read_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="32" slack="0"/>
+<pin id="76" dir="0" index="1" bw="32" slack="0"/>
+<pin id="77" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="cols_read/1 "/>
+</bind>
+</comp>
+
+<comp id="80" class="1004" name="rows_read_read_fu_80">
+<pin_list>
+<pin id="81" dir="0" index="0" bw="32" slack="0"/>
+<pin id="82" dir="0" index="1" bw="32" slack="0"/>
+<pin id="83" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="rows_read/1 "/>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="pca_m_pcVals_1_addr_gep_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="64" slack="2147483647"/>
+<pin id="88" dir="0" index="1" bw="1" slack="0"/>
+<pin id="89" dir="0" index="2" bw="1" slack="0"/>
+<pin id="90" dir="1" index="3" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="pca_m_pcVals_1_addr/9 "/>
+</bind>
+</comp>
+
+<comp id="93" class="1004" name="grp_access_fu_93">
+<pin_list>
+<pin id="94" dir="0" index="0" bw="2" slack="0"/>
+<pin id="95" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="96" dir="0" index="2" bw="0" slack="0"/>
+<pin id="106" dir="0" index="4" bw="2" slack="2147483647"/>
+<pin id="107" dir="0" index="5" bw="64" slack="2147483647"/>
+<pin id="108" dir="0" index="6" bw="0" slack="2147483647"/>
+<pin id="97" dir="1" index="3" bw="64" slack="1"/>
+<pin id="109" dir="1" index="7" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="pca_m_pcVals_1_load/9 pca_m_pcVals_1_load_1/10 pca_m_pcVals_1_load_2/10 "/>
+</bind>
+</comp>
+
+<comp id="99" class="1004" name="pca_m_pcVals_1_addr_1_gep_fu_99">
+<pin_list>
+<pin id="100" dir="0" index="0" bw="64" slack="2147483647"/>
+<pin id="101" dir="0" index="1" bw="1" slack="0"/>
+<pin id="102" dir="0" index="2" bw="1" slack="0"/>
+<pin id="103" dir="1" index="3" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="pca_m_pcVals_1_addr_1/10 "/>
+</bind>
+</comp>
+
+<comp id="111" class="1004" name="pca_m_pcVals_1_addr_2_gep_fu_111">
+<pin_list>
+<pin id="112" dir="0" index="0" bw="64" slack="2147483647"/>
+<pin id="113" dir="0" index="1" bw="1" slack="0"/>
+<pin id="114" dir="0" index="2" bw="3" slack="0"/>
+<pin id="115" dir="1" index="3" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="pca_m_pcVals_1_addr_2/10 "/>
+</bind>
+</comp>
+
+<comp id="119" class="1004" name="grp_aveImpl_double_15_80_1_2_16_s_fu_119">
+<pin_list>
+<pin id="120" dir="0" index="0" bw="0" slack="0"/>
+<pin id="121" dir="0" index="1" bw="32" slack="0"/>
+<pin id="122" dir="0" index="2" bw="32" slack="0"/>
+<pin id="123" dir="0" index="3" bw="64" slack="0"/>
+<pin id="124" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln363/1 "/>
+</bind>
+</comp>
+
+<comp id="129" class="1004" name="grp_covCoreWrapper_double_15_80_1_2_16_s_fu_129">
+<pin_list>
+<pin id="130" dir="0" index="0" bw="0" slack="0"/>
+<pin id="131" dir="0" index="1" bw="32" slack="2"/>
+<pin id="132" dir="0" index="2" bw="32" slack="2"/>
+<pin id="133" dir="0" index="3" bw="64" slack="0"/>
+<pin id="134" dir="0" index="4" bw="64" slack="2147483647"/>
+<pin id="135" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln364/3 "/>
+</bind>
+</comp>
+
+<comp id="138" class="1004" name="grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_138">
+<pin_list>
+<pin id="139" dir="0" index="0" bw="0" slack="0"/>
+<pin id="140" dir="0" index="1" bw="64" slack="1"/>
+<pin id="141" dir="0" index="2" bw="32" slack="4"/>
+<pin id="142" dir="0" index="3" bw="8" slack="4"/>
+<pin id="143" dir="0" index="4" bw="64" slack="2147483647"/>
+<pin id="144" dir="0" index="5" bw="64" slack="2147483647"/>
+<pin id="145" dir="1" index="6" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln31/5 "/>
+</bind>
+</comp>
+
+<comp id="147" class="1004" name="grp_implement_fu_147">
+<pin_list>
+<pin id="148" dir="0" index="0" bw="0" slack="0"/>
+<pin id="149" dir="0" index="1" bw="64" slack="2147483647"/>
+<pin id="150" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="151" dir="0" index="3" bw="64" slack="2147483647"/>
+<pin id="152" dir="0" index="4" bw="32" slack="6"/>
+<pin id="153" dir="0" index="5" bw="64" slack="2147483647"/>
+<pin id="154" dir="1" index="6" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln298/7 "/>
+</bind>
+</comp>
+
+<comp id="156" class="1004" name="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156">
+<pin_list>
+<pin id="157" dir="0" index="0" bw="0" slack="0"/>
+<pin id="158" dir="0" index="1" bw="34" slack="0"/>
+<pin id="159" dir="0" index="2" bw="64" slack="0"/>
+<pin id="160" dir="0" index="3" bw="64" slack="0"/>
+<pin id="161" dir="0" index="4" bw="64" slack="0"/>
+<pin id="162" dir="0" index="5" bw="64" slack="0"/>
+<pin id="163" dir="0" index="6" bw="64" slack="0"/>
+<pin id="164" dir="0" index="7" bw="64" slack="0"/>
+<pin id="165" dir="0" index="8" bw="64" slack="2147483647"/>
+<pin id="166" dir="1" index="9" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln298/41 "/>
+</bind>
+</comp>
+
+<comp id="171" class="1004" name="grp_fu_171">
+<pin_list>
+<pin id="172" dir="0" index="0" bw="64" slack="0"/>
+<pin id="173" dir="0" index="1" bw="64" slack="2"/>
+<pin id="174" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="dsqrt(518) " fcode="dsqrt"/>
+<opset="sqrtVals/12 "/>
+</bind>
+</comp>
+
+<comp id="177" class="1004" name="grp_fu_177">
+<pin_list>
+<pin id="178" dir="0" index="0" bw="64" slack="0"/>
+<pin id="179" dir="0" index="1" bw="64" slack="1"/>
+<pin id="180" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="dsqrt(518) " fcode="dsqrt"/>
+<opset="sqrtVals_1/12 "/>
+</bind>
+</comp>
+
+<comp id="183" class="1004" name="grp_fu_183">
+<pin_list>
+<pin id="184" dir="0" index="0" bw="64" slack="0"/>
+<pin id="185" dir="0" index="1" bw="64" slack="1"/>
+<pin id="186" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="dsqrt(518) " fcode="dsqrt"/>
+<opset="sqrtVals_2/12 "/>
+</bind>
+</comp>
+
+<comp id="189" class="1004" name="grp_fu_189">
+<pin_list>
+<pin id="190" dir="0" index="0" bw="32" slack="0"/>
+<pin id="191" dir="0" index="1" bw="32" slack="0"/>
+<pin id="192" dir="1" index="2" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="mul_ln31/3 "/>
+</bind>
+</comp>
+
+<comp id="193" class="1004" name="trunc_ln31_fu_193">
+<pin_list>
+<pin id="194" dir="0" index="0" bw="32" slack="0"/>
+<pin id="195" dir="1" index="1" bw="8" slack="4"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln31/1 "/>
+</bind>
+</comp>
+
+<comp id="197" class="1004" name="zext_ln31_fu_197">
+<pin_list>
+<pin id="198" dir="0" index="0" bw="32" slack="2"/>
+<pin id="199" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln31/3 "/>
+</bind>
+</comp>
+
+<comp id="202" class="1004" name="zext_ln298_fu_202">
+<pin_list>
+<pin id="203" dir="0" index="0" bw="32" slack="40"/>
+<pin id="204" dir="1" index="1" bw="34" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln298/41 "/>
+</bind>
+</comp>
+
+<comp id="205" class="1004" name="p_shl2_fu_205">
+<pin_list>
+<pin id="206" dir="0" index="0" bw="34" slack="0"/>
+<pin id="207" dir="0" index="1" bw="32" slack="40"/>
+<pin id="208" dir="0" index="2" bw="1" slack="0"/>
+<pin id="209" dir="1" index="3" bw="34" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="p_shl2/41 "/>
+</bind>
+</comp>
+
+<comp id="212" class="1004" name="sub_ln298_fu_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="34" slack="0"/>
+<pin id="214" dir="0" index="1" bw="32" slack="0"/>
+<pin id="215" dir="1" index="2" bw="34" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sub(10) " fcode="sub"/>
+<opset="sub_ln298/41 "/>
+</bind>
+</comp>
+
+<comp id="219" class="1005" name="cols_read_reg_219">
+<pin_list>
+<pin id="220" dir="0" index="0" bw="32" slack="1"/>
+<pin id="221" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="cols_read "/>
+</bind>
+</comp>
+
+<comp id="225" class="1005" name="rows_read_reg_225">
+<pin_list>
+<pin id="226" dir="0" index="0" bw="32" slack="1"/>
+<pin id="227" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="rows_read "/>
+</bind>
+</comp>
+
+<comp id="236" class="1005" name="trunc_ln31_reg_236">
+<pin_list>
+<pin id="237" dir="0" index="0" bw="8" slack="4"/>
+<pin id="238" dir="1" index="1" bw="8" slack="4"/>
+</pin_list>
+<bind>
+<opset="trunc_ln31 "/>
+</bind>
+</comp>
+
+<comp id="241" class="1005" name="zext_ln31_reg_241">
+<pin_list>
+<pin id="242" dir="0" index="0" bw="64" slack="1"/>
+<pin id="243" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="zext_ln31 "/>
+</bind>
+</comp>
+
+<comp id="247" class="1005" name="mul_ln31_reg_247">
+<pin_list>
+<pin id="248" dir="0" index="0" bw="64" slack="1"/>
+<pin id="249" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="mul_ln31 "/>
+</bind>
+</comp>
+
+<comp id="252" class="1005" name="pca_m_pcVals_1_addr_reg_252">
+<pin_list>
+<pin id="253" dir="0" index="0" bw="2" slack="1"/>
+<pin id="254" dir="1" index="1" bw="2" slack="1"/>
+</pin_list>
+<bind>
+<opset="pca_m_pcVals_1_addr "/>
+</bind>
+</comp>
+
+<comp id="257" class="1005" name="pca_m_pcVals_1_load_reg_257">
+<pin_list>
+<pin id="258" dir="0" index="0" bw="64" slack="2"/>
+<pin id="259" dir="1" index="1" bw="64" slack="2"/>
+</pin_list>
+<bind>
+<opset="pca_m_pcVals_1_load "/>
+</bind>
+</comp>
+
+<comp id="262" class="1005" name="pca_m_pcVals_1_addr_1_reg_262">
+<pin_list>
+<pin id="263" dir="0" index="0" bw="2" slack="1"/>
+<pin id="264" dir="1" index="1" bw="2" slack="1"/>
+</pin_list>
+<bind>
+<opset="pca_m_pcVals_1_addr_1 "/>
+</bind>
+</comp>
+
+<comp id="267" class="1005" name="pca_m_pcVals_1_addr_2_reg_267">
+<pin_list>
+<pin id="268" dir="0" index="0" bw="2" slack="1"/>
+<pin id="269" dir="1" index="1" bw="2" slack="1"/>
+</pin_list>
+<bind>
+<opset="pca_m_pcVals_1_addr_2 "/>
+</bind>
+</comp>
+
+<comp id="272" class="1005" name="pca_m_pcVals_1_load_1_reg_272">
+<pin_list>
+<pin id="273" dir="0" index="0" bw="64" slack="1"/>
+<pin id="274" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="pca_m_pcVals_1_load_1 "/>
+</bind>
+</comp>
+
+<comp id="277" class="1005" name="pca_m_pcVals_1_load_2_reg_277">
+<pin_list>
+<pin id="278" dir="0" index="0" bw="64" slack="1"/>
+<pin id="279" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="pca_m_pcVals_1_load_2 "/>
+</bind>
+</comp>
+
+<comp id="282" class="1005" name="sqrtVals_reg_282">
+<pin_list>
+<pin id="283" dir="0" index="0" bw="64" slack="1"/>
+<pin id="284" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="sqrtVals "/>
+</bind>
+</comp>
+
+<comp id="287" class="1005" name="sqrtVals_1_reg_287">
+<pin_list>
+<pin id="288" dir="0" index="0" bw="64" slack="1"/>
+<pin id="289" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="sqrtVals_1 "/>
+</bind>
+</comp>
+
+<comp id="292" class="1005" name="sqrtVals_2_reg_292">
+<pin_list>
+<pin id="293" dir="0" index="0" bw="64" slack="1"/>
+<pin id="294" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="sqrtVals_2 "/>
+</bind>
+</comp>
+
+<comp id="297" class="1005" name="sub_ln298_reg_297">
+<pin_list>
+<pin id="298" dir="0" index="0" bw="34" slack="1"/>
+<pin id="299" dir="1" index="1" bw="34" slack="1"/>
+</pin_list>
+<bind>
+<opset="sub_ln298 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="57"><net_src comp="14" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="61"><net_src comp="14" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="65"><net_src comp="14" pin="0"/><net_sink comp="62" pin=0"/></net>
+
+<net id="69"><net_src comp="14" pin="0"/><net_sink comp="66" pin=0"/></net>
+
+<net id="73"><net_src comp="14" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="78"><net_src comp="12" pin="0"/><net_sink comp="74" pin=0"/></net>
+
+<net id="79"><net_src comp="2" pin="0"/><net_sink comp="74" pin=1"/></net>
+
+<net id="84"><net_src comp="12" pin="0"/><net_sink comp="80" pin=0"/></net>
+
+<net id="85"><net_src comp="0" pin="0"/><net_sink comp="80" pin=1"/></net>
+
+<net id="91"><net_src comp="24" pin="0"/><net_sink comp="86" pin=1"/></net>
+
+<net id="92"><net_src comp="24" pin="0"/><net_sink comp="86" pin=2"/></net>
+
+<net id="98"><net_src comp="86" pin="3"/><net_sink comp="93" pin=0"/></net>
+
+<net id="104"><net_src comp="24" pin="0"/><net_sink comp="99" pin=1"/></net>
+
+<net id="105"><net_src comp="14" pin="0"/><net_sink comp="99" pin=2"/></net>
+
+<net id="110"><net_src comp="99" pin="3"/><net_sink comp="93" pin=2"/></net>
+
+<net id="116"><net_src comp="24" pin="0"/><net_sink comp="111" pin=1"/></net>
+
+<net id="117"><net_src comp="26" pin="0"/><net_sink comp="111" pin=2"/></net>
+
+<net id="118"><net_src comp="111" pin="3"/><net_sink comp="93" pin=0"/></net>
+
+<net id="125"><net_src comp="16" pin="0"/><net_sink comp="119" pin=0"/></net>
+
+<net id="126"><net_src comp="80" pin="2"/><net_sink comp="119" pin=1"/></net>
+
+<net id="127"><net_src comp="74" pin="2"/><net_sink comp="119" pin=2"/></net>
+
+<net id="128"><net_src comp="4" pin="0"/><net_sink comp="119" pin=3"/></net>
+
+<net id="136"><net_src comp="18" pin="0"/><net_sink comp="129" pin=0"/></net>
+
+<net id="137"><net_src comp="4" pin="0"/><net_sink comp="129" pin=3"/></net>
+
+<net id="146"><net_src comp="20" pin="0"/><net_sink comp="138" pin=0"/></net>
+
+<net id="155"><net_src comp="22" pin="0"/><net_sink comp="147" pin=0"/></net>
+
+<net id="167"><net_src comp="34" pin="0"/><net_sink comp="156" pin=0"/></net>
+
+<net id="168"><net_src comp="10" pin="0"/><net_sink comp="156" pin=2"/></net>
+
+<net id="169"><net_src comp="6" pin="0"/><net_sink comp="156" pin=3"/></net>
+
+<net id="170"><net_src comp="8" pin="0"/><net_sink comp="156" pin=4"/></net>
+
+<net id="175"><net_src comp="171" pin="2"/><net_sink comp="156" pin=5"/></net>
+
+<net id="176"><net_src comp="28" pin="0"/><net_sink comp="171" pin=0"/></net>
+
+<net id="181"><net_src comp="177" pin="2"/><net_sink comp="156" pin=6"/></net>
+
+<net id="182"><net_src comp="28" pin="0"/><net_sink comp="177" pin=0"/></net>
+
+<net id="187"><net_src comp="183" pin="2"/><net_sink comp="156" pin=7"/></net>
+
+<net id="188"><net_src comp="28" pin="0"/><net_sink comp="183" pin=0"/></net>
+
+<net id="196"><net_src comp="80" pin="2"/><net_sink comp="193" pin=0"/></net>
+
+<net id="200"><net_src comp="197" pin="1"/><net_sink comp="189" pin=0"/></net>
+
+<net id="201"><net_src comp="197" pin="1"/><net_sink comp="189" pin=1"/></net>
+
+<net id="210"><net_src comp="30" pin="0"/><net_sink comp="205" pin=0"/></net>
+
+<net id="211"><net_src comp="32" pin="0"/><net_sink comp="205" pin=2"/></net>
+
+<net id="216"><net_src comp="205" pin="3"/><net_sink comp="212" pin=0"/></net>
+
+<net id="217"><net_src comp="202" pin="1"/><net_sink comp="212" pin=1"/></net>
+
+<net id="218"><net_src comp="212" pin="2"/><net_sink comp="156" pin=1"/></net>
+
+<net id="222"><net_src comp="74" pin="2"/><net_sink comp="219" pin=0"/></net>
+
+<net id="223"><net_src comp="219" pin="1"/><net_sink comp="119" pin=2"/></net>
+
+<net id="224"><net_src comp="219" pin="1"/><net_sink comp="129" pin=2"/></net>
+
+<net id="228"><net_src comp="80" pin="2"/><net_sink comp="225" pin=0"/></net>
+
+<net id="229"><net_src comp="225" pin="1"/><net_sink comp="119" pin=1"/></net>
+
+<net id="230"><net_src comp="225" pin="1"/><net_sink comp="129" pin=1"/></net>
+
+<net id="231"><net_src comp="225" pin="1"/><net_sink comp="197" pin=0"/></net>
+
+<net id="232"><net_src comp="225" pin="1"/><net_sink comp="138" pin=2"/></net>
+
+<net id="233"><net_src comp="225" pin="1"/><net_sink comp="147" pin=4"/></net>
+
+<net id="234"><net_src comp="225" pin="1"/><net_sink comp="202" pin=0"/></net>
+
+<net id="235"><net_src comp="225" pin="1"/><net_sink comp="205" pin=1"/></net>
+
+<net id="239"><net_src comp="193" pin="1"/><net_sink comp="236" pin=0"/></net>
+
+<net id="240"><net_src comp="236" pin="1"/><net_sink comp="138" pin=3"/></net>
+
+<net id="244"><net_src comp="197" pin="1"/><net_sink comp="241" pin=0"/></net>
+
+<net id="245"><net_src comp="241" pin="1"/><net_sink comp="189" pin=0"/></net>
+
+<net id="246"><net_src comp="241" pin="1"/><net_sink comp="189" pin=1"/></net>
+
+<net id="250"><net_src comp="189" pin="2"/><net_sink comp="247" pin=0"/></net>
+
+<net id="251"><net_src comp="247" pin="1"/><net_sink comp="138" pin=1"/></net>
+
+<net id="255"><net_src comp="86" pin="3"/><net_sink comp="252" pin=0"/></net>
+
+<net id="256"><net_src comp="252" pin="1"/><net_sink comp="93" pin=0"/></net>
+
+<net id="260"><net_src comp="93" pin="3"/><net_sink comp="257" pin=0"/></net>
+
+<net id="261"><net_src comp="257" pin="1"/><net_sink comp="171" pin=1"/></net>
+
+<net id="265"><net_src comp="99" pin="3"/><net_sink comp="262" pin=0"/></net>
+
+<net id="266"><net_src comp="262" pin="1"/><net_sink comp="93" pin=2"/></net>
+
+<net id="270"><net_src comp="111" pin="3"/><net_sink comp="267" pin=0"/></net>
+
+<net id="271"><net_src comp="267" pin="1"/><net_sink comp="93" pin=0"/></net>
+
+<net id="275"><net_src comp="93" pin="7"/><net_sink comp="272" pin=0"/></net>
+
+<net id="276"><net_src comp="272" pin="1"/><net_sink comp="177" pin=1"/></net>
+
+<net id="280"><net_src comp="93" pin="3"/><net_sink comp="277" pin=0"/></net>
+
+<net id="281"><net_src comp="277" pin="1"/><net_sink comp="183" pin=1"/></net>
+
+<net id="285"><net_src comp="171" pin="2"/><net_sink comp="282" pin=0"/></net>
+
+<net id="286"><net_src comp="282" pin="1"/><net_sink comp="156" pin=5"/></net>
+
+<net id="290"><net_src comp="177" pin="2"/><net_sink comp="287" pin=0"/></net>
+
+<net id="291"><net_src comp="287" pin="1"/><net_sink comp="156" pin=6"/></net>
+
+<net id="295"><net_src comp="183" pin="2"/><net_sink comp="292" pin=0"/></net>
+
+<net id="296"><net_src comp="292" pin="1"/><net_sink comp="156" pin=7"/></net>
+
+<net id="300"><net_src comp="212" pin="2"/><net_sink comp="297" pin=0"/></net>
+
+<net id="301"><net_src comp="297" pin="1"/><net_sink comp="156" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: input_r | {1 2 }
+	Port: outputLoadings_0 | {41 42 }
+	Port: outputLoadings_1 | {41 42 }
+	Port: outputLoadings_2 | {41 42 }
+ - Input state : 
+	Port: dut : rows | {1 }
+	Port: dut : cols | {1 }
+	Port: dut : input_r | {1 2 3 4 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+		mul_ln31 : 1
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+		pca_m_pcVals_1_load : 1
+	State 10
+		pca_m_pcVals_1_load_1 : 1
+		pca_m_pcVals_1_load_2 : 1
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+		sub_ln298 : 1
+		call_ln298 : 2
+	State 42
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                      Functional Unit                      |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |          grp_aveImpl_double_15_80_1_2_16_s_fu_119         |    0    |    31   | 9.33079 |   9215  |   4843  |    0    |
+|          |      grp_covCoreWrapper_double_15_80_1_2_16_s_fu_129      |    0    |    25   | 10.2813 |  11153  |   4176  |    0    |
+|   call   | grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_138 |    0    |    1    | 0.806857|   265   |   384   |    0    |
+|          |                    grp_implement_fu_147                   |    4    |    66   |  40.854 |  24668  |  15496  |    2    |
+|          | grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156 |    0    |    8    |  0.387  |   903   |   369   |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|    mul   |                         grp_fu_189                        |    0    |    4    |    0    |   165   |    49   |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|    sub   |                      sub_ln298_fu_212                     |    0    |    0    |    0    |    0    |    41   |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   read   |                    cols_read_read_fu_74                   |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                    rows_read_read_fu_80                   |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          |                         grp_fu_171                        |    0    |    0    |    0    |    0    |    0    |    0    |
+|   dsqrt  |                         grp_fu_177                        |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                         grp_fu_183                        |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   trunc  |                     trunc_ln31_fu_193                     |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   zext   |                      zext_ln31_fu_197                     |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |                     zext_ln298_fu_202                     |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|bitconcatenate|                       p_shl2_fu_205                       |    0    |    0    |    0    |    0    |    0    |    0    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                           |    4    |   135   | 61.6599 |  46369  |  25358  |    2    |
+|----------|-----------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+
+Memories:
++---------------+--------+--------+--------+--------+
+|               |  BRAM  |   FF   |   LUT  |  URAM  |
++---------------+--------+--------+--------+--------+
+|   covMatrix   |    2   |    0   |    0   |    0   |
+| pca_m_pcVals_0|    0   |   64   |   65   |    0   |
+| pca_m_pcVals_1|    0   |   64   |   65   |    0   |
+|  pca_m_pcVecs |    2   |    0   |    0   |    0   |
+|standarisedData|    2   |    0   |    0   |    0   |
++---------------+--------+--------+--------+--------+
+|     Total     |    6   |   128  |   130  |    0   |
++---------------+--------+--------+--------+--------+
+
+* Register list:
++-----------------------------+--------+
+|                             |   FF   |
++-----------------------------+--------+
+|      cols_read_reg_219      |   32   |
+|       mul_ln31_reg_247      |   64   |
+|pca_m_pcVals_1_addr_1_reg_262|    2   |
+|pca_m_pcVals_1_addr_2_reg_267|    2   |
+| pca_m_pcVals_1_addr_reg_252 |    2   |
+|pca_m_pcVals_1_load_1_reg_272|   64   |
+|pca_m_pcVals_1_load_2_reg_277|   64   |
+| pca_m_pcVals_1_load_reg_257 |   64   |
+|      rows_read_reg_225      |   32   |
+|      sqrtVals_1_reg_287     |   64   |
+|      sqrtVals_2_reg_292     |   64   |
+|       sqrtVals_reg_282      |   64   |
+|      sub_ln298_reg_297      |   34   |
+|      trunc_ln31_reg_236     |    8   |
+|      zext_ln31_reg_241      |   64   |
++-----------------------------+--------+
+|            Total            |   624  |
++-----------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------------------------------------------------------|------|------|------|--------||---------||---------|
+|                            Comp                           |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-----------------------------------------------------------|------|------|------|--------||---------||---------|
+|                      grp_access_fu_93                     |  p0  |   4  |   2  |    8   ||    20   |
+|                      grp_access_fu_93                     |  p2  |   2  |   0  |    0   ||    9    |
+|          grp_aveImpl_double_15_80_1_2_16_s_fu_119         |  p1  |   2  |  32  |   64   ||    9    |
+|          grp_aveImpl_double_15_80_1_2_16_s_fu_119         |  p2  |   2  |  32  |   64   ||    9    |
+| grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156 |  p1  |   2  |  34  |   68   ||    9    |
+| grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156 |  p5  |   2  |  64  |   128  ||    9    |
+| grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156 |  p6  |   2  |  64  |   128  ||    9    |
+| grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156 |  p7  |   2  |  64  |   128  ||    9    |
+|                         grp_fu_189                        |  p0  |   2  |  32  |   64   ||    9    |
+|                         grp_fu_189                        |  p1  |   2  |  32  |   64   ||    9    |
+|-----------------------------------------------------------|------|------|------|--------||---------||---------|
+|                           Total                           |      |      |      |   716  || 3.93571 ||   101   |
+|-----------------------------------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    4   |   135  |   61   |  46369 |  25358 |    2   |
+|   Memory  |    6   |    -   |    -   |   128  |   130  |    0   |
+|Multiplexer|    -   |    -   |    3   |    -   |   101  |    -   |
+|  Register |    -   |    -   |    -   |   624  |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |   10   |   135  |   65   |  47121 |  25589 |    2   |
++-----------+--------+--------+--------+--------+--------+--------+

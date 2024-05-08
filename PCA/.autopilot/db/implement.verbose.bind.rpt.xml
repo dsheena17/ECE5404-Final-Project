@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'implement'" level="0">
+<item name = "Date">Wed May  8 02:27:10 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">Principal_Component_Analysis.prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 3.237 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1_fu_267">implement_Pipeline_Loop_init_A_VITIS_LOOP_91_1, 261, 261, 0.870 us, 0.870 us, 261, 261, no</column>
+<column name="grp_gesvdj_2D_double_16_1_16_s_fu_280">gesvdj_2D_double_16_1_16_s, 13934, 415008, 46.442 us, 1.383 ms, 13934, 415008, no</column>
+<column name="grp_implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2_fu_287">implement_Pipeline_Loop_postcal_VITIS_LOOP_113_2, 260, 260, 0.867 us, 0.867 us, 260, 260, no</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_125_1_fu_297">implement_Pipeline_VITIS_LOOP_125_1, 5, 18, 16.665 ns, 59.994 ns, 5, 18, no</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop_fu_308">implement_Pipeline_NSort_shift_buf_Loop, 2, 4, 6.666 ns, 13.332 ns, 2, 4, no</column>
+<column name="grp_implement_Pipeline_NSort_shift_buf_Loop12_fu_314">implement_Pipeline_NSort_shift_buf_Loop12, 2, 4, 6.666 ns, 13.332 ns, 2, 4, no</column>
+<column name="grp_implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1_fu_320">implement_Pipeline_PCA_filtermat_loop_VITIS_LOOP_160_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1_fu_335">implement_Pipeline_PCA_Sign_Normalization_Loop_VITIS_LOOP_214_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_238_2_fu_349">implement_Pipeline_VITIS_LOOP_238_2, 5, 5, 16.665 ns, 16.665 ns, 5, 5, no</column>
+<column name="grp_implement_Pipeline_VITIS_LOOP_244_4_fu_360">implement_Pipeline_VITIS_LOOP_244_4, ?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- NSort_main_Loop">?, ?, 10 ~ 28, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

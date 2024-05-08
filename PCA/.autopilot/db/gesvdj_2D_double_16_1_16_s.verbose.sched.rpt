@@ -1,0 +1,235 @@
+
+
+================================================================
+== Vitis HLS Report for 'gesvdj_2D_double_16_1_16_s'
+================================================================
+* Date:           Wed May  8 02:27:06 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        Principal_Component_Analysis.prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.541 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |    Interval    | Pipeline|
+    |   min   |   max   |    min    |    max   |  min  |   max  |   Type  |
+    +---------+---------+-----------+----------+-------+--------+---------+
+    |    13934|   415008|  46.442 us|  1.383 ms|  13934|  415008|       no|
+    +---------+---------+-----------+----------+-------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name         |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop_init_I_Loop_init_J  |      261|      261|         7|          1|          1|   256|       yes|
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 7
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 7, States = { 2 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 9 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 2 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082]   --->   Operation 11 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%r = alloca i32 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 12 'alloca' 'r' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 13 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %dataU_out, i64 666, i64 31, i64 18446744073709551615"   --->   Operation 14 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %dataA, i64 666, i64 31, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%lda_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %lda" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1075]   --->   Operation 16 'read' 'lda_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.38ns)   --->   "%store_ln0 = store i9 0, i9 %indvar_flatten"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 18 [1/1] (0.38ns)   --->   "%store_ln1079 = store i5 0, i5 %r" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 18 'store' 'store_ln1079' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 19 [1/1] (0.38ns)   --->   "%store_ln1082 = store i5 0, i5 %j" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082]   --->   Operation 19 'store' 'store_ln1082' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln1079 = br void %for.inc" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 20 'br' 'br_ln1079' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.07>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i9 %indvar_flatten" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 21 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.71ns)   --->   "%icmp_ln1079 = icmp_eq  i9 %indvar_flatten_load, i9 256" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 22 'icmp' 'icmp_ln1079' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.71ns)   --->   "%add_ln1079_1 = add i9 %indvar_flatten_load, i9 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 23 'add' 'add_ln1079_1' <Predicate = true> <Delay = 0.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln1079 = br i1 %icmp_ln1079, void %for.inc14, void %for.end16" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 24 'br' 'br_ln1079' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%j_load = load i5 %j" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082]   --->   Operation 25 'load' 'j_load' <Predicate = (!icmp_ln1079)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%r_load = load i5 %r" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 26 'load' 'r_load' <Predicate = (!icmp_ln1079)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.70ns)   --->   "%add_ln1079 = add i5 %r_load, i5 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 27 'add' 'add_ln1079' <Predicate = (!icmp_ln1079)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.70ns)   --->   "%icmp_ln1082 = icmp_eq  i5 %j_load, i5 16" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082]   --->   Operation 28 'icmp' 'icmp_ln1082' <Predicate = (!icmp_ln1079)> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.27ns)   --->   "%select_ln1079 = select i1 %icmp_ln1082, i5 0, i5 %j_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 29 'select' 'select_ln1079' <Predicate = (!icmp_ln1079)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.27ns)   --->   "%select_ln1079_1 = select i1 %icmp_ln1082, i5 %add_ln1079, i5 %r_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 30 'select' 'select_ln1079_1' <Predicate = (!icmp_ln1079)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%trunc_ln1085 = trunc i5 %select_ln1079_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 31 'trunc' 'trunc_ln1085' <Predicate = (!icmp_ln1079)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i4.i4, i4 %trunc_ln1085, i4 0" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 32 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln1079)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln1085_1 = zext i5 %select_ln1079" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 33 'zext' 'zext_ln1085_1' <Predicate = (!icmp_ln1079)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.70ns)   --->   "%add_ln1085 = add i8 %tmp, i8 %zext_ln1085_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 34 'add' 'add_ln1085' <Predicate = (!icmp_ln1079)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.70ns)   --->   "%icmp_ln1085 = icmp_eq  i5 %select_ln1079_1, i5 %select_ln1079" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 35 'icmp' 'icmp_ln1085' <Predicate = (!icmp_ln1079)> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.70ns)   --->   "%add_ln1082 = add i5 %select_ln1079, i5 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082]   --->   Operation 36 'add' 'add_ln1082' <Predicate = (!icmp_ln1079)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.38ns)   --->   "%store_ln1079 = store i9 %add_ln1079_1, i9 %indvar_flatten" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 37 'store' 'store_ln1079' <Predicate = (!icmp_ln1079)> <Delay = 0.38>
+ST_2 : Operation 38 [1/1] (0.38ns)   --->   "%store_ln1079 = store i5 %select_ln1079_1, i5 %r" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079]   --->   Operation 38 'store' 'store_ln1079' <Predicate = (!icmp_ln1079)> <Delay = 0.38>
+ST_2 : Operation 39 [1/1] (0.38ns)   --->   "%store_ln1082 = store i5 %add_ln1082, i5 %j" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082]   --->   Operation 39 'store' 'store_ln1082' <Predicate = (!icmp_ln1079)> <Delay = 0.38>
+
+State 3 <SV = 2> <Delay = 2.21>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln1085 = zext i1 %icmp_ln1085" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 40 'zext' 'zext_ln1085' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [5/5] (2.21ns)   --->   "%conv = sitodp i32 %zext_ln1085" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 41 'sitodp' 'conv' <Predicate = true> <Delay = 2.21> <CoreInst = "Int2Double">   --->   Core 66 'Int2Double' <Latency = 4> <II = 1> <Delay = 2.21> <FuncUnit> <Opcode : 'uitodp' 'sitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.21>
+ST_4 : Operation 42 [4/5] (2.21ns)   --->   "%conv = sitodp i32 %zext_ln1085" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 42 'sitodp' 'conv' <Predicate = true> <Delay = 2.21> <CoreInst = "Int2Double">   --->   Core 66 'Int2Double' <Latency = 4> <II = 1> <Delay = 2.21> <FuncUnit> <Opcode : 'uitodp' 'sitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 2.21>
+ST_5 : Operation 43 [3/5] (2.21ns)   --->   "%conv = sitodp i32 %zext_ln1085" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 43 'sitodp' 'conv' <Predicate = true> <Delay = 2.21> <CoreInst = "Int2Double">   --->   Core 66 'Int2Double' <Latency = 4> <II = 1> <Delay = 2.21> <FuncUnit> <Opcode : 'uitodp' 'sitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 2.21>
+ST_6 : Operation 44 [2/5] (2.21ns)   --->   "%conv = sitodp i32 %zext_ln1085" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 44 'sitodp' 'conv' <Predicate = true> <Delay = 2.21> <CoreInst = "Int2Double">   --->   Core 66 'Int2Double' <Latency = 4> <II = 1> <Delay = 2.21> <FuncUnit> <Opcode : 'uitodp' 'sitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 2.21>
+ST_7 : Operation 45 [1/5] (2.21ns)   --->   "%conv = sitodp i32 %zext_ln1085" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 45 'sitodp' 'conv' <Predicate = true> <Delay = 2.21> <CoreInst = "Int2Double">   --->   Core 66 'Int2Double' <Latency = 4> <II = 1> <Delay = 2.21> <FuncUnit> <Opcode : 'uitodp' 'sitodp'> <InPorts = 1> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 2.23>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @Loop_init_I_Loop_init_J_str"   --->   Operation 46 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 256, i64 256, i64 256"   --->   Operation 47 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln1085_2 = zext i8 %add_ln1085" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 48 'zext' 'zext_ln1085_2' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%dataU_out_addr = getelementptr i64 %dataU_out, i64 0, i64 %zext_ln1085_2" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 49 'getelementptr' 'dataU_out_addr' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%specpipeline_ln1084 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_12" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1084]   --->   Operation 50 'specpipeline' 'specpipeline_ln1084' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (2.23ns)   --->   "%store_ln1085 = store i64 %conv, i8 %dataU_out_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085]   --->   Operation 51 'store' 'store_ln1085' <Predicate = true> <Delay = 2.23> <CoreInst = "RAM_T2P_URAM">   --->   Core 100 'RAM_T2P_URAM' <Latency = 1> <II = 1> <Delay = 2.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 256> <RAM>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln1082 = br void %for.inc" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082]   --->   Operation 52 'br' 'br_ln1082' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 2> <Delay = 1.98>
+ST_9 : Operation 53 [2/2] (1.98ns)   --->   "%call_ln1088 = call void @Jacobi_svd<double, 16, 1, 16>, i64 %dataA, i64 %dataU_out, i32 %lda_read" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1088]   --->   Operation 53 'call' 'call_ln1088' <Predicate = true> <Delay = 1.98> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 3> <Delay = 0.00>
+ST_10 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln1088 = call void @Jacobi_svd<double, 16, 1, 16>, i64 %dataA, i64 %dataU_out, i32 %lda_read" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1088]   --->   Operation 54 'call' 'call_ln1088' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln1090 = ret" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1090]   --->   Operation 55 'ret' 'ret_ln1090' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.333ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 9 bit ('indvar_flatten') [6]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten' [10]  (0.387 ns)
+
+ <State 2>: 2.079ns
+The critical path consists of the following:
+	'load' operation 5 bit ('j_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082) on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082 [20]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln1082', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082) [25]  (0.707 ns)
+	'select' operation 5 bit ('select_ln1079', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1079) [26]  (0.278 ns)
+	'add' operation 5 bit ('add_ln1082', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082) [39]  (0.707 ns)
+	'store' operation 0 bit ('store_ln1082', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082) of variable 'add_ln1082', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082 on local variable 'j', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1082 [42]  (0.387 ns)
+
+ <State 3>: 2.217ns
+The critical path consists of the following:
+	'sitodp' operation 64 bit ('conv', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085) [37]  (2.217 ns)
+
+ <State 4>: 2.217ns
+The critical path consists of the following:
+	'sitodp' operation 64 bit ('conv', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085) [37]  (2.217 ns)
+
+ <State 5>: 2.217ns
+The critical path consists of the following:
+	'sitodp' operation 64 bit ('conv', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085) [37]  (2.217 ns)
+
+ <State 6>: 2.217ns
+The critical path consists of the following:
+	'sitodp' operation 64 bit ('conv', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085) [37]  (2.217 ns)
+
+ <State 7>: 2.217ns
+The critical path consists of the following:
+	'sitodp' operation 64 bit ('conv', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085) [37]  (2.217 ns)
+
+ <State 8>: 2.235ns
+The critical path consists of the following:
+	'getelementptr' operation 8 bit ('dataU_out_addr', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085) [33]  (0.000 ns)
+	'store' operation 0 bit ('store_ln1085', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085) of variable 'conv', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1085 on array 'dataU_out' [38]  (2.235 ns)
+
+ <State 9>: 1.987ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1088', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../../solver/L2/include/hw/MatrixDecomposition/gesvdj.hpp:1088) to 'Jacobi_svd<double, 16, 1, 16>' [45]  (1.987 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

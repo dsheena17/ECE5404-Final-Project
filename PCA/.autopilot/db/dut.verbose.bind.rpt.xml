@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dut'" level="0">
+<item name = "Date">Wed May  8 02:27:11 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">Principal_Component_Analysis.prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu250-figd2104-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 3.237 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_aveImpl_double_15_80_1_2_16_s_fu_119">aveImpl_double_15_80_1_2_16_s, 4794, 4794, 15.978 us, 15.978 us, 4794, 4794, no</column>
+<column name="grp_covCoreWrapper_double_15_80_1_2_16_s_fu_129">covCoreWrapper_double_15_80_1_2_16_s, 40981, 40981, 0.137 ms, 0.137 ms, 40982, 40982, dataflow</column>
+<column name="grp_dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2_fu_138">dut_Pipeline_VITIS_LOOP_277_1_VITIS_LOOP_278_2, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_implement_fu_147">implement, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3_fu_156">dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3, ?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

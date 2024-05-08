@@ -1,0 +1,280 @@
+
+
+================================================================
+== Vitis HLS Report for 'dut_Pipeline_VITIS_LOOP_350_2_VITIS_LOOP_351_3'
+================================================================
+* Date:           Wed May  8 02:27:10 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        Principal_Component_Analysis.prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.323 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_350_2_VITIS_LOOP_351_3  |        ?|        ?|        12|          1|          1|     ?|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 13
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 13, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351->dut.cpp:37]   --->   Operation 15 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 16 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%indvar_flatten6 = alloca i32 1"   --->   Operation 17 'alloca' 'indvar_flatten6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outputLoadings_2, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outputLoadings_1, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %outputLoadings_0, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%sqrtVals_2_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %sqrtVals_2"   --->   Operation 21 'read' 'sqrtVals_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%sqrtVals_1_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %sqrtVals_1"   --->   Operation 22 'read' 'sqrtVals_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%sqrtVals_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %sqrtVals"   --->   Operation 23 'read' 'sqrtVals_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%sub_ln298_read = read i34 @_ssdm_op_Read.ap_auto.i34, i34 %sub_ln298"   --->   Operation 24 'read' 'sub_ln298_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.38ns)   --->   "%store_ln0 = store i34 0, i34 %indvar_flatten6"   --->   Operation 25 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 26 [1/1] (0.38ns)   --->   "%store_ln350 = store i32 0, i32 %i" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 26 'store' 'store_ln350' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 27 [1/1] (0.38ns)   --->   "%store_ln351 = store i2 0, i2 %j" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351->dut.cpp:37]   --->   Operation 27 'store' 'store_ln351' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc24.i"   --->   Operation 28 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.81>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%indvar_flatten6_load = load i34 %indvar_flatten6" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 29 'load' 'indvar_flatten6_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.90ns)   --->   "%icmp_ln350 = icmp_eq  i34 %indvar_flatten6_load, i34 %sub_ln298_read" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 30 'icmp' 'icmp_ln350' <Predicate = true> <Delay = 0.90> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.90> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.90ns)   --->   "%add_ln350_1 = add i34 %indvar_flatten6_load, i34 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 31 'add' 'add_ln350_1' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.90> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln350 = br i1 %icmp_ln350, void %for.inc27.i, void %_ZN2xf7fintech3PCAIdLj3ELj1ELj15ELj80ELNS0_23pcaImplementationMethodE0EE17getLoadingsMatrixEPA3_d.exit.loopexit.exitStub" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 32 'br' 'br_ln350' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%j_load = load i2 %j" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351->dut.cpp:37]   --->   Operation 33 'load' 'j_load' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%i_load = load i32 %i" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 34 'load' 'i_load' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.88ns)   --->   "%add_ln350 = add i32 %i_load, i32 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 35 'add' 'add_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.43ns)   --->   "%icmp_ln351 = icmp_eq  i2 %j_load, i2 3" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351->dut.cpp:37]   --->   Operation 36 'icmp' 'icmp_ln351' <Predicate = (!icmp_ln350)> <Delay = 0.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.27ns)   --->   "%select_ln350 = select i1 %icmp_ln351, i2 0, i2 %j_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 37 'select' 'select_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.22ns)   --->   "%select_ln350_1 = select i1 %icmp_ln351, i32 %add_ln350, i32 %i_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 38 'select' 'select_ln350_1' <Predicate = (!icmp_ln350)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln350 = zext i32 %select_ln350_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 39 'zext' 'zext_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%empty = trunc i32 %select_ln350_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 40 'trunc' 'empty' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%empty_88 = trunc i32 %select_ln350_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 41 'trunc' 'empty_88' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%p_shl = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i5.i2, i5 %empty_88, i2 0" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 42 'bitconcatenate' 'p_shl' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.70ns)   --->   "%mul_i1 = sub i7 %p_shl, i7 %empty" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 43 'sub' 'mul_i1' <Predicate = (!icmp_ln350)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%outputLoadings_2_addr = getelementptr i64 %outputLoadings_2, i64 0, i64 %zext_ln350" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 44 'getelementptr' 'outputLoadings_2_addr' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%outputLoadings_0_addr = getelementptr i64 %outputLoadings_0, i64 0, i64 %zext_ln350" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 45 'getelementptr' 'outputLoadings_0_addr' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%outputLoadings_1_addr = getelementptr i64 %outputLoadings_1, i64 0, i64 %zext_ln350" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 46 'getelementptr' 'outputLoadings_1_addr' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.66ns)   --->   "%switch_ln353 = switch i2 %select_ln350, void %arrayidx233.i1.case.2, i2 0, void %arrayidx233.i1.case.0, i2 1, void %arrayidx233.i1.case.1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 47 'switch' 'switch_ln353' <Predicate = (!icmp_ln350)> <Delay = 0.66>
+ST_2 : Operation 48 [1/1] (0.43ns)   --->   "%add_ln351 = add i2 %select_ln350, i2 1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351->dut.cpp:37]   --->   Operation 48 'add' 'add_ln351' <Predicate = (!icmp_ln350)> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 49 [1/1] (0.38ns)   --->   "%store_ln350 = store i34 %add_ln350_1, i34 %indvar_flatten6" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 49 'store' 'store_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.38>
+ST_2 : Operation 50 [1/1] (0.38ns)   --->   "%store_ln350 = store i32 %select_ln350_1, i32 %i" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37]   --->   Operation 50 'store' 'store_ln350' <Predicate = (!icmp_ln350)> <Delay = 0.38>
+ST_2 : Operation 51 [1/1] (0.38ns)   --->   "%store_ln351 = store i2 %add_ln351, i2 %j" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351->dut.cpp:37]   --->   Operation 51 'store' 'store_ln351' <Predicate = (!icmp_ln350)> <Delay = 0.38>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln351 = br void %for.inc24.i" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:351->dut.cpp:37]   --->   Operation 52 'br' 'br_ln351' <Predicate = (!icmp_ln350)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.92>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln353 = zext i2 %select_ln350" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 53 'zext' 'zext_ln353' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln353 = add i7 %mul_i1, i7 %zext_ln353" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 54 'add' 'add_ln353' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 55 [1/1] (0.72ns) (root node of TernaryAdder)   --->   "%add_ln353_1 = add i7 %add_ln353, i7 45" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 55 'add' 'add_ln353_1' <Predicate = true> <Delay = 0.72> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln353_1 = zext i7 %add_ln353_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 56 'zext' 'zext_ln353_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%pca_m_pcVecs_addr = getelementptr i64 %pca_m_pcVecs, i64 0, i64 %zext_ln353_1" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 57 'getelementptr' 'pca_m_pcVecs_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 58 [2/2] (1.20ns)   --->   "%pca_m_pcVecs_load = load i7 %pca_m_pcVecs_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 58 'load' 'pca_m_pcVecs_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 90> <RAM>
+
+State 4 <SV = 3> <Delay = 1.20>
+ST_4 : Operation 59 [1/1] (0.41ns)   --->   "%tmp = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.3f64.f64.i2, i2 0, i64 %sqrtVals_read, i2 1, i64 %sqrtVals_1_read, i2 2, i64 %sqrtVals_2_read, i64 <undef>, i2 %select_ln350" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 59 'sparsemux' 'tmp' <Predicate = true> <Delay = 0.41> <CoreInst = "SparseMux">   --->   Core 147 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 60 [1/2] (1.20ns)   --->   "%pca_m_pcVecs_load = load i7 %pca_m_pcVecs_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 60 'load' 'pca_m_pcVecs_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 90> <RAM>
+
+State 5 <SV = 4> <Delay = 2.32>
+ST_5 : Operation 61 [8/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 61 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 2.32>
+ST_6 : Operation 62 [7/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 62 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 2.32>
+ST_7 : Operation 63 [6/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 63 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 2.32>
+ST_8 : Operation 64 [5/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 64 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 2.32>
+ST_9 : Operation 65 [4/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 65 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 2.32>
+ST_10 : Operation 66 [3/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 66 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 2.32>
+ST_11 : Operation 67 [2/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 67 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 2.32>
+ST_12 : Operation 68 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_350_2_VITIS_LOOP_351_3_str"   --->   Operation 68 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 69 [1/1] (0.00ns)   --->   "%specpipeline_ln352 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_12" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:352->dut.cpp:37]   --->   Operation 69 'specpipeline' 'specpipeline_ln352' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 70 [1/8] (2.32ns)   --->   "%mul19_i = dmul i64 %tmp, i64 %pca_m_pcVecs_load" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 70 'dmul' 'mul19_i' <Predicate = true> <Delay = 2.32> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 7> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 71 [1/1] (0.00ns)   --->   "%bitcast_ln353 = bitcast i64 %mul19_i" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 71 'bitcast' 'bitcast_ln353' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 78 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 78 'ret' 'ret_ln0' <Predicate = (icmp_ln350)> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 0.71>
+ST_13 : Operation 72 [1/1] (0.71ns)   --->   "%store_ln353 = store i64 %bitcast_ln353, i4 %outputLoadings_1_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 72 'store' 'store_ln353' <Predicate = (select_ln350 == 1)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 15> <RAM>
+ST_13 : Operation 73 [1/1] (0.00ns)   --->   "%br_ln353 = br void %arrayidx233.i1.exit" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 73 'br' 'br_ln353' <Predicate = (select_ln350 == 1)> <Delay = 0.00>
+ST_13 : Operation 74 [1/1] (0.71ns)   --->   "%store_ln353 = store i64 %bitcast_ln353, i4 %outputLoadings_0_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 74 'store' 'store_ln353' <Predicate = (select_ln350 == 0)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 15> <RAM>
+ST_13 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln353 = br void %arrayidx233.i1.exit" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 75 'br' 'br_ln353' <Predicate = (select_ln350 == 0)> <Delay = 0.00>
+ST_13 : Operation 76 [1/1] (0.71ns)   --->   "%store_ln353 = store i64 %bitcast_ln353, i4 %outputLoadings_2_addr" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 76 'store' 'store_ln353' <Predicate = (select_ln350 != 0 & select_ln350 != 1)> <Delay = 0.71> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 15> <RAM>
+ST_13 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln353 = br void %arrayidx233.i1.exit" [C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37]   --->   Operation 77 'br' 'br_ln353' <Predicate = (select_ln350 != 0 & select_ln350 != 1)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.333ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 34 bit ('indvar_flatten6') [11]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten6' [19]  (0.387 ns)
+
+ <State 2>: 1.813ns
+The critical path consists of the following:
+	'load' operation 32 bit ('i_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37) on local variable 'i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37 [30]  (0.000 ns)
+	'add' operation 32 bit ('add_ln350', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37) [31]  (0.880 ns)
+	'select' operation 32 bit ('select_ln350_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37) [35]  (0.227 ns)
+	'sub' operation 7 bit ('mul_i1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:350->dut.cpp:37) [40]  (0.706 ns)
+
+ <State 3>: 1.923ns
+The critical path consists of the following:
+	'add' operation 7 bit ('add_ln353', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [47]  (0.000 ns)
+	'add' operation 7 bit ('add_ln353_1', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [48]  (0.723 ns)
+	'getelementptr' operation 7 bit ('pca_m_pcVecs_addr', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [50]  (0.000 ns)
+	'load' operation 64 bit ('pca_m_pcVecs_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) on array 'pca_m_pcVecs' [51]  (1.200 ns)
+
+ <State 4>: 1.200ns
+The critical path consists of the following:
+	'load' operation 64 bit ('pca_m_pcVecs_load', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) on array 'pca_m_pcVecs' [51]  (1.200 ns)
+
+ <State 5>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 6>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 7>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 8>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 9>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 10>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 11>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 12>: 2.323ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul19_i', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) [52]  (2.323 ns)
+
+ <State 13>: 0.714ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln353', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37) of variable 'bitcast_ln353', C:/Vitis_Libraries/quantitative_finance/L1/tests/pca/../../../L1/include/xf_fintech\pca.hpp:353->dut.cpp:37 on array 'outputLoadings_0' [59]  (0.714 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
