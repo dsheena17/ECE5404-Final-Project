@@ -68,9 +68,23 @@ MinC = np.sum(np.square(pc[:,r:]) / eig_val[r:], axis=1)
 
 # Threshold Computation ######################################################
 
+# plotting the PC scores
+fig, ax = plt.subplots(2, figsize=(16,9))
+ax[0].set_title('Distribution of Major PC scores vs # input')
+# setting axis limits to the 99th percentile for readaility purposes
+# ax[0].set_ylim([0,  np.percentile(MajC, 99)])
+# ax[1].set_ylim([0,  np.percentile(MinC, 99)])
+ax[0].plot(range(len(MajC)), MajC, '.', label="MajC")
+ax[0].set_ylabel('Major PC Scores')
+ax[1].set_title('Distribution of Minor PC scores vs # input')
+ax[1].plot(range(len(MinC)), MinC, '.', label="MinC")
+ax[1].set_ylabel('Minor PC Scores')
+plt.savefig(dir + 'PC_score_distribution.png')
+plt.close()
+
 # this computation might be the issue
-t_M = np.percentile(MajC, 70)
-t_m = np.percentile(MinC, 70)
+t_M = np.percentile(MajC, 80)
+t_m = np.percentile(MinC, 80)
 print(f"t_M = {t_M}\tt_m = {t_m}")
 
 # Anomaly detection on TRAIN data ############################################
@@ -81,22 +95,6 @@ abnormal_train_target = pd.read_csv('./processed_data/train_target.csv').to_nump
 # normalizing the abnormal data is making all predictions normal
 abnormal_train = (abnormal_train - normal_train_mean) / normal_train_std
 np.savetxt(dir + 'abnormal_train_scaled.csv', abnormal_train, delimiter=',')
-
-# correlation matrix
-R = np.cov(abnormal_train, rowvar=False)
-# eigen-analysis
-eig_val, eig_vec = np.linalg.eig(R)
-
-assert(isinstance(eig_val, complex) == False)
-assert(isinstance(eig_vec, complex) == False)
-
-# sorting the eigenvectors and eigenvalues
-indices = np.argsort(eig_val)[::-1]
-eig_val = eig_val[indices]
-eig_vec = eig_vec[:, indices]
-
-np.savetxt(dir + 'abnormal_eig_vec.csv', eig_vec, delimiter=',')
-np.savetxt(dir + 'abnormal_eig_val.csv', eig_val, delimiter=',')
 
 # PC score computation
 
@@ -128,31 +126,11 @@ print(f'Training Accuracy = {metrics.accuracy_score(abnormal_train_target, predi
 # Anomaly detection on TEST data ############################################
 
 test =  pd.read_csv('./processed_data/test.csv').to_numpy()
-test = test[10,:].reshape(1, 32)
-print
 test_target = pd.read_csv('./processed_data/test_target.csv').to_numpy()
-test_target = test_target[10,:].reshape(1, 1)
 
 # normalizing the abnormal data is making all predictions normal
 test = (test - normal_train_mean) / normal_train_std
 np.savetxt(dir + 'test_scaled.csv', test, delimiter=',')
-
-# covariance matrix
-R = np.cov(test.T, rowvar=False)
-print(R.shape)
-# eigen-analysis
-eig_val, eig_vec = np.linalg.eig(R)
-
-assert(isinstance(eig_val, complex) == False)
-assert(isinstance(eig_vec, complex) == False)
-
-# sorting the eigenvectors and eigenvalues
-indices = np.argsort(eig_val)[::-1]
-eig_val = eig_val[indices]
-eig_vec = eig_vec[:, indices]
-
-np.savetxt(dir + 'test_eig_vec.csv', eig_vec, delimiter=',')
-np.savetxt(dir + 'test_eig_val.csv', eig_val, delimiter=',')
 
 # PC score computation
 
