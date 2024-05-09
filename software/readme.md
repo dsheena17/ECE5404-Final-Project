@@ -28,3 +28,6 @@ Then, run PCA on the processed data files:
 ### others:
 1. pca_results/normal_train_mean.csv (mean of normal data)
 2. pca_results/normal_train_std.csv (standard deviation of normal data)
+
+# to convert float to binary numbers (verilog)
+> python convert_float_to_hex.py
