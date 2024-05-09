@@ -91,24 +91,19 @@ module maj_pca_score #(
 //********************************************************* USING FLOATING POINT *********************************************************************
 
 //-------------------------------------------- NO CLOKC INSERTED -------------------------------------------------------
-    integer i;
-    real sum_sq;
+
+    reg [63:0] temp [0:MAJ_PC_NUM-1];
+    reg [63:0] sum_sq;
 //    real POS_INF = $bitstoreal(32'h7f800000); // Positive infinity
 //    real NEG_INF = $bitstoreal(32'hff800000); // Negative infinity
-    always @(*) begin
-        sum_sq = 0;
-        for (i = 0; i < MAJ_PC_NUM; i = i + 1) begin
-            sum_sq = sum_sq + ((maj_principal_comps[i] * maj_principal_comps[i]) / maj_eigen_values[i]);
-        end
-    end
 
-// assign sum_sq = 0;
-//genvar i;
-//generate
-//    for (i = 0; i < MAJ_PC_NUM; i = i + 1) begin : SQ_LOOP
-//        assign temp[i] = (maj_principal_comps[i] * maj_principal_comps[i]) / maj_eigen_values[i];
-//        assign sum_sq = sum_sq + temp[i];
-//    end
+ assign sum_sq = 0;
+genvar i;
+generate
+    for (i = 0; i < MAJ_PC_NUM; i = i + 1) begin : SQ_LOOP
+        assign temp[i] = (maj_principal_comps[i] * maj_principal_comps[i]) / maj_eigen_values[i];
+        assign sum_sq = sum_sq + temp[i];
+    end
 
 //for (i = 0; i < MAJ_PC_NUM; i = i + 1) begin : SQ_LOOP
 //    if (maj_eigen_values[i] != 0) begin
@@ -122,7 +117,7 @@ module maj_pca_score #(
 //    end
 //end
 
-//endgenerate
+endgenerate
 
 //initial begin
 //        sum_sq = 0;

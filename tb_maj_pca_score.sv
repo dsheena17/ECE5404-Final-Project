@@ -82,8 +82,8 @@ $display($time, " << Starting the Simulation >>");
 maj_eigen_values[0] =4;
 maj_eigen_values[1] =3;
 
-maj_principal_comps[0] = 64;
-maj_principal_comps[1] = 15;
+maj_principal_comps[0] = 2;
+maj_principal_comps[1] = 3;
 //***************************************************************************************************************************************************
 
 end
